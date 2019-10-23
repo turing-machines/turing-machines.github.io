@@ -32,6 +32,15 @@ deploy it using Helm on Kubedge.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Turing PI assembly</title>
+      <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</guid>
+      <description>&lt;p&gt;This page contains examples of hardware to use in order to build a cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Creating a Turing Pi Kubernetes Cluster</title>
       <link>https://turing-machines.github.io/docker_kubernetes/children/2018-07-03-a/</link>
       <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
@@ -107,15 +116,6 @@ The goal of this post is to transform a github repo into a helm repo.&lt;/p&gt;<
       <description>&lt;p&gt;Also ARM processor on the Raspberry PI 3B+ is a 64 bit processor,
 because the board is only equipped with 1G of RAM, a 64 bit operating system
 is not really needed except when&amp;hellip;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Installing Kibana</title>
-      <link>https://turing-machines.github.io/applications/children/kibana/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/applications/children/kibana/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the PI Cluster.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -219,6 +219,15 @@ For instance you can cross-build golang executable for ARM32v7 and transfer it t
       
       <guid>https://turing-machines.github.io/os_installation/children/worker_pi/</guid>
       <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Kibana</title>
+      <link>https://turing-machines.github.io/applications/children/kibana/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/applications/children/kibana/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the PI Cluster.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
     </item>
     
     <item>
