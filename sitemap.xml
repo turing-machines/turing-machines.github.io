@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://turing-machines.github.io/turing_pi/</loc>
+  </url>
+  
+  <url>
     <loc>https://turing-machines.github.io/applications/children/kubeplay/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
