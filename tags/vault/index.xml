@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vault on Turing Machines Documentation</title>
-    <link>http://192.168.0.73:5000/tags/vault/</link>
+    <link>https://turing-machines.github.io/tags/vault/</link>
     <description>Recent content in vault on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://192.168.0.73:5000/tags/vault/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://turing-machines.github.io/tags/vault/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Build and Deploy Kubernetes Hashicorp Vault</title>
-      <link>http://192.168.0.73:5000/advanced/children/2018-08-01-a/</link>
+      <link>https://turing-machines.github.io/advanced/children/2018-08-01-a/</link>
       <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/advanced/children/2018-08-01-a/</guid>
+      <guid>https://turing-machines.github.io/advanced/children/2018-08-01-a/</guid>
       <description>&lt;p&gt;Vault is aiming at improving security of the containers by rotating token and credential
 much more often than usual. Looks like it is especially effectiv to help rotate passwords
 used to access internal databases.&lt;/p&gt;</description>

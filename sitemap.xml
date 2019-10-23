@@ -3,346 +3,346 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://192.168.0.73:5000/applications/children/kubeplay/</loc>
+    <loc>https://turing-machines.github.io/applications/children/kubeplay/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/os_installation/children/cluster_assembly/</loc>
+    <loc>https://turing-machines.github.io/os_installation/children/cluster_assembly/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/docker_kubernetes/children/2018-07-03-a/</loc>
+    <loc>https://turing-machines.github.io/docker_kubernetes/children/2018-07-03-a/</loc>
     <lastmod>2018-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/os_installation/</loc>
+    <loc>https://turing-machines.github.io/os_installation/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/applications/children/kubernetes_dashboard/</loc>
+    <loc>https://turing-machines.github.io/applications/children/kubernetes_dashboard/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/advanced/children/2018-07-18-a/</loc>
+    <loc>https://turing-machines.github.io/advanced/children/2018-07-18-a/</loc>
     <lastmod>2018-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/maintenance/children/2018-07-13-a/</loc>
+    <loc>https://turing-machines.github.io/maintenance/children/2018-07-13-a/</loc>
     <lastmod>2018-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/maintenance/children/2018-07-11-a/</loc>
+    <loc>https://turing-machines.github.io/maintenance/children/2018-07-11-a/</loc>
     <lastmod>2018-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/docker_kubernetes/children/2018-07-08-a/</loc>
+    <loc>https://turing-machines.github.io/docker_kubernetes/children/2018-07-08-a/</loc>
     <lastmod>2018-07-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/os_installation/children/master_pi/</loc>
+    <loc>https://turing-machines.github.io/os_installation/children/master_pi/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/advanced/children/os_64_bits/</loc>
+    <loc>https://turing-machines.github.io/advanced/children/os_64_bits/</loc>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/docker_kubernetes/</loc>
+    <loc>https://turing-machines.github.io/docker_kubernetes/</loc>
     <lastmod>2018-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/</loc>
+    <loc>https://turing-machines.github.io/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/applications/children/kubesim_blinkt/</loc>
+    <loc>https://turing-machines.github.io/applications/children/kubesim_blinkt/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/docker_kubernetes/children/2018-07-14-a/</loc>
+    <loc>https://turing-machines.github.io/docker_kubernetes/children/2018-07-14-a/</loc>
     <lastmod>2018-07-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/maintenance/</loc>
+    <loc>https://turing-machines.github.io/maintenance/</loc>
     <lastmod>2018-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/maintenance/children/2018-09-28-a/</loc>
+    <loc>https://turing-machines.github.io/maintenance/children/2018-09-28-a/</loc>
     <lastmod>2018-09-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/applications/children/prometheus/</loc>
+    <loc>https://turing-machines.github.io/applications/children/prometheus/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/os_installation/children/setup_dhcpd/</loc>
+    <loc>https://turing-machines.github.io/os_installation/children/setup_dhcpd/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/docker_kubernetes/children/2018-06-19-a/</loc>
+    <loc>https://turing-machines.github.io/docker_kubernetes/children/2018-06-19-a/</loc>
     <lastmod>2018-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/applications/</loc>
+    <loc>https://turing-machines.github.io/applications/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/applications/children/nats/</loc>
+    <loc>https://turing-machines.github.io/applications/children/nats/</loc>
     <lastmod>2018-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/applications/children/grafana/</loc>
+    <loc>https://turing-machines.github.io/applications/children/grafana/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/docker_kubernetes/children/2018-07-12-a/</loc>
+    <loc>https://turing-machines.github.io/docker_kubernetes/children/2018-07-12-a/</loc>
     <lastmod>2018-07-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/os_installation/children/worker_pi/</loc>
+    <loc>https://turing-machines.github.io/os_installation/children/worker_pi/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/advanced/</loc>
+    <loc>https://turing-machines.github.io/advanced/</loc>
     <lastmod>2018-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/applications/children/kibana/</loc>
+    <loc>https://turing-machines.github.io/applications/children/kibana/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/os_installation/children/ansible/</loc>
+    <loc>https://turing-machines.github.io/os_installation/children/ansible/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/advanced/children/2018-06-30-a/</loc>
+    <loc>https://turing-machines.github.io/advanced/children/2018-06-30-a/</loc>
     <lastmod>2018-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/advanced/children/2018-07-29-a/</loc>
+    <loc>https://turing-machines.github.io/advanced/children/2018-07-29-a/</loc>
     <lastmod>2018-07-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/maintenance/children/2018-07-02-a/</loc>
+    <loc>https://turing-machines.github.io/maintenance/children/2018-07-02-a/</loc>
     <lastmod>2018-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/os_installation/children/dongle/</loc>
+    <loc>https://turing-machines.github.io/os_installation/children/dongle/</loc>
     <lastmod>2018-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/advanced/children/2018-07-30-a/</loc>
+    <loc>https://turing-machines.github.io/advanced/children/2018-07-30-a/</loc>
     <lastmod>2018-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/advanced/children/2018-07-31-a/</loc>
+    <loc>https://turing-machines.github.io/advanced/children/2018-07-31-a/</loc>
     <lastmod>2018-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/advanced/children/2018-08-01-a/</loc>
+    <loc>https://turing-machines.github.io/advanced/children/2018-08-01-a/</loc>
     <lastmod>2018-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/64/</loc>
+    <loc>https://turing-machines.github.io/tags/64/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/categories/</loc>
+    <loc>https://turing-machines.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/</loc>
+    <loc>https://turing-machines.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/ansible/</loc>
+    <loc>https://turing-machines.github.io/tags/ansible/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/blinkt/</loc>
+    <loc>https://turing-machines.github.io/tags/blinkt/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/cni/</loc>
+    <loc>https://turing-machines.github.io/tags/cni/</loc>
     <lastmod>2018-07-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/dashboard/</loc>
+    <loc>https://turing-machines.github.io/tags/dashboard/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/dhcpd/</loc>
+    <loc>https://turing-machines.github.io/tags/dhcpd/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/docker/</loc>
+    <loc>https://turing-machines.github.io/tags/docker/</loc>
     <lastmod>2018-07-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/fluentd/</loc>
+    <loc>https://turing-machines.github.io/tags/fluentd/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/github/</loc>
+    <loc>https://turing-machines.github.io/tags/github/</loc>
     <lastmod>2018-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/grafana/</loc>
+    <loc>https://turing-machines.github.io/tags/grafana/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/helm/</loc>
+    <loc>https://turing-machines.github.io/tags/helm/</loc>
     <lastmod>2018-07-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/hypriot/</loc>
+    <loc>https://turing-machines.github.io/tags/hypriot/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/istio/</loc>
+    <loc>https://turing-machines.github.io/tags/istio/</loc>
     <lastmod>2018-07-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/kubedge/</loc>
+    <loc>https://turing-machines.github.io/tags/kubedge/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/kubernetes/</loc>
+    <loc>https://turing-machines.github.io/tags/kubernetes/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/kustomize/</loc>
+    <loc>https://turing-machines.github.io/tags/kustomize/</loc>
     <lastmod>2018-07-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/nats/</loc>
+    <loc>https://turing-machines.github.io/tags/nats/</loc>
     <lastmod>2018-11-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/portieris/</loc>
+    <loc>https://turing-machines.github.io/tags/portieris/</loc>
     <lastmod>2018-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/prometheus/</loc>
+    <loc>https://turing-machines.github.io/tags/prometheus/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/rpi/</loc>
+    <loc>https://turing-machines.github.io/tags/rpi/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/security/</loc>
+    <loc>https://turing-machines.github.io/tags/security/</loc>
     <lastmod>2018-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/sonobuoy/</loc>
+    <loc>https://turing-machines.github.io/tags/sonobuoy/</loc>
     <lastmod>2018-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/test-infra/</loc>
+    <loc>https://turing-machines.github.io/tags/test-infra/</loc>
     <lastmod>2018-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/testing/</loc>
+    <loc>https://turing-machines.github.io/tags/testing/</loc>
     <lastmod>2018-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/tags/vault/</loc>
+    <loc>https://turing-machines.github.io/tags/vault/</loc>
     <lastmod>2018-08-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/categories/wiki/</loc>
+    <loc>https://turing-machines.github.io/categories/wiki/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://192.168.0.73:5000/categories/wip/</loc>
+    <loc>https://turing-machines.github.io/categories/wip/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

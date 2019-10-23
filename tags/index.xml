@@ -2,236 +2,236 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Turing Machines Documentation</title>
-    <link>http://192.168.0.73:5000/tags/</link>
+    <link>https://turing-machines.github.io/tags/</link>
     <description>Recent content in Tags on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://192.168.0.73:5000/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://turing-machines.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>64</title>
-      <link>http://192.168.0.73:5000/tags/64/</link>
+      <link>https://turing-machines.github.io/tags/64/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/64/</guid>
+      <guid>https://turing-machines.github.io/tags/64/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ansible</title>
-      <link>http://192.168.0.73:5000/tags/ansible/</link>
+      <link>https://turing-machines.github.io/tags/ansible/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/ansible/</guid>
+      <guid>https://turing-machines.github.io/tags/ansible/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blinkt</title>
-      <link>http://192.168.0.73:5000/tags/blinkt/</link>
+      <link>https://turing-machines.github.io/tags/blinkt/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/blinkt/</guid>
+      <guid>https://turing-machines.github.io/tags/blinkt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cni</title>
-      <link>http://192.168.0.73:5000/tags/cni/</link>
+      <link>https://turing-machines.github.io/tags/cni/</link>
       <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/cni/</guid>
+      <guid>https://turing-machines.github.io/tags/cni/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dashboard</title>
-      <link>http://192.168.0.73:5000/tags/dashboard/</link>
+      <link>https://turing-machines.github.io/tags/dashboard/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/dashboard/</guid>
+      <guid>https://turing-machines.github.io/tags/dashboard/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dhcpd</title>
-      <link>http://192.168.0.73:5000/tags/dhcpd/</link>
+      <link>https://turing-machines.github.io/tags/dhcpd/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/dhcpd/</guid>
+      <guid>https://turing-machines.github.io/tags/dhcpd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>http://192.168.0.73:5000/tags/docker/</link>
+      <link>https://turing-machines.github.io/tags/docker/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/docker/</guid>
+      <guid>https://turing-machines.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fluentd</title>
-      <link>http://192.168.0.73:5000/tags/fluentd/</link>
+      <link>https://turing-machines.github.io/tags/fluentd/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/fluentd/</guid>
+      <guid>https://turing-machines.github.io/tags/fluentd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>http://192.168.0.73:5000/tags/github/</link>
+      <link>https://turing-machines.github.io/tags/github/</link>
       <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/github/</guid>
+      <guid>https://turing-machines.github.io/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>grafana</title>
-      <link>http://192.168.0.73:5000/tags/grafana/</link>
+      <link>https://turing-machines.github.io/tags/grafana/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/grafana/</guid>
+      <guid>https://turing-machines.github.io/tags/grafana/</guid>
       <description></description>
     </item>
     
     <item>
       <title>helm</title>
-      <link>http://192.168.0.73:5000/tags/helm/</link>
+      <link>https://turing-machines.github.io/tags/helm/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/helm/</guid>
+      <guid>https://turing-machines.github.io/tags/helm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hypriot</title>
-      <link>http://192.168.0.73:5000/tags/hypriot/</link>
+      <link>https://turing-machines.github.io/tags/hypriot/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/hypriot/</guid>
+      <guid>https://turing-machines.github.io/tags/hypriot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>istio</title>
-      <link>http://192.168.0.73:5000/tags/istio/</link>
+      <link>https://turing-machines.github.io/tags/istio/</link>
       <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/istio/</guid>
+      <guid>https://turing-machines.github.io/tags/istio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kubedge</title>
-      <link>http://192.168.0.73:5000/tags/kubedge/</link>
+      <link>https://turing-machines.github.io/tags/kubedge/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/kubedge/</guid>
+      <guid>https://turing-machines.github.io/tags/kubedge/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kubernetes</title>
-      <link>http://192.168.0.73:5000/tags/kubernetes/</link>
+      <link>https://turing-machines.github.io/tags/kubernetes/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/kubernetes/</guid>
+      <guid>https://turing-machines.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kustomize</title>
-      <link>http://192.168.0.73:5000/tags/kustomize/</link>
+      <link>https://turing-machines.github.io/tags/kustomize/</link>
       <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/kustomize/</guid>
+      <guid>https://turing-machines.github.io/tags/kustomize/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nats</title>
-      <link>http://192.168.0.73:5000/tags/nats/</link>
+      <link>https://turing-machines.github.io/tags/nats/</link>
       <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/nats/</guid>
+      <guid>https://turing-machines.github.io/tags/nats/</guid>
       <description></description>
     </item>
     
     <item>
       <title>portieris</title>
-      <link>http://192.168.0.73:5000/tags/portieris/</link>
+      <link>https://turing-machines.github.io/tags/portieris/</link>
       <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/portieris/</guid>
+      <guid>https://turing-machines.github.io/tags/portieris/</guid>
       <description></description>
     </item>
     
     <item>
       <title>prometheus</title>
-      <link>http://192.168.0.73:5000/tags/prometheus/</link>
+      <link>https://turing-machines.github.io/tags/prometheus/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/prometheus/</guid>
+      <guid>https://turing-machines.github.io/tags/prometheus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rpi</title>
-      <link>http://192.168.0.73:5000/tags/rpi/</link>
+      <link>https://turing-machines.github.io/tags/rpi/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/rpi/</guid>
+      <guid>https://turing-machines.github.io/tags/rpi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>security</title>
-      <link>http://192.168.0.73:5000/tags/security/</link>
+      <link>https://turing-machines.github.io/tags/security/</link>
       <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/security/</guid>
+      <guid>https://turing-machines.github.io/tags/security/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sonobuoy</title>
-      <link>http://192.168.0.73:5000/tags/sonobuoy/</link>
+      <link>https://turing-machines.github.io/tags/sonobuoy/</link>
       <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/sonobuoy/</guid>
+      <guid>https://turing-machines.github.io/tags/sonobuoy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test-infra</title>
-      <link>http://192.168.0.73:5000/tags/test-infra/</link>
+      <link>https://turing-machines.github.io/tags/test-infra/</link>
       <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/test-infra/</guid>
+      <guid>https://turing-machines.github.io/tags/test-infra/</guid>
       <description></description>
     </item>
     
     <item>
       <title>testing</title>
-      <link>http://192.168.0.73:5000/tags/testing/</link>
+      <link>https://turing-machines.github.io/tags/testing/</link>
       <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/testing/</guid>
+      <guid>https://turing-machines.github.io/tags/testing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vault</title>
-      <link>http://192.168.0.73:5000/tags/vault/</link>
+      <link>https://turing-machines.github.io/tags/vault/</link>
       <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/tags/vault/</guid>
+      <guid>https://turing-machines.github.io/tags/vault/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kustomize on Turing Machines Documentation</title>
-    <link>http://192.168.0.73:5000/tags/kustomize/</link>
+    <link>https://turing-machines.github.io/tags/kustomize/</link>
     <description>Recent content in kustomize on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://192.168.0.73:5000/tags/kustomize/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://turing-machines.github.io/tags/kustomize/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Build and Deploy Kubernetes Kustomize</title>
-      <link>http://192.168.0.73:5000/advanced/children/2018-07-29-a/</link>
+      <link>https://turing-machines.github.io/advanced/children/2018-07-29-a/</link>
       <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/advanced/children/2018-07-29-a/</guid>
+      <guid>https://turing-machines.github.io/advanced/children/2018-07-29-a/</guid>
       <description>&lt;p&gt;kustomize seems to help the setup of multiple clusters by removing copy paste accross cluster
 and still keeping the configuration file has plain yaml instead of the template like it
 is often the case with t&lt;/p&gt;</description>

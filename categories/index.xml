@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Turing Machines Documentation</title>
-    <link>http://192.168.0.73:5000/categories/</link>
+    <link>https://turing-machines.github.io/categories/</link>
     <description>Recent content in Categories on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://192.168.0.73:5000/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://turing-machines.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>wiki</title>
-      <link>http://192.168.0.73:5000/categories/wiki/</link>
+      <link>https://turing-machines.github.io/categories/wiki/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/categories/wiki/</guid>
+      <guid>https://turing-machines.github.io/categories/wiki/</guid>
       <description></description>
     </item>
     
     <item>
       <title>wip</title>
-      <link>http://192.168.0.73:5000/categories/wip/</link>
+      <link>https://turing-machines.github.io/categories/wip/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/categories/wip/</guid>
+      <guid>https://turing-machines.github.io/categories/wip/</guid>
       <description></description>
     </item>
     

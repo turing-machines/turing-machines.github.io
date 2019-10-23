@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rpi on Turing Machines Documentation</title>
-    <link>http://192.168.0.73:5000/tags/rpi/</link>
+    <link>https://turing-machines.github.io/tags/rpi/</link>
     <description>Recent content in rpi on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://192.168.0.73:5000/tags/rpi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://turing-machines.github.io/tags/rpi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installing Kubedge Kubeplay</title>
-      <link>http://192.168.0.73:5000/applications/children/kubeplay/</link>
+      <link>https://turing-machines.github.io/applications/children/kubeplay/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/applications/children/kubeplay/</guid>
+      <guid>https://turing-machines.github.io/applications/children/kubeplay/</guid>
       <description>&lt;p&gt;Install simplistic Kubeplay Application on the PI Cluster. It is a primitiv golang based server
 which get the user to go through the entire DevOps process (to build the docker image) and
 deploy it using Helm on Kubedge.&lt;/p&gt;</description>
@@ -24,56 +24,56 @@ deploy it using Helm on Kubedge.&lt;/p&gt;</description>
     
     <item>
       <title>Turing PI assembly</title>
-      <link>http://192.168.0.73:5000/os_installation/children/cluster_assembly/</link>
+      <link>https://turing-machines.github.io/os_installation/children/cluster_assembly/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/os_installation/children/cluster_assembly/</guid>
+      <guid>https://turing-machines.github.io/os_installation/children/cluster_assembly/</guid>
       <description>&lt;p&gt;This page contains examples of hardware to use in order to build a cluster&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Creating a Raspberry 3 B&#43; Kubernetes Cluster</title>
-      <link>http://192.168.0.73:5000/docker_kubernetes/children/2018-07-03-a/</link>
+      <link>https://turing-machines.github.io/docker_kubernetes/children/2018-07-03-a/</link>
       <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/docker_kubernetes/children/2018-07-03-a/</guid>
+      <guid>https://turing-machines.github.io/docker_kubernetes/children/2018-07-03-a/</guid>
       <description>&lt;p&gt;Also GCE is perfect to learn Kubernetes, building Kubernetes on top of PI Cluster brings another dimension to the learning,
 from setting up the OS, partitionning the OS, DHCP, NAT, cross compiling for the ARM32V7.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Installing Kubernetes Dashboard</title>
-      <link>http://192.168.0.73:5000/applications/children/kubernetes_dashboard/</link>
+      <link>https://turing-machines.github.io/applications/children/kubernetes_dashboard/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/applications/children/kubernetes_dashboard/</guid>
+      <guid>https://turing-machines.github.io/applications/children/kubernetes_dashboard/</guid>
       <description>&lt;p&gt;Install Kubernetes Dashboard on the PI Cluster&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Add Persistency Volume to PI Cluster</title>
-      <link>http://192.168.0.73:5000/docker_kubernetes/children/2018-07-08-a/</link>
+      <link>https://turing-machines.github.io/docker_kubernetes/children/2018-07-08-a/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/docker_kubernetes/children/2018-07-08-a/</guid>
+      <guid>https://turing-machines.github.io/docker_kubernetes/children/2018-07-08-a/</guid>
       <description>&lt;p&gt;In order to install Prometheus, NATS, Cassandra using Kubernetes, we need to first create Persistency Volumes&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>OS Installation on Turing Master</title>
-      <link>http://192.168.0.73:5000/os_installation/children/master_pi/</link>
+      <link>https://turing-machines.github.io/os_installation/children/master_pi/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/os_installation/children/master_pi/</guid>
+      <guid>https://turing-machines.github.io/os_installation/children/master_pi/</guid>
       <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Installing Hypriot OS</title>
-      <link>http://192.168.0.73:5000/advanced/children/os_64_bits/</link>
+      <link>https://turing-machines.github.io/advanced/children/os_64_bits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/advanced/children/os_64_bits/</guid>
+      <guid>https://turing-machines.github.io/advanced/children/os_64_bits/</guid>
       <description>&lt;p&gt;Also ARM processor on the Raspberry PI 3B+ is a 64 bit processor,
 because the board is only equipped with 1G of RAM, a 64 bit operating system
 is not really needed except when&amp;hellip;.&lt;/p&gt;</description>
@@ -81,19 +81,19 @@ is not really needed except when&amp;hellip;.&lt;/p&gt;</description>
     
     <item>
       <title>Installing Kubedge Blinkt</title>
-      <link>http://192.168.0.73:5000/applications/children/kubesim_blinkt/</link>
+      <link>https://turing-machines.github.io/applications/children/kubesim_blinkt/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/applications/children/kubesim_blinkt/</guid>
+      <guid>https://turing-machines.github.io/applications/children/kubesim_blinkt/</guid>
       <description>&lt;p&gt;Install Kubedge Blinkt Application on the PI Cluster&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Deploy Flannel in PI Cluster</title>
-      <link>http://192.168.0.73:5000/docker_kubernetes/children/2018-07-14-a/</link>
+      <link>https://turing-machines.github.io/docker_kubernetes/children/2018-07-14-a/</link>
       <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/docker_kubernetes/children/2018-07-14-a/</guid>
+      <guid>https://turing-machines.github.io/docker_kubernetes/children/2018-07-14-a/</guid>
       <description>&lt;p&gt;In order to get the nodes and pods interface with each other accross the cluster.
 This post describes how I deployed Flannel acounting with the fact that some of the
 nodes have multiple interfaces (wlan0 and eth0).&lt;/p&gt;</description>
@@ -101,29 +101,29 @@ nodes have multiple interfaces (wlan0 and eth0).&lt;/p&gt;</description>
     
     <item>
       <title>Upgrade RPI Kubernetes cluster to 1.12</title>
-      <link>http://192.168.0.73:5000/maintenance/children/2018-09-28-a/</link>
+      <link>https://turing-machines.github.io/maintenance/children/2018-09-28-a/</link>
       <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/maintenance/children/2018-09-28-a/</guid>
+      <guid>https://turing-machines.github.io/maintenance/children/2018-09-28-a/</guid>
       <description>&lt;p&gt;The new Kubernetes 1.12 is out. THe goal is to update my two clusters to 1.12
 using kubeadm 1.12&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Installing Prometheus</title>
-      <link>http://192.168.0.73:5000/applications/children/prometheus/</link>
+      <link>https://turing-machines.github.io/applications/children/prometheus/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/applications/children/prometheus/</guid>
+      <guid>https://turing-machines.github.io/applications/children/prometheus/</guid>
       <description>&lt;p&gt;Install Prometheus on the PI Cluster&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Setting up DHCPD on Turing Master</title>
-      <link>http://192.168.0.73:5000/os_installation/children/setup_dhcpd/</link>
+      <link>https://turing-machines.github.io/os_installation/children/setup_dhcpd/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/os_installation/children/setup_dhcpd/</guid>
+      <guid>https://turing-machines.github.io/os_installation/children/setup_dhcpd/</guid>
       <description>&lt;p&gt;This tutorial how to setup DHCPD and NAT so that the slave PI can access the
 internet through the NAT (ETH0-&amp;gt;WLAN0) running on Turing Master. This tutorial
 also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs.&lt;/p&gt;</description>
@@ -131,10 +131,10 @@ also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs
     
     <item>
       <title>Add Raspberry PI node to Kubernetes Cluster in 10 min</title>
-      <link>http://192.168.0.73:5000/docker_kubernetes/children/2018-06-19-a/</link>
+      <link>https://turing-machines.github.io/docker_kubernetes/children/2018-06-19-a/</link>
       <pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/docker_kubernetes/children/2018-06-19-a/</guid>
+      <guid>https://turing-machines.github.io/docker_kubernetes/children/2018-06-19-a/</guid>
       <description>&lt;p&gt;During some of the manipulation of the partition table of
 my SD card, I ended up screwing up both my SD card and my backup Win32DiskImage backup.
 Moreover if your SD card is 32G, it takes around 30 minute to restore from backup.
@@ -146,46 +146,46 @@ build a default SD image where cloud-init does 100% of the initialization work.&
     
     <item>
       <title>Installing NATS</title>
-      <link>http://192.168.0.73:5000/applications/children/nats/</link>
+      <link>https://turing-machines.github.io/applications/children/nats/</link>
       <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/applications/children/nats/</guid>
+      <guid>https://turing-machines.github.io/applications/children/nats/</guid>
       <description>&lt;p&gt;Install NATS on the PI Cluster&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Installing Grafana</title>
-      <link>http://192.168.0.73:5000/applications/children/grafana/</link>
+      <link>https://turing-machines.github.io/applications/children/grafana/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/applications/children/grafana/</guid>
+      <guid>https://turing-machines.github.io/applications/children/grafana/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Install Grafana on the PI Cluster&lt;/strong&gt;. Grafana helps to plot the data in the system. It is an OSS like tools which helps to manage the kubedge cluster.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>OS Installation on Turing Worker</title>
-      <link>http://192.168.0.73:5000/os_installation/children/worker_pi/</link>
+      <link>https://turing-machines.github.io/os_installation/children/worker_pi/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/os_installation/children/worker_pi/</guid>
+      <guid>https://turing-machines.github.io/os_installation/children/worker_pi/</guid>
       <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Installing Kibana</title>
-      <link>http://192.168.0.73:5000/applications/children/kibana/</link>
+      <link>https://turing-machines.github.io/applications/children/kibana/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/applications/children/kibana/</guid>
+      <guid>https://turing-machines.github.io/applications/children/kibana/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the PI Cluster.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Using Ansible to manage Turing Pi</title>
-      <link>http://192.168.0.73:5000/os_installation/children/ansible/</link>
+      <link>https://turing-machines.github.io/os_installation/children/ansible/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/os_installation/children/ansible/</guid>
+      <guid>https://turing-machines.github.io/os_installation/children/ansible/</guid>
       <description>&lt;p&gt;Even if the ultimate goal is to manage completly the cluster using Kubernetes,
 the ability to use Ansible during debug process is very usefull.
 The goal here is to setup ansible inventory, basic playbooks.&lt;/p&gt;</description>
@@ -193,10 +193,10 @@ The goal here is to setup ansible inventory, basic playbooks.&lt;/p&gt;</descrip
     
     <item>
       <title>Build and Deploy Kubernetes Kustomize</title>
-      <link>http://192.168.0.73:5000/advanced/children/2018-07-29-a/</link>
+      <link>https://turing-machines.github.io/advanced/children/2018-07-29-a/</link>
       <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/advanced/children/2018-07-29-a/</guid>
+      <guid>https://turing-machines.github.io/advanced/children/2018-07-29-a/</guid>
       <description>&lt;p&gt;kustomize seems to help the setup of multiple clusters by removing copy paste accross cluster
 and still keeping the configuration file has plain yaml instead of the template like it
 is often the case with t&lt;/p&gt;</description>
@@ -204,10 +204,10 @@ is often the case with t&lt;/p&gt;</description>
     
     <item>
       <title>Create a Turing Pi Rescue Dongle</title>
-      <link>http://192.168.0.73:5000/os_installation/children/dongle/</link>
+      <link>https://turing-machines.github.io/os_installation/children/dongle/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/os_installation/children/dongle/</guid>
+      <guid>https://turing-machines.github.io/os_installation/children/dongle/</guid>
       <description>&lt;p&gt;I encountered multiple issues trying to repartition my SD on my PI.
 Because the / directory is mounted, it never really worked safely for me
 to use fdisk. Morevoer some of the powerfull tools such as gparted need
@@ -218,20 +218,20 @@ X11 installed, which I don&amp;rsquo;t have by default.&lt;/p&gt;
     
     <item>
       <title>Build and Deploy Kubernetes test-infra</title>
-      <link>http://192.168.0.73:5000/advanced/children/2018-07-30-a/</link>
+      <link>https://turing-machines.github.io/advanced/children/2018-07-30-a/</link>
       <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/advanced/children/2018-07-30-a/</guid>
+      <guid>https://turing-machines.github.io/advanced/children/2018-07-30-a/</guid>
       <description>&lt;p&gt;test-infra seems to somewhat overlap with sonobuoy features. The purpose of this post is
 to fetch the code, compile and deploy it on a Kubernetes cluster.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Build and Deploy Kubernetes Istio</title>
-      <link>http://192.168.0.73:5000/advanced/children/2018-07-31-a/</link>
+      <link>https://turing-machines.github.io/advanced/children/2018-07-31-a/</link>
       <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/advanced/children/2018-07-31-a/</guid>
+      <guid>https://turing-machines.github.io/advanced/children/2018-07-31-a/</guid>
       <description>&lt;p&gt;Istio is aiming at improving security of the containers. One of the key aspects
 is the end to end encryption of the commnucation, the role of citadel to ensure the
 management of the certificates, the renewal of the certificates.
@@ -241,10 +241,10 @@ leverage it in my day to day work.&lt;/p&gt;</description>
     
     <item>
       <title>Build and Deploy Kubernetes Hashicorp Vault</title>
-      <link>http://192.168.0.73:5000/advanced/children/2018-08-01-a/</link>
+      <link>https://turing-machines.github.io/advanced/children/2018-08-01-a/</link>
       <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/advanced/children/2018-08-01-a/</guid>
+      <guid>https://turing-machines.github.io/advanced/children/2018-08-01-a/</guid>
       <description>&lt;p&gt;Vault is aiming at improving security of the containers by rotating token and credential
 much more often than usual. Looks like it is especially effectiv to help rotate passwords
 used to access internal databases.&lt;/p&gt;</description>

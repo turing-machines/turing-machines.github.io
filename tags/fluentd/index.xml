@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fluentd on Turing Machines Documentation</title>
-    <link>http://192.168.0.73:5000/tags/fluentd/</link>
+    <link>https://turing-machines.github.io/tags/fluentd/</link>
     <description>Recent content in fluentd on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://192.168.0.73:5000/tags/fluentd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://turing-machines.github.io/tags/fluentd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installing Kibana</title>
-      <link>http://192.168.0.73:5000/applications/children/kibana/</link>
+      <link>https://turing-machines.github.io/applications/children/kibana/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/applications/children/kibana/</guid>
+      <guid>https://turing-machines.github.io/applications/children/kibana/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the PI Cluster.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
     </item>
     

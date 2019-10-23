@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nats on Turing Machines Documentation</title>
-    <link>http://192.168.0.73:5000/tags/nats/</link>
+    <link>https://turing-machines.github.io/tags/nats/</link>
     <description>Recent content in nats on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://192.168.0.73:5000/tags/nats/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://turing-machines.github.io/tags/nats/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installing NATS</title>
-      <link>http://192.168.0.73:5000/applications/children/nats/</link>
+      <link>https://turing-machines.github.io/applications/children/nats/</link>
       <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/applications/children/nats/</guid>
+      <guid>https://turing-machines.github.io/applications/children/nats/</guid>
       <description>&lt;p&gt;Install NATS on the PI Cluster&lt;/p&gt;</description>
     </item>
     

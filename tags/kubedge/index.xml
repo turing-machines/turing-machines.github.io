@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kubedge on Turing Machines Documentation</title>
-    <link>http://192.168.0.73:5000/tags/kubedge/</link>
+    <link>https://turing-machines.github.io/tags/kubedge/</link>
     <description>Recent content in kubedge on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://192.168.0.73:5000/tags/kubedge/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://turing-machines.github.io/tags/kubedge/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installing Kubedge Blinkt</title>
-      <link>http://192.168.0.73:5000/applications/children/kubesim_blinkt/</link>
+      <link>https://turing-machines.github.io/applications/children/kubesim_blinkt/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/applications/children/kubesim_blinkt/</guid>
+      <guid>https://turing-machines.github.io/applications/children/kubesim_blinkt/</guid>
       <description>&lt;p&gt;Install Kubedge Blinkt Application on the PI Cluster&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Installing Kubedge Kubeplay</title>
-      <link>http://192.168.0.73:5000/applications/children/kubeplay/</link>
+      <link>https://turing-machines.github.io/applications/children/kubeplay/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://192.168.0.73:5000/applications/children/kubeplay/</guid>
+      <guid>https://turing-machines.github.io/applications/children/kubeplay/</guid>
       <description>&lt;p&gt;Install simplistic Kubeplay Application on the PI Cluster. It is a primitiv golang based server
 which get the user to go through the entire DevOps process (to build the docker image) and
 deploy it using Helm on Kubedge.&lt;/p&gt;</description>
