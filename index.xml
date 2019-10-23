@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Turing Pi on Turing Machines Documentation</title>
+    <title>Turing Machines on Turing Machines Documentation</title>
     <link>https://turing-machines.github.io/</link>
-    <description>Recent content in Turing Pi on Turing Machines Documentation</description>
+    <description>Recent content in Turing Machines on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
