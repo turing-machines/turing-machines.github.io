@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>helm on Turing Machines Documentation</title>
+    <link>http://192.168.0.73:5000/tags/helm/</link>
+    <description>Recent content in helm on Turing Machines Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://192.168.0.73:5000/tags/helm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deply Helm and Tiller on PI Cluster</title>
+      <link>http://192.168.0.73:5000/maintenance/children/2018-07-13-a/</link>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/maintenance/children/2018-07-13-a/</guid>
+      <description>&lt;p&gt;The main purpose of this exercise is to be able to use Helm on the Rapsberry PI Cluster.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Use github repo as helm chart repository</title>
+      <link>http://192.168.0.73:5000/maintenance/children/2018-07-11-a/</link>
+      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/maintenance/children/2018-07-11-a/</guid>
+      <description>&lt;p&gt;In order to be able use Helm charts the &amp;ldquo;normal&amp;rdquo; way, it is need to buid your own helm repository.
+The goal of this post is to transform a github repo into a helm repo.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

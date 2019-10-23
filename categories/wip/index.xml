@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wip on Turing Machines Documentation</title>
+    <link>http://192.168.0.73:5000/categories/wip/</link>
+    <description>Recent content in wip on Turing Machines Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://192.168.0.73:5000/categories/wip/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing Kubedge Kubeplay</title>
+      <link>http://192.168.0.73:5000/applications/children/kubeplay/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/kubeplay/</guid>
+      <description>&lt;p&gt;Install simplistic Kubeplay Application on the PI Cluster. It is a primitiv golang based server
+which get the user to go through the entire DevOps process (to build the docker image) and
+deploy it using Helm on Kubedge.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Kubernetes Dashboard</title>
+      <link>http://192.168.0.73:5000/applications/children/kubernetes_dashboard/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/kubernetes_dashboard/</guid>
+      <description>&lt;p&gt;Install Kubernetes Dashboard on the PI Cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Compile and Test Portieris</title>
+      <link>http://192.168.0.73:5000/advanced/children/2018-07-18-a/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/advanced/children/2018-07-18-a/</guid>
+      <description>&lt;p&gt;One of the biggest security risks related to Kubernetes are often linked to
+the fact that it is really hard to ensure that only &amp;ldquo;approved&amp;rdquo; images are
+deployed in your Kubernetes cluster. The goal here is to leverage Notary
+and the a project called &amp;ldquo;Portieris&amp;rdquo; created by IBM.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Add Persistency Volume to PI Cluster</title>
+      <link>http://192.168.0.73:5000/docker_kubernetes/children/2018-07-08-a/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/docker_kubernetes/children/2018-07-08-a/</guid>
+      <description>&lt;p&gt;In order to install Prometheus, NATS, Cassandra using Kubernetes, we need to first create Persistency Volumes&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Hypriot OS</title>
+      <link>http://192.168.0.73:5000/advanced/children/os_64_bits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/advanced/children/os_64_bits/</guid>
+      <description>&lt;p&gt;Also ARM processor on the Raspberry PI 3B+ is a 64 bit processor,
+because the board is only equipped with 1G of RAM, a 64 bit operating system
+is not really needed except when&amp;hellip;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Kubedge Blinkt</title>
+      <link>http://192.168.0.73:5000/applications/children/kubesim_blinkt/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/kubesim_blinkt/</guid>
+      <description>&lt;p&gt;Install Kubedge Blinkt Application on the PI Cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Upgrade RPI Kubernetes cluster to 1.12</title>
+      <link>http://192.168.0.73:5000/maintenance/children/2018-09-28-a/</link>
+      <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/maintenance/children/2018-09-28-a/</guid>
+      <description>&lt;p&gt;The new Kubernetes 1.12 is out. THe goal is to update my two clusters to 1.12
+using kubeadm 1.12&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Prometheus</title>
+      <link>http://192.168.0.73:5000/applications/children/prometheus/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/prometheus/</guid>
+      <description>&lt;p&gt;Install Prometheus on the PI Cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Setting up DHCPD on Turing Master</title>
+      <link>http://192.168.0.73:5000/os_installation/children/setup_dhcpd/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/os_installation/children/setup_dhcpd/</guid>
+      <description>&lt;p&gt;This tutorial how to setup DHCPD and NAT so that the slave PI can access the
+internet through the NAT (ETH0-&amp;gt;WLAN0) running on Turing Master. This tutorial
+also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing NATS</title>
+      <link>http://192.168.0.73:5000/applications/children/nats/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/nats/</guid>
+      <description>&lt;p&gt;Install NATS on the PI Cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Grafana</title>
+      <link>http://192.168.0.73:5000/applications/children/grafana/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/grafana/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Install Grafana on the PI Cluster&lt;/strong&gt;. Grafana helps to plot the data in the system. It is an OSS like tools which helps to manage the kubedge cluster.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Kibana</title>
+      <link>http://192.168.0.73:5000/applications/children/kibana/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/kibana/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the PI Cluster.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Build and Deploy Kubernetes Kustomize</title>
+      <link>http://192.168.0.73:5000/advanced/children/2018-07-29-a/</link>
+      <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/advanced/children/2018-07-29-a/</guid>
+      <description>&lt;p&gt;kustomize seems to help the setup of multiple clusters by removing copy paste accross cluster
+and still keeping the configuration file has plain yaml instead of the template like it
+is often the case with t&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Build and Deploy Kubernetes test-infra</title>
+      <link>http://192.168.0.73:5000/advanced/children/2018-07-30-a/</link>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/advanced/children/2018-07-30-a/</guid>
+      <description>&lt;p&gt;test-infra seems to somewhat overlap with sonobuoy features. The purpose of this post is
+to fetch the code, compile and deploy it on a Kubernetes cluster.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Build and Deploy Kubernetes Istio</title>
+      <link>http://192.168.0.73:5000/advanced/children/2018-07-31-a/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/advanced/children/2018-07-31-a/</guid>
+      <description>&lt;p&gt;Istio is aiming at improving security of the containers. One of the key aspects
+is the end to end encryption of the commnucation, the role of citadel to ensure the
+management of the certificates, the renewal of the certificates.
+As always, the goal of this post is to study that new tool and figure out I can
+leverage it in my day to day work.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Build and Deploy Kubernetes Hashicorp Vault</title>
+      <link>http://192.168.0.73:5000/advanced/children/2018-08-01-a/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/advanced/children/2018-08-01-a/</guid>
+      <description>&lt;p&gt;Vault is aiming at improving security of the containers by rotating token and credential
+much more often than usual. Looks like it is especially effectiv to help rotate passwords
+used to access internal databases.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

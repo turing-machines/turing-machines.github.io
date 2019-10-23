@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Turing Machines Documentation</title>
+    <link>http://192.168.0.73:5000/tags/</link>
+    <description>Recent content in Tags on Turing Machines Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://192.168.0.73:5000/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>64</title>
+      <link>http://192.168.0.73:5000/tags/64/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/64/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ansible</title>
+      <link>http://192.168.0.73:5000/tags/ansible/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blinkt</title>
+      <link>http://192.168.0.73:5000/tags/blinkt/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/blinkt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cni</title>
+      <link>http://192.168.0.73:5000/tags/cni/</link>
+      <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/cni/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dashboard</title>
+      <link>http://192.168.0.73:5000/tags/dashboard/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/dashboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dhcpd</title>
+      <link>http://192.168.0.73:5000/tags/dhcpd/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/dhcpd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>http://192.168.0.73:5000/tags/docker/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fluentd</title>
+      <link>http://192.168.0.73:5000/tags/fluentd/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/fluentd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>http://192.168.0.73:5000/tags/github/</link>
+      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grafana</title>
+      <link>http://192.168.0.73:5000/tags/grafana/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/grafana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>helm</title>
+      <link>http://192.168.0.73:5000/tags/helm/</link>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/helm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hypriot</title>
+      <link>http://192.168.0.73:5000/tags/hypriot/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/hypriot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>istio</title>
+      <link>http://192.168.0.73:5000/tags/istio/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/istio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubedge</title>
+      <link>http://192.168.0.73:5000/tags/kubedge/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/kubedge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>http://192.168.0.73:5000/tags/kubernetes/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kustomize</title>
+      <link>http://192.168.0.73:5000/tags/kustomize/</link>
+      <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/kustomize/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nats</title>
+      <link>http://192.168.0.73:5000/tags/nats/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/nats/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>portieris</title>
+      <link>http://192.168.0.73:5000/tags/portieris/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/portieris/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prometheus</title>
+      <link>http://192.168.0.73:5000/tags/prometheus/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/prometheus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rpi</title>
+      <link>http://192.168.0.73:5000/tags/rpi/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/rpi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>http://192.168.0.73:5000/tags/security/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sonobuoy</title>
+      <link>http://192.168.0.73:5000/tags/sonobuoy/</link>
+      <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/sonobuoy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test-infra</title>
+      <link>http://192.168.0.73:5000/tags/test-infra/</link>
+      <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/test-infra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>testing</title>
+      <link>http://192.168.0.73:5000/tags/testing/</link>
+      <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vault</title>
+      <link>http://192.168.0.73:5000/tags/vault/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/tags/vault/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

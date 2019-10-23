@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operating System on Turing Machines Documentation</title>
+    <link>http://192.168.0.73:5000/os_installation/</link>
+    <description>Recent content in Operating System on Turing Machines Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://192.168.0.73:5000/os_installation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Turing PI assembly</title>
+      <link>http://192.168.0.73:5000/os_installation/children/cluster_assembly/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/os_installation/children/cluster_assembly/</guid>
+      <description>&lt;p&gt;This page contains examples of hardware to use in order to build a cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OS Installation on Turing Master</title>
+      <link>http://192.168.0.73:5000/os_installation/children/master_pi/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/os_installation/children/master_pi/</guid>
+      <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Setting up DHCPD on Turing Master</title>
+      <link>http://192.168.0.73:5000/os_installation/children/setup_dhcpd/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/os_installation/children/setup_dhcpd/</guid>
+      <description>&lt;p&gt;This tutorial how to setup DHCPD and NAT so that the slave PI can access the
+internet through the NAT (ETH0-&amp;gt;WLAN0) running on Turing Master. This tutorial
+also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OS Installation on Turing Worker</title>
+      <link>http://192.168.0.73:5000/os_installation/children/worker_pi/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/os_installation/children/worker_pi/</guid>
+      <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Ansible to manage Turing Pi</title>
+      <link>http://192.168.0.73:5000/os_installation/children/ansible/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/os_installation/children/ansible/</guid>
+      <description>&lt;p&gt;Even if the ultimate goal is to manage completly the cluster using Kubernetes,
+the ability to use Ansible during debug process is very usefull.
+The goal here is to setup ansible inventory, basic playbooks.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Create a Turing Pi Rescue Dongle</title>
+      <link>http://192.168.0.73:5000/os_installation/children/dongle/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/os_installation/children/dongle/</guid>
+      <description>&lt;p&gt;I encountered multiple issues trying to repartition my SD on my PI.
+Because the / directory is mounted, it never really worked safely for me
+to use fdisk. Morevoer some of the powerfull tools such as gparted need
+X11 installed, which I don&amp;rsquo;t have by default.&lt;/p&gt;
+
+&lt;p&gt;Hopefully the new PI3 B and B+ are able to boot from USB, hence the idea of creating a Rescue Dongle&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

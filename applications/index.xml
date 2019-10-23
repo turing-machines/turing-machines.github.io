@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Applications on Turing Machines Documentation</title>
+    <link>http://192.168.0.73:5000/applications/</link>
+    <description>Recent content in Applications on Turing Machines Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://192.168.0.73:5000/applications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing Kubedge Kubeplay</title>
+      <link>http://192.168.0.73:5000/applications/children/kubeplay/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/kubeplay/</guid>
+      <description>&lt;p&gt;Install simplistic Kubeplay Application on the PI Cluster. It is a primitiv golang based server
+which get the user to go through the entire DevOps process (to build the docker image) and
+deploy it using Helm on Kubedge.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Kubernetes Dashboard</title>
+      <link>http://192.168.0.73:5000/applications/children/kubernetes_dashboard/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/kubernetes_dashboard/</guid>
+      <description>&lt;p&gt;Install Kubernetes Dashboard on the PI Cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Kubedge Blinkt</title>
+      <link>http://192.168.0.73:5000/applications/children/kubesim_blinkt/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/kubesim_blinkt/</guid>
+      <description>&lt;p&gt;Install Kubedge Blinkt Application on the PI Cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Prometheus</title>
+      <link>http://192.168.0.73:5000/applications/children/prometheus/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/prometheus/</guid>
+      <description>&lt;p&gt;Install Prometheus on the PI Cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing NATS</title>
+      <link>http://192.168.0.73:5000/applications/children/nats/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/nats/</guid>
+      <description>&lt;p&gt;Install NATS on the PI Cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Grafana</title>
+      <link>http://192.168.0.73:5000/applications/children/grafana/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/grafana/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Install Grafana on the PI Cluster&lt;/strong&gt;. Grafana helps to plot the data in the system. It is an OSS like tools which helps to manage the kubedge cluster.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Kibana</title>
+      <link>http://192.168.0.73:5000/applications/children/kibana/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/applications/children/kibana/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the PI Cluster.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

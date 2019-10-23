@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ansible on Turing Machines Documentation</title>
+    <link>http://192.168.0.73:5000/tags/ansible/</link>
+    <description>Recent content in ansible on Turing Machines Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://192.168.0.73:5000/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OS Installation on Turing Master</title>
+      <link>http://192.168.0.73:5000/os_installation/children/master_pi/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/os_installation/children/master_pi/</guid>
+      <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OS Installation on Turing Worker</title>
+      <link>http://192.168.0.73:5000/os_installation/children/worker_pi/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/os_installation/children/worker_pi/</guid>
+      <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Turing PI assembly</title>
+      <link>http://192.168.0.73:5000/os_installation/children/cluster_assembly/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/os_installation/children/cluster_assembly/</guid>
+      <description>&lt;p&gt;This page contains examples of hardware to use in order to build a cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Ansible to manage Turing Pi</title>
+      <link>http://192.168.0.73:5000/os_installation/children/ansible/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.0.73:5000/os_installation/children/ansible/</guid>
+      <description>&lt;p&gt;Even if the ultimate goal is to manage completly the cluster using Kubernetes,
+the ability to use Ansible during debug process is very usefull.
+The goal here is to setup ansible inventory, basic playbooks.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
