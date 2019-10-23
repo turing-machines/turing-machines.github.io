@@ -11,7 +11,7 @@
 	"title": "Turing PI assembly",
 	"tags": ["ansible", "rpi"],
 	"description": "",
-	"content": "This page contains examples of hardware to use in order to build a cluster\nAssembled 3 nodes Turing Pi 3 Nodes Cluster Hardware Assembly    Component URL Example Quantity Cost Estimate     Turing Pi clusterboard PI Rack 1 $128   RPI Compute Module 3+ PI 3 $105   Total   $233    5 Nodes Cluster Hardware Assembly    Component URL Example Quantity Cost Estimate     Turing Pi clusterboard PI Rack 1 $128   RPI Compute Module 3+ PI 5 $175   Total   $303    Reference Links  Video1 "
+	"content": "This page contains examples of hardware to use in order to build a cluster\nAssembled 3 nodes Turing Pi 3 Nodes Cluster Hardware Assembly    Component URL Example Quantity Cost Estimate     Turing Pi clusterboard Clusterboard 1 $128   RPI Compute Module 3+ Compute Module 3 $105   Total   $233    5 Nodes Cluster Hardware Assembly    Component URL Example Quantity Cost Estimate     Turing Pi clusterboard Clusterboard 1 $128   RPI Compute Module 3+ Compute Module 5 $175   Total   $303    Reference Links  Video1 "
 },
 {
 	"uri": "https://turing-machines.github.io/docker_kubernetes/children/2018-07-03-a/",
