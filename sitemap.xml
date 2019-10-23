@@ -13,12 +13,12 @@
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/os_installation/children/cluster_assembly/</loc>
+    <loc>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</loc>
+    <loc>https://turing-machines.github.io/os_installation/children/cluster_assembly/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -336,6 +336,12 @@
   <url>
     <loc>https://turing-machines.github.io/tags/testing/</loc>
     <lastmod>2018-07-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://turing-machines.github.io/tags/turing_pi/</loc>
+    <lastmod>2018-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

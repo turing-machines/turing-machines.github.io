@@ -23,20 +23,20 @@ deploy it using Helm on Kubedge.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Assembly</title>
+      <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</guid>
+      <description>&lt;p&gt;This page contains tutorial to build a Turing Pi cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Turing PI assembly</title>
       <link>https://turing-machines.github.io/os_installation/children/cluster_assembly/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://turing-machines.github.io/os_installation/children/cluster_assembly/</guid>
-      <description>&lt;p&gt;This page contains examples of hardware to use in order to build a cluster&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Turing PI assembly</title>
-      <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</guid>
       <description>&lt;p&gt;This page contains examples of hardware to use in order to build a cluster&lt;/p&gt;</description>
     </item>
     
