@@ -21,6 +21,17 @@
     </item>
     
     <item>
+      <title>Installing Turing Pi Kubeplay</title>
+      <link>https://turing-machines.github.io/applications/children/kubeplay/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/applications/children/kubeplay/</guid>
+      <description>&lt;p&gt;Install simplistic Kubeplay Application on the Turing Pi. It is a primitiv golang based server
+which get the user to go through the entire DevOps process (to build the docker image) and
+deploy it using Helm on Turing Pi.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Assembly</title>
       <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
