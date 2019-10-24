@@ -12,19 +12,19 @@
     <title>Using Ansible to manage Turing Pi :: Turing Machines Documentation</title>
 
     
-    <link href="https://turing-machines.github.io/css/nucleus.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hybrid.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/featherlight.min.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/auto-complete.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/theme.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hugo-theme.css?1571914506" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/nucleus.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hybrid.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/featherlight.min.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/auto-complete.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/theme.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hugo-theme.css?1571918455" rel="stylesheet">
     
-      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1571914506" rel="stylesheet">
+      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1571918455" rel="stylesheet">
     
 
-    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1571914506"></script>
+    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1571918455"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1571914506"></script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1571914506"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1571918455"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1571918455"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/turing-machines.github.io";
     
 </script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1571914506"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1571918455"></script>
 
     
   </div>
@@ -1024,11 +1024,11 @@ mkdir -p mgt/inventory/host_vars
 
 <pre><code>cat /etc/hosts
 
-192.168.2.1 kubemaster-pi.clusterX.kubedge.cloud kubemaster-pi
-192.168.2.101 kube-node01.clusterX.kubedge.cloud kube-node01
-192.168.2.102 kube-node02.clusterX.kubedge.cloud kube-node02
-192.168.2.103 kube-node03.clusterX.kubedge.cloud kube-node03
-192.168.2.104 kube-node04.clusterX.kubedge.cloud kube-node04
+192.168.2.1 kubemaster-pi.clusterX.turing.cloud kubemaster-pi
+192.168.2.101 kube-node01.clusterX.turing.cloud kube-node01
+192.168.2.102 kube-node02.clusterX.turing.cloud kube-node02
+192.168.2.103 kube-node03.clusterX.turing.cloud kube-node03
+192.168.2.104 kube-node04.clusterX.turing.cloud kube-node04
 </code></pre>
 
 <p>Let&rsquo;s create an rsa key for Ansible SSH. Note
@@ -1050,7 +1050,7 @@ ssh-copy-id -i mgtkey.pub pirate@kube-node04
 <p>Create a first ansible host_var. We will use the mgtkey for ssh/ansible.</p>
 
 <pre><code>cd ~/mgt/inventory/host_vars
-cat kubemaster-pi.clusterX.kubedge.cloud
+cat kubemaster-pi.clusterX.turing.cloud
 
 ansible_host: 192.168.2.FOOBAR
 ansible_port: 22
@@ -1060,13 +1060,13 @@ ansible_ssh_private_key_file: mgtkey
 
 <pre><code>for i in kube-node01 kube-node02 kube-node03 kube-node04
 do
-cp kubemaster-pi.clusterX.kubedge.cloud $i.clusterX.kubedge.cloud
+cp kubemaster-pi.clusterX.turing.cloud $i.clusterX.turing.cloud
 done
 </code></pre>
 
 <p>Replace FOOBAR by the proper value</p>
 
-<pre><code>vi *.clusterX.kubedge.cloud
+<pre><code>vi *.clusterX.turing.cloud
 </code></pre>
 
 <p>Create the main inventory file</p>
@@ -1080,13 +1080,13 @@ masters
 workers
 
 [masters]
-kubemaster-pi.clusterX.kubedge.cloud
+kubemaster-pi.clusterX.turing.cloud
 
 [workers]
-kube-node01.clusterX.kubedge.cloud
-kube-node02.clusterX.kubedge.cloud
-kube-node03.clusterX.kubedge.cloud
-kube-node04.clusterX.kubedge.cloud
+kube-node01.clusterX.turing.cloud
+kube-node02.clusterX.turing.cloud
+kube-node03.clusterX.turing.cloud
+kube-node04.clusterX.turing.cloud
 </code></pre>
 
 <h3 id="use-ansible">Use ansible</h3>
@@ -1095,23 +1095,23 @@ kube-node04.clusterX.kubedge.cloud
 
 <pre><code>ansible picluster -i inventory/ -m ping
 
-kube-node01.clusterX.kubedge.cloud | SUCCESS =&gt; {
+kube-node01.clusterX.turing.cloud | SUCCESS =&gt; {
     &quot;changed&quot;: false,
     &quot;ping&quot;: &quot;pong&quot;
 }
-kube-node04.clusterX.kubedge.cloud | SUCCESS =&gt; {
+kube-node04.clusterX.turing.cloud | SUCCESS =&gt; {
     &quot;changed&quot;: false,
     &quot;ping&quot;: &quot;pong&quot;
 }
-kube-node03.clusterX.kubedge.cloud | SUCCESS =&gt; {
+kube-node03.clusterX.turing.cloud | SUCCESS =&gt; {
     &quot;changed&quot;: false,
     &quot;ping&quot;: &quot;pong&quot;
 }
-kubemaster-pi.clusterX.kubedge.cloud | SUCCESS =&gt; {
+kubemaster-pi.clusterX.turing.cloud | SUCCESS =&gt; {
     &quot;changed&quot;: false,
     &quot;ping&quot;: &quot;pong&quot;
 }
-kube-node02.clusterX.kubedge.cloud | SUCCESS =&gt; {
+kube-node02.clusterX.turing.cloud | SUCCESS =&gt; {
     &quot;changed&quot;: false,
     &quot;ping&quot;: &quot;pong&quot;
 }
@@ -1119,7 +1119,7 @@ kube-node02.clusterX.kubedge.cloud | SUCCESS =&gt; {
 
 <pre><code>ansible masters -i inventory/ -m ping
 
-kubemaster-pi.clusterX.kubedge.cloud | SUCCESS =&gt; {
+kubemaster-pi.clusterX.turing.cloud | SUCCESS =&gt; {
     &quot;changed&quot;: false,
     &quot;ping&quot;: &quot;pong&quot;
 }
@@ -1127,19 +1127,19 @@ kubemaster-pi.clusterX.kubedge.cloud | SUCCESS =&gt; {
 
 <pre><code>ansible workers -i inventory/ -m ping
 
-kube-node01.clusterX.kubedge.cloud | SUCCESS =&gt; {
+kube-node01.clusterX.turing.cloud | SUCCESS =&gt; {
     &quot;changed&quot;: false,
     &quot;ping&quot;: &quot;pong&quot;
 }
-kube-node03.clusterX.kubedge.cloud | SUCCESS =&gt; {
+kube-node03.clusterX.turing.cloud | SUCCESS =&gt; {
     &quot;changed&quot;: false,
     &quot;ping&quot;: &quot;pong&quot;
 }
-kube-node02.clusterX.kubedge.cloud | SUCCESS =&gt; {
+kube-node02.clusterX.turing.cloud | SUCCESS =&gt; {
     &quot;changed&quot;: false,
     &quot;ping&quot;: &quot;pong&quot;
 }
-kube-node04.clusterX.kubedge.cloud | SUCCESS =&gt; {
+kube-node04.clusterX.turing.cloud | SUCCESS =&gt; {
     &quot;changed&quot;: false,
     &quot;ping&quot;: &quot;pong&quot;
 </code></pre>
@@ -1171,44 +1171,44 @@ kube-node04.clusterX.kubedge.cloud | SUCCESS =&gt; {
 PLAY [picluster] ***************************************************************
 
 TASK [setup] *******************************************************************
-ok: [kubemaster-pi.clusterX.kubedge.cloud]
-ok: [kube-node03.clusterX.kubedge.cloud]
-ok: [kube-node04.clusterX.kubedge.cloud]
-ok: [kube-node02.clusterX.kubedge.cloud]
-ok: [kube-node01.clusterX.kubedge.cloud]
+ok: [kubemaster-pi.clusterX.turing.cloud]
+ok: [kube-node03.clusterX.turing.cloud]
+ok: [kube-node04.clusterX.turing.cloud]
+ok: [kube-node02.clusterX.turing.cloud]
+ok: [kube-node01.clusterX.turing.cloud]
 
 TASK [update apt] **************************************************************
-changed: [kube-node02.clusterX.kubedge.cloud]
-changed: [kubemaster-pi.clusterX.kubedge.cloud]
-changed: [kube-node01.clusterX.kubedge.cloud]
-changed: [kube-node03.clusterX.kubedge.cloud]
-changed: [kube-node04.clusterX.kubedge.cloud]
+changed: [kube-node02.clusterX.turing.cloud]
+changed: [kubemaster-pi.clusterX.turing.cloud]
+changed: [kube-node01.clusterX.turing.cloud]
+changed: [kube-node03.clusterX.turing.cloud]
+changed: [kube-node04.clusterX.turing.cloud]
 
 PLAY RECAP *********************************************************************
-kube-node01.clusterX.kubedge.cloud         : ok=2    changed=1    unreachable=0    failed=0
-kube-node02.clusterX.kubedge.cloud         : ok=2    changed=1    unreachable=0    failed=0
-kube-node03.clusterX.kubedge.cloud         : ok=2    changed=1    unreachable=0    failed=0
-kube-node04.clusterX.kubedge.cloud         : ok=2    changed=1    unreachable=0    failed=0
-kubemaster-pi.clusterX.kubedge.cloud       : ok=2    changed=1    unreachable=0    failed=0
+kube-node01.clusterX.turing.cloud         : ok=2    changed=1    unreachable=0    failed=0
+kube-node02.clusterX.turing.cloud         : ok=2    changed=1    unreachable=0    failed=0
+kube-node03.clusterX.turing.cloud         : ok=2    changed=1    unreachable=0    failed=0
+kube-node04.clusterX.turing.cloud         : ok=2    changed=1    unreachable=0    failed=0
+kubemaster-pi.clusterX.turing.cloud       : ok=2    changed=1    unreachable=0    failed=0
 </code></pre>
 
 <h4 id="check-the-version-of-kubeadm">Check the version  of kubeadm</h4>
 
 <pre><code>ansible picluster -i inventory -m shell -a &quot;kubeadm version&quot;
 
-kube-node04.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kube-node04.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 kubeadm version: &amp;version.Info{Major:&quot;1&quot;, Minor:&quot;9&quot;, GitVersion:&quot;v1.9.8&quot;, GitCommit:&quot;c138b85178156011dc934c2c9f4837476876fb07&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2018-05-21T18:53:18Z&quot;, GoVersion:&quot;go1.9.3&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/arm&quot;}
 
-kube-node03.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kube-node03.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 kubeadm version: &amp;version.Info{Major:&quot;1&quot;, Minor:&quot;9&quot;, GitVersion:&quot;v1.9.8&quot;, GitCommit:&quot;c138b85178156011dc934c2c9f4837476876fb07&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2018-05-21T18:53:18Z&quot;, GoVersion:&quot;go1.9.3&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/arm&quot;}
 
-kube-node01.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kube-node01.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 kubeadm version: &amp;version.Info{Major:&quot;1&quot;, Minor:&quot;9&quot;, GitVersion:&quot;v1.9.8&quot;, GitCommit:&quot;c138b85178156011dc934c2c9f4837476876fb07&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2018-05-21T18:53:18Z&quot;, GoVersion:&quot;go1.9.3&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/arm&quot;}
 
-kubemaster-pi.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kubemaster-pi.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 kubeadm version: &amp;version.Info{Major:&quot;1&quot;, Minor:&quot;9&quot;, GitVersion:&quot;v1.9.8&quot;, GitCommit:&quot;c138b85178156011dc934c2c9f4837476876fb07&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2018-05-21T18:53:18Z&quot;, GoVersion:&quot;go1.9.3&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/arm&quot;}
 
-kube-node02.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kube-node02.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 kubeadm version: &amp;version.Info{Major:&quot;1&quot;, Minor:&quot;9&quot;, GitVersion:&quot;v1.9.8&quot;, GitCommit:&quot;c138b85178156011dc934c2c9f4837476876fb07&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2018-05-21T18:53:18Z&quot;, GoVersion:&quot;go1.9.3&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/arm&quot;}
 </code></pre>
 
@@ -1216,19 +1216,19 @@ kubeadm version: &amp;version.Info{Major:&quot;1&quot;, Minor:&quot;9&quot;, Git
 
 <pre><code>ansible picluster -i inventory -m shell -a &quot;vcgencmd measure_temp&quot;
 
-kube-node03.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kube-node03.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 temp=36.5'C
 
-kubemaster-pi.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kubemaster-pi.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 temp=49.4'C
 
-kube-node02.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kube-node02.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 temp=33.2'C
 
-kube-node04.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kube-node04.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 temp=34.3'C
 
-kube-node01.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kube-node01.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 temp=32.2'C
 </code></pre>
 
@@ -1238,31 +1238,31 @@ temp=32.2'C
 
 <pre><code>ansible picluster -i inventory -m shell -a &quot;lsusb&quot;
 
-kubemaster-pi.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kubemaster-pi.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 Bus 001 Device 004: ID 0424:7800 Standard Microsystems Corp.
 Bus 001 Device 003: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
 Bus 001 Device 002: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
-kube-node02.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kube-node02.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 Bus 001 Device 004: ID 0424:7800 Standard Microsystems Corp.
 Bus 001 Device 003: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
 Bus 001 Device 002: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
-kube-node01.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kube-node01.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 Bus 001 Device 004: ID 0424:7800 Standard Microsystems Corp.
 Bus 001 Device 003: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
 Bus 001 Device 002: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
-kube-node04.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kube-node04.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 Bus 001 Device 004: ID 0424:7800 Standard Microsystems Corp.
 Bus 001 Device 003: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
 Bus 001 Device 002: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
-kube-node03.clusterX.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+kube-node03.clusterX.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 Bus 001 Device 004: ID 0424:7800 Standard Microsystems Corp.
 Bus 001 Device 003: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
 Bus 001 Device 002: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
@@ -1273,19 +1273,19 @@ Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
 <pre><code>ansible picluster -i inventory -m shell -s -a &quot;lsusb&quot;
 
-master-pi.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+master-pi.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 Bus 001 Device 004: ID 0424:7800 Standard Microsystems Corp.
 Bus 001 Device 003: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
 Bus 001 Device 002: ID 0424:2514 Standard Microsystems Corp. USB 2.0 Hub
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
-home-pi.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+home-pi.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 Bus 001 Device 004: ID 10c4:8a2a Cygnal Integrated Products, Inc.
 Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
 Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 
-nas-pi.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+nas-pi.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
 Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. SMC9514 Hub
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
@@ -1945,20 +1945,20 @@ ansible picluster -i inventory -m shell -a &quot;fdisk -l&quot;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://turing-machines.github.io/js/clipboard.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/featherlight.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/highlight.pack.js?1571914506"></script>
+    <script src="https://turing-machines.github.io/js/clipboard.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/featherlight.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/highlight.pack.js?1571918455"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/learn.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/hugo-learn.js?1571914506"></script>
+    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/learn.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/hugo-learn.js?1571918455"></script>
 
-    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1571914506" type="text/css" rel="stylesheet" />
-    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1571914506"></script>
+    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1571918455" type="text/css" rel="stylesheet" />
+    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1571918455"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

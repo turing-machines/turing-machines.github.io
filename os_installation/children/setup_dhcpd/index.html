@@ -12,19 +12,19 @@
     <title>Setting up DHCPD on Turing Master :: Turing Machines Documentation</title>
 
     
-    <link href="https://turing-machines.github.io/css/nucleus.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hybrid.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/featherlight.min.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/auto-complete.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/theme.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hugo-theme.css?1571914506" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/nucleus.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hybrid.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/featherlight.min.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/auto-complete.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/theme.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hugo-theme.css?1571918455" rel="stylesheet">
     
-      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1571914506" rel="stylesheet">
+      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1571918455" rel="stylesheet">
     
 
-    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1571914506"></script>
+    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1571918455"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1571914506"></script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1571914506"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1571918455"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1571918455"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/turing-machines.github.io";
     
 </script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1571914506"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1571918455"></script>
 
     
   </div>
@@ -970,13 +970,13 @@ also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs
 
 <p>Check the setup of the dhcp server</p>
 
-<pre><code class="language-bash">diff /etc/default/isc-dhcp-server /home/pirate/proj/kubedge/kube-rpi/config/cluster1/hypriotos/kubemaster-pi/etc/default/isc-dhcp-server
+<pre><code class="language-bash">diff /etc/default/isc-dhcp-server /home/pirate/proj/turing/kube-rpi/config/cluster1/hypriotos/kubemaster-pi/etc/default/isc-dhcp-server
 vi /etc/default/isc-dhcp-server
 </code></pre>
 
 <p>Update the dhcpd.conf. Comment out the fix allocation at first until you have access to the eth0 mac address.</p>
 
-<pre><code class="language-bash">diff /etc/dhcp/dhcpd.conf /home/pirate/proj/kubedge/kube-rpi/config/cluster1/hypriotos/kubemaster-pi/etc/dhcp/dhcpd.conf
+<pre><code class="language-bash">diff /etc/dhcp/dhcpd.conf /home/pirate/proj/turing/kube-rpi/config/cluster1/hypriotos/kubemaster-pi/etc/dhcp/dhcpd.conf
 vi /etc/dhcp/dhcpd.conf
 </code></pre>
 
@@ -988,7 +988,7 @@ sudo service isc-dhcp-server status
 
 <p>Check the ipforwarding setup</p>
 
-<pre><code class="language-bash">diff /etc/sysctl.conf /home/pirate/proj/kubedge/kube-rpi/config/cluster1/hypriotos/kubemaster-pi/etc/sysctl.conf
+<pre><code class="language-bash">diff /etc/sysctl.conf /home/pirate/proj/turing/kube-rpi/config/cluster1/hypriotos/kubemaster-pi/etc/sysctl.conf
 vi /etc/sysctl.conf
 </code></pre>
 
@@ -1009,9 +1009,9 @@ sudo sh -c &quot;iptables-save &gt; /etc/iptables.ipv4.nat&quot;
 <h3 id="reference-files">Reference Files</h3>
 
 <ul>
-<li><a href="https://github.com/kubedge/kube-rpi/blob/master/config/cluster1/hypriotos/kubemaster-pi/etc/dhcp/dhcpd.conf" target="_blank">dhcpd</a></li>
-<li><a href="https://github.com/kubedge/kube-rpi/blob/master/config/cluster1/hypriotos/kubemaster-pi/etc/sysctl.conf" target="_blank">sysctl.conf</a></li>
-<li><a href="https://github.com/kubedge/kube-rpi/blob/master/config/cluster1/hypriotos/kubemaster-pi/etc/default/isc-dhcp-server" target="_blank">isc-dhcp-server</a></li>
+<li><a href="https://github.com/turing/kube-rpi/blob/master/config/cluster1/hypriotos/kubemaster-pi/etc/dhcp/dhcpd.conf" target="_blank">dhcpd</a></li>
+<li><a href="https://github.com/turing/kube-rpi/blob/master/config/cluster1/hypriotos/kubemaster-pi/etc/sysctl.conf" target="_blank">sysctl.conf</a></li>
+<li><a href="https://github.com/turing/kube-rpi/blob/master/config/cluster1/hypriotos/kubemaster-pi/etc/default/isc-dhcp-server" target="_blank">isc-dhcp-server</a></li>
 </ul>
 
 <h2 id="verification">Verification</h2>
@@ -1697,20 +1697,20 @@ to surf the internet.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://turing-machines.github.io/js/clipboard.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/featherlight.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/highlight.pack.js?1571914506"></script>
+    <script src="https://turing-machines.github.io/js/clipboard.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/featherlight.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/highlight.pack.js?1571918455"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/learn.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/hugo-learn.js?1571914506"></script>
+    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/learn.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/hugo-learn.js?1571918455"></script>
 
-    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1571914506" type="text/css" rel="stylesheet" />
-    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1571914506"></script>
+    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1571918455" type="text/css" rel="stylesheet" />
+    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1571918455"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

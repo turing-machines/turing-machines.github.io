@@ -12,19 +12,19 @@
     <title>OS Installation on Turing Master :: Turing Machines Documentation</title>
 
     
-    <link href="https://turing-machines.github.io/css/nucleus.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hybrid.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/featherlight.min.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/auto-complete.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/theme.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hugo-theme.css?1571914506" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/nucleus.css?1571918454" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1571918454" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hybrid.css?1571918454" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/featherlight.min.css?1571918454" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1571918454" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/auto-complete.css?1571918454" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/theme.css?1571918454" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hugo-theme.css?1571918454" rel="stylesheet">
     
-      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1571914506" rel="stylesheet">
+      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1571918454" rel="stylesheet">
     
 
-    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1571914506"></script>
+    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1571918454"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1571914506"></script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1571914506"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1571918454"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1571918454"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/turing-machines.github.io";
     
 </script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1571914506"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1571918454"></script>
 
     
   </div>
@@ -1059,8 +1059,8 @@ sudo apt-get install git-review
 
 
 ```bash
-$ mkdir -p $HOME/proj/kubedge
-$ cd $HOME/proj/kubedge
+$ mkdir -p $HOME/proj/turing
+$ cd $HOME/proj/turing
 </code></pre>
 
 <p>create a cloneit1.sh file, edit it and run it</p>
@@ -1072,15 +1072,15 @@ $ cd $HOME/proj/kubedge
 <pre><code class="language-bash">#!/bin/bash
 GOODPATH=`pwd`
 USERID=yourgithubaccount
-for i in helmrepos kubeplay kubesim_5gc kubesim_base kubesim_elte kubesim_epc kubesim_lte kubesim_nr kubesim_blinkt kubesim_nats kubesim_linkio kubedge_utils
+for i in helmrepos kubeplay kubesim_5gc kubesim_base kubesim_elte kubesim_epc kubesim_lte kubesim_nr kubesim_blinkt kubesim_nats kubesim_linkio turing_utils
 do
 echo &quot;======================================================&quot;
 echo $i
 echo &quot;======================================================&quot;
 # If you want to contribute
-# git clone -b arm32v7 ssh://$USERID@review.gerrithub.io:29418/kubedge/$i &amp;&amp; scp -p -P 29418 $USERID@review.gerrithub.io:hooks/commit-msg $i/.git/hooks/
+# git clone -b arm32v7 ssh://$USERID@review.gerrithub.io:29418/turing/$i &amp;&amp; scp -p -P 29418 $USERID@review.gerrithub.io:hooks/commit-msg $i/.git/hooks/
 # If you want to just pull the code
-# git clone -b arm32v7 git@github.com:kubedge/$i.git
+# git clone -b arm32v7 git@github.com:turing/$i.git
 cd $GOODPATH
 done
 </code></pre>
@@ -1096,15 +1096,15 @@ echo &quot;======================================================&quot;
 echo $i
 echo &quot;======================================================&quot;
 # If you want to contribute
-# git clone ssh://$USERID@review.gerrithub.io:29418/kubedge/$i &amp;&amp; scp -p -P 29418 $USERID@review.gerrithub.io:hooks/commit-msg $i/.git/hooks/
+# git clone ssh://$USERID@review.gerrithub.io:29418/turing/$i &amp;&amp; scp -p -P 29418 $USERID@review.gerrithub.io:hooks/commit-msg $i/.git/hooks/
 # If you want to just pull the code
-# git clone git@github.com:kubedge/$i.git
+# git clone git@github.com:turing/$i.git
 cd $GOODPATH
 done
 </code></pre>
 
 <div class="notices info" ><p>You know have access especially through <strong>kube-rpi</strong> and <strong>ansible-kube-rpi</strong> to example files and ansible playbook usefull to install your first node:
-<strong>cd $HOME/proj/kubedge/kube-rpi/config/cluster1/hypriotos/kubemaster-pi</strong></p>
+<strong>cd $HOME/proj/turing/kube-rpi/config/cluster1/hypriotos/kubemaster-pi</strong></p>
 </div>
 
 
@@ -1749,20 +1749,20 @@ done
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://turing-machines.github.io/js/clipboard.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/featherlight.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/highlight.pack.js?1571914506"></script>
+    <script src="https://turing-machines.github.io/js/clipboard.min.js?1571918454"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1571918454"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1571918454"></script>
+    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1571918454"></script>
+    <script src="https://turing-machines.github.io/js/featherlight.min.js?1571918454"></script>
+    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1571918454"></script>
+    <script src="https://turing-machines.github.io/js/highlight.pack.js?1571918454"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/learn.js?1571914506"></script>
-    <script src="https://turing-machines.github.io/js/hugo-learn.js?1571914506"></script>
+    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1571918454"></script>
+    <script src="https://turing-machines.github.io/js/learn.js?1571918454"></script>
+    <script src="https://turing-machines.github.io/js/hugo-learn.js?1571918454"></script>
 
-    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1571914506" type="text/css" rel="stylesheet" />
-    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1571914506"></script>
+    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1571918454" type="text/css" rel="stylesheet" />
+    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1571918454"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

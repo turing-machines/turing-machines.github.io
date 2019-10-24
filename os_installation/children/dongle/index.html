@@ -12,19 +12,19 @@
     <title>Create a Turing Pi Rescue Dongle :: Turing Machines Documentation</title>
 
     
-    <link href="https://turing-machines.github.io/css/nucleus.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hybrid.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/featherlight.min.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/auto-complete.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/theme.css?1571914506" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hugo-theme.css?1571914506" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/nucleus.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hybrid.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/featherlight.min.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/auto-complete.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/theme.css?1571918455" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hugo-theme.css?1571918455" rel="stylesheet">
     
-      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1571914506" rel="stylesheet">
+      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1571918455" rel="stylesheet">
     
 
-    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1571914506"></script>
+    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1571918455"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1571914506"></script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1571914506"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1571918455"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1571918455"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/turing-machines.github.io";
     
 </script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1571914506"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1571918455"></script>
 
     
   </div>
@@ -959,26 +959,26 @@ For the PC 3B, you have to activate using the /boot/config.txt</p>
 
 <pre><code>ansible picluster -i inventory/ -m shell -a &quot;grep program_usb_boot_mode /boot/config.txt&quot;
 
-master-pi.kubedge.cloud | FAILED | rc=1 &gt;&gt;
+master-pi.turing.cloud | FAILED | rc=1 &gt;&gt;
 
 
-nas-pi.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+nas-pi.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 program_usb_boot_mode=1
 
-home-pi.kubedge.cloud | FAILED | rc=1 &gt;&gt;
+home-pi.turing.cloud | FAILED | rc=1 &gt;&gt;
 </code></pre>
 
 <p>The flag for OTP USB flag is set on the 3B+ (by default on master-pi) and on the 3B where I did add the entry to the config.txt (nas-pi)</p>
 
 <pre><code>ansible picluster -i inventory/ -m shell -a &quot;vcgencmd otp_dump | grep 17:&quot;
 
-master-pi.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+master-pi.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 17:3020000a
 
-nas-pi.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+nas-pi.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 17:3020000a
 
-home-pi.kubedge.cloud | SUCCESS | rc=0 &gt;&gt;
+home-pi.turing.cloud | SUCCESS | rc=0 &gt;&gt;
 17:1020000a
 </code></pre>
 
@@ -1691,20 +1691,20 @@ unmount the mmc root partition
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://turing-machines.github.io/js/clipboard.min.js?1571914507"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1571914507"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1571914507"></script>
-    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1571914507"></script>
-    <script src="https://turing-machines.github.io/js/featherlight.min.js?1571914507"></script>
-    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1571914507"></script>
-    <script src="https://turing-machines.github.io/js/highlight.pack.js?1571914507"></script>
+    <script src="https://turing-machines.github.io/js/clipboard.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/featherlight.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/highlight.pack.js?1571918455"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1571914507"></script>
-    <script src="https://turing-machines.github.io/js/learn.js?1571914507"></script>
-    <script src="https://turing-machines.github.io/js/hugo-learn.js?1571914507"></script>
+    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/learn.js?1571918455"></script>
+    <script src="https://turing-machines.github.io/js/hugo-learn.js?1571918455"></script>
 
-    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1571914507" type="text/css" rel="stylesheet" />
-    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1571914507"></script>
+    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1571918455" type="text/css" rel="stylesheet" />
+    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1571918455"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
