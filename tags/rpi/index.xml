@@ -140,7 +140,7 @@ build a default SD image where cloud-init does 100% of the initialization work.&
       <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://turing-machines.github.io/applications/children/nats/</guid>
-      <description>&lt;p&gt;Install NATS on the PI Cluster&lt;/p&gt;</description>
+      <description>&lt;p&gt;Install NATS on the Turing Pi&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -149,7 +149,7 @@ build a default SD image where cloud-init does 100% of the initialization work.&
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://turing-machines.github.io/applications/children/grafana/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Install Grafana on the PI Cluster&lt;/strong&gt;. Grafana helps to plot the data in the system. It is an OSS like tools which helps to manage the kubedge cluster.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Install Grafana on the Turing Pi.&lt;/strong&gt; Grafana helps to plot the data in the system. It is an OSS like tools which helps to manage the Turing Pi cluster.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -167,7 +167,7 @@ build a default SD image where cloud-init does 100% of the initialization work.&
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://turing-machines.github.io/applications/children/kibana/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the PI Cluster.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the Turing Pi.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
     </item>
     
     <item>
