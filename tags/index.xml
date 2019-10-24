@@ -209,6 +209,15 @@
     </item>
     
     <item>
+      <title>specs</title>
+      <link>https://turing-machines.github.io/tags/specs/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/tags/specs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>test-infra</title>
       <link>https://turing-machines.github.io/tags/test-infra/</link>
       <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
@@ -229,7 +238,7 @@
     <item>
       <title>turing_pi</title>
       <link>https://turing-machines.github.io/tags/turing_pi/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://turing-machines.github.io/tags/turing_pi/</guid>
       <description></description>

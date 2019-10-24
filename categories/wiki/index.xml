@@ -6,10 +6,19 @@
     <description>Recent content in wiki on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://turing-machines.github.io/categories/wiki/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Specifications</title>
+      <link>https://turing-machines.github.io/turing_pi/children/specs/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/turing_pi/children/specs/</guid>
+      <description>&lt;p&gt;Turing Pi specifications&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Installing Kubedge Kubeplay</title>
@@ -107,15 +116,6 @@ The goal of this post is to transform a github repo into a helm repo.&lt;/p&gt;<
       <description>&lt;p&gt;Also ARM processor on the Raspberry PI 3B+ is a 64 bit processor,
 because the board is only equipped with 1G of RAM, a 64 bit operating system
 is not really needed except when&amp;hellip;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Installing Kibana</title>
-      <link>https://turing-machines.github.io/applications/children/kibana/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/applications/children/kibana/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the PI Cluster.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -219,6 +219,15 @@ For instance you can cross-build golang executable for ARM32v7 and transfer it t
       
       <guid>https://turing-machines.github.io/os_installation/children/worker_pi/</guid>
       <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Kibana</title>
+      <link>https://turing-machines.github.io/applications/children/kibana/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/applications/children/kibana/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the PI Cluster.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
     </item>
     
     <item>
