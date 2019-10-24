@@ -92,15 +92,6 @@ is not really needed except when&amp;hellip;.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Installing Kubedge Blinkt</title>
-      <link>https://turing-machines.github.io/applications/children/kubesim_blinkt/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/applications/children/kubesim_blinkt/</guid>
-      <description>&lt;p&gt;Install Kubedge Blinkt Application on the PI Cluster&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Deploy Flannel in Turing Pi</title>
       <link>https://turing-machines.github.io/docker_kubernetes/children/2018-07-14-a/</link>
       <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>

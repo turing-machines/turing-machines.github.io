@@ -32,15 +32,6 @@ deploy it using Helm on Turing Pi.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Installing Kubedge Blinkt</title>
-      <link>https://turing-machines.github.io/applications/children/kubesim_blinkt/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/applications/children/kubesim_blinkt/</guid>
-      <description>&lt;p&gt;Install Kubedge Blinkt Application on the PI Cluster&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Installing Prometheus</title>
       <link>https://turing-machines.github.io/applications/children/prometheus/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>

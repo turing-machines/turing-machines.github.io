@@ -77,11 +77,6 @@
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/applications/children/kubesim_blinkt/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://turing-machines.github.io/docker_kubernetes/children/2018-07-14-a/</loc>
     <lastmod>2018-07-14T00:00:00+00:00</lastmod>
   </url>
@@ -208,12 +203,6 @@
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/blinkt/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://turing-machines.github.io/tags/cni/</loc>
     <lastmod>2018-07-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -270,12 +259,6 @@
   <url>
     <loc>https://turing-machines.github.io/tags/istio/</loc>
     <lastmod>2018-07-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://turing-machines.github.io/tags/kubedge/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
