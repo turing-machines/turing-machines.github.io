@@ -41,15 +41,14 @@ deploy it using Helm on Turing Pi.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Turing Pi FAQ</title>
+      <title>FAQ</title>
       <link>https://turing-machines.github.io/faq/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://turing-machines.github.io/faq/</guid>
-      <description>FAQ What model RPi is in this? Supported models
-Raspberry Pi Compute Module 1 Raspberry Pi Compute Module 3 Raspberry Pi Compute Module 3+
-Будет ли поддержка Raspberry Pi 4? Как только поступят в продажу Raspberry Pi 4 Compute Modules в короткие сроки будет версия платы с их поддержкой
-How to the compute modules communicate with each other? We use onboard 1 Gbps Ethernet switch within the nodes. Also, each node can exchange some tech info thought the I2C bus with each other, including Real-Time Clock (RTC)</description>
+      <description>What model Raspberry Pi is in this? Supported models
+ Raspberry Pi Compute Module 1 Raspberry Pi Compute Module 3 Raspberry Pi Compute Module 3+  Будет ли поддержка Raspberry Pi 4? Как только поступят в продажу Raspberry Pi 4 Compute Modules в короткие сроки будет версия платы с их поддержкой
+How to the compute modules communicate with each other? We use onboard 1 Gbps Ethernet switch within the nodes.</description>
     </item>
     
   </channel>
