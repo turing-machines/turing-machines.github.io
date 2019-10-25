@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Specifications</title>
+      <title>Specs</title>
       <link>https://turing-machines.github.io/turing_pi/children/specs/</link>
       <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
       
@@ -46,7 +46,7 @@ deploy it using Helm on Turing Pi.&lt;/p&gt;</description>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://turing-machines.github.io/faq/</guid>
-      <description>1. What model Raspberry Pi is in this? Supported models
+      <description>1. What model Raspberry Pi is in this? Supported models with eMMC and without
  Raspberry Pi Compute Module 1 Raspberry Pi Compute Module 3 Raspberry Pi Compute Module 3+  2. Будет ли поддержка Raspberry Pi 4? Как только поступят в продажу Raspberry Pi 4 Compute Modules в короткие сроки будет версия платы с их поддержкой
 3. How to the compute modules communicate with each other? We use onboard 1 Gbps Ethernet switch within the nodes.</description>
     </item>
