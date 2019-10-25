@@ -12,19 +12,19 @@
     <title>Specs :: Turing Machines Documentation</title>
 
     
-    <link href="https://turing-machines.github.io/css/nucleus.css?1572012133" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1572012133" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hybrid.css?1572012133" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/featherlight.min.css?1572012133" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1572012133" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/auto-complete.css?1572012133" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/theme.css?1572012133" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hugo-theme.css?1572012133" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/nucleus.css?1572012290" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1572012290" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hybrid.css?1572012290" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/featherlight.min.css?1572012290" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1572012290" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/auto-complete.css?1572012290" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/theme.css?1572012290" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hugo-theme.css?1572012290" rel="stylesheet">
     
-      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1572012133" rel="stylesheet">
+      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1572012290" rel="stylesheet">
     
 
-    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1572012133"></script>
+    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1572012290"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1572012133"></script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1572012133"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1572012290"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1572012290"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/turing-machines.github.io";
     
 </script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1572012133"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1572012290"></script>
 
     
   </div>
@@ -109,25 +109,6 @@
  
   
     
-      <li data-nav-id="/turing_pi/children/i2c_cluster_bus/" title="Cluster Management Bus" class="dd-item ">
-        <a href="https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/">
-        I2C Cluster Bus
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
       <li data-nav-id="/turing_pi/children/specs/" title="Specs" class="dd-item active">
         <a href="https://turing-machines.github.io/turing_pi/children/specs/">
         Specifications
@@ -150,6 +131,25 @@
       <li data-nav-id="/turing_pi/children/cluster_assembly/" title="Assembly" class="dd-item ">
         <a href="https://turing-machines.github.io/turing_pi/children/cluster_assembly/">
         Assembly
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/turing_pi/children/i2c_cluster_bus/" title="Cluster Management Bus" class="dd-item ">
+        <a href="https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/">
+        I2C Cluster Bus
         
         </a>
     </li>
@@ -937,6 +937,7 @@
 <li>
 <ul>
 <li><a href="#overview">Overview</a></li>
+<li><a href="#cluster-management-bus">Cluster Management bus</a></li>
 <li><a href="#scheme">Scheme</a></li>
 <li><a href="#reference-links">Reference Links</a></li>
 </ul></li>
@@ -1061,6 +1062,24 @@
 <td>Cluster Management Bus (CMB)</td>
 <td>I2C protocol</td>
 </tr>
+</tbody>
+</table>
+
+<h2 id="cluster-management-bus">Cluster Management bus</h2>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>I2C access</td>
+<td>From each node</td>
+</tr>
 
 <tr>
 <td>Node Power Management</td>
@@ -1080,11 +1099,6 @@
 <tr>
 <td>I2C RTC model</td>
 <td><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MCP7940N-Battery-Backed-I2C-RTCC-with-SRAM-20005010G.pdf" target="_blank">MCP7940NT-I/SN</a></td>
-</tr>
-
-<tr>
-<td>I2C access</td>
-<td>From each node</td>
 </tr>
 </tbody>
 </table>
@@ -1145,25 +1159,6 @@
             
                 
                     
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1183,6 +1178,22 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1733,7 +1744,7 @@
 
 
         
-            <a class="nav nav-prev" href="https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/" title="Cluster Management Bus"> <i class="fas fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="https://turing-machines.github.io/turing_pi/" title="Turing Pi Basics"> <i class="fas fa-chevron-left"></i></a>
         
         
             <a class="nav nav-next" href="https://turing-machines.github.io/turing_pi/children/cluster_assembly/" title="Assembly" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
@@ -1745,20 +1756,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://turing-machines.github.io/js/clipboard.min.js?1572012133"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1572012133"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1572012133"></script>
-    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1572012133"></script>
-    <script src="https://turing-machines.github.io/js/featherlight.min.js?1572012133"></script>
-    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1572012133"></script>
-    <script src="https://turing-machines.github.io/js/highlight.pack.js?1572012133"></script>
+    <script src="https://turing-machines.github.io/js/clipboard.min.js?1572012291"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1572012291"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1572012291"></script>
+    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1572012291"></script>
+    <script src="https://turing-machines.github.io/js/featherlight.min.js?1572012291"></script>
+    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1572012291"></script>
+    <script src="https://turing-machines.github.io/js/highlight.pack.js?1572012291"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1572012133"></script>
-    <script src="https://turing-machines.github.io/js/learn.js?1572012133"></script>
-    <script src="https://turing-machines.github.io/js/hugo-learn.js?1572012133"></script>
+    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1572012291"></script>
+    <script src="https://turing-machines.github.io/js/learn.js?1572012291"></script>
+    <script src="https://turing-machines.github.io/js/hugo-learn.js?1572012291"></script>
 
-    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1572012133" type="text/css" rel="stylesheet" />
-    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1572012133"></script>
+    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1572012291" type="text/css" rel="stylesheet" />
+    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1572012291"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
