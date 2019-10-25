@@ -17,7 +17,11 @@
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</guid>
-      <description>WIP</description>
+      <description>WIP
+Configure I2C Add dtoverlay to /boot/config.txt and reboot
+dtoverlay=i2c1-bcm2708,sda1_pin=44,scl1_pin=45,pin_func=6  Install i2c-tools
+sudo apt-get install i2c-tools  Now check our I2C devices on the CMB
+sudo i2cdetect -y 1 0 1 2 3 4 5 6 7 8 9 a b c d e f 00: -- -- -- -- -- -- -- -- -- -- -- -- -- 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 50: -- -- -- -- -- -- -- 57 -- -- -- -- -- -- -- -- 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 6f 70: -- -- -- -- -- -- -- --  I2C expander hosts on address 0x57 and RTC with general-purpose 64 byte EEPROM hosts on 0x6f</description>
     </item>
     
   </channel>

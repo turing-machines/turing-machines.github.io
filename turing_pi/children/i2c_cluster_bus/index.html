@@ -12,19 +12,19 @@
     <title>Cluster Management Bus :: Turing Machines Documentation</title>
 
     
-    <link href="https://turing-machines.github.io/css/nucleus.css?1572013177" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1572013177" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hybrid.css?1572013177" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/featherlight.min.css?1572013177" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1572013177" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/auto-complete.css?1572013177" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/theme.css?1572013177" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hugo-theme.css?1572013177" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/nucleus.css?1572026811" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1572026811" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hybrid.css?1572026811" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/featherlight.min.css?1572026811" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1572026811" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/auto-complete.css?1572026811" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/theme.css?1572026811" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hugo-theme.css?1572026811" rel="stylesheet">
     
-      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1572013177" rel="stylesheet">
+      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1572026811" rel="stylesheet">
     
 
-    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1572013177"></script>
+    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1572026811"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1572013177"></script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1572013177"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1572026811"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1572026811"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/turing-machines.github.io";
     
 </script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1572013177"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1572026811"></script>
 
     
   </div>
@@ -932,7 +932,20 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#configure-i2c">Configure I2C</a></li>
+<li><a href="#i2c-expander">I2C expander</a></li>
+<li><a href="#real-time-clock-rtcc-with-eeprom">Real-Time Clock (RTCC) with EEPROM</a></li>
+</ul></li>
+<li><a href="#reference-links">Reference Links</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -950,7 +963,70 @@
         
 
 
+
+
 <p>WIP</p>
+
+<h3 id="configure-i2c">Configure I2C</h3>
+
+<p>Add dtoverlay to /boot/config.txt and reboot</p>
+
+<pre><code>dtoverlay=i2c1-bcm2708,sda1_pin=44,scl1_pin=45,pin_func=6
+</code></pre>
+
+<p>Install i2c-tools</p>
+
+<pre><code class="language-bash">sudo apt-get install i2c-tools
+</code></pre>
+
+<p>Now check our I2C devices on the CMB</p>
+
+<pre><code class="language-bash">sudo i2cdetect -y 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- 57 -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 6f
+70: -- -- -- -- -- -- -- --
+</code></pre>
+
+<p><strong>I2C expander</strong> hosts on address 0x57 and <strong>RTC with general-purpose 64 byte EEPROM</strong> hosts on 0x6f</p>
+
+<h3 id="i2c-expander">I2C expander</h3>
+
+<p>I2C expander offers users a digitally programmable alternative to hardware
+jumpers and mechanical switches that are being used to control digital logic
+nodes.</p>
+
+<p>Example of reading from register 0xf2 where factory default value is 0xff</p>
+
+<pre><code class="language-bash">sudo i2cget -y 1 0x57 0xf2
+0xff
+</code></pre>
+
+<h3 id="real-time-clock-rtcc-with-eeprom">Real-Time Clock (RTCC) with EEPROM</h3>
+
+<p>Real-Time Clock/Calendar (RTCC) tracks time using internal
+counters for hours, minutes, seconds, days, months, years, and day of week.
+Alarms can be configured on all counters up to and including months.</p>
+
+<p>SRAM and timekeeping circuitry are powered from the back-up supply when main
+power is lost, allowing the device to maintain accurate time and the SRAM
+contents. The times when the device switches over to the back-up supply and
+when primary power returns are both logged by the power-fail time-stamp.</p>
+
+<p>Memory map</p>
+
+<p>[](/images/turing_pi/memap.png)</p>
+
+<h2 id="reference-links">Reference Links</h2>
+
+<div class="notices note" ><p>WIP</p>
+</div>
+
 
 
 <footer class=" footline" >
@@ -1603,20 +1679,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://turing-machines.github.io/js/clipboard.min.js?1572013177"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1572013177"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1572013177"></script>
-    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1572013177"></script>
-    <script src="https://turing-machines.github.io/js/featherlight.min.js?1572013177"></script>
-    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1572013177"></script>
-    <script src="https://turing-machines.github.io/js/highlight.pack.js?1572013177"></script>
+    <script src="https://turing-machines.github.io/js/clipboard.min.js?1572026811"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1572026811"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1572026811"></script>
+    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1572026811"></script>
+    <script src="https://turing-machines.github.io/js/featherlight.min.js?1572026811"></script>
+    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1572026811"></script>
+    <script src="https://turing-machines.github.io/js/highlight.pack.js?1572026811"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1572013177"></script>
-    <script src="https://turing-machines.github.io/js/learn.js?1572013177"></script>
-    <script src="https://turing-machines.github.io/js/hugo-learn.js?1572013177"></script>
+    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1572026811"></script>
+    <script src="https://turing-machines.github.io/js/learn.js?1572026811"></script>
+    <script src="https://turing-machines.github.io/js/hugo-learn.js?1572026811"></script>
 
-    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1572013177" type="text/css" rel="stylesheet" />
-    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1572013177"></script>
+    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1572026811" type="text/css" rel="stylesheet" />
+    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1572026811"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
