@@ -6,10 +6,19 @@
     <description>Recent content in wiki on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://turing-machines.github.io/categories/wiki/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cluster Management Bus</title>
+      <link>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Specs</title>
@@ -140,15 +149,6 @@ using kubeadm 1.12&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Installing Kibana</title>
-      <link>https://turing-machines.github.io/applications/children/kibana/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/applications/children/kibana/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the Turing Pi.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Installing Prometheus</title>
       <link>https://turing-machines.github.io/applications/children/prometheus/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
@@ -219,6 +219,15 @@ For instance you can cross-build golang executable for ARM32v7 and transfer it t
       
       <guid>https://turing-machines.github.io/os_installation/children/worker_pi/</guid>
       <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Kibana</title>
+      <link>https://turing-machines.github.io/applications/children/kibana/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/applications/children/kibana/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the Turing Pi.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
     </item>
     
     <item>

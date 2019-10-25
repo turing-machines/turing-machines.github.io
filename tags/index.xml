@@ -119,6 +119,15 @@
     </item>
     
     <item>
+      <title>i2c</title>
+      <link>https://turing-machines.github.io/tags/i2c/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/tags/i2c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>istio</title>
       <link>https://turing-machines.github.io/tags/istio/</link>
       <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
@@ -229,7 +238,7 @@
     <item>
       <title>turing_pi</title>
       <link>https://turing-machines.github.io/tags/turing_pi/</link>
-      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://turing-machines.github.io/tags/turing_pi/</guid>
       <description></description>
