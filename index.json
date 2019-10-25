@@ -4,7 +4,7 @@
 	"title": "Specs",
 	"tags": ["specs", "turing_pi"],
 	"description": "",
-	"content": "Turing Pi specifications\nOverview    Name Value     Power Adapter 12-18 V, 3-5 A   Mini ITX power socket 2x2 12 V   Int. Power Adapter Max. W 50 W   Ethernet Port 1x 1-Gbps   Int. Network Speed 1-Gbps   Node Network Speed 100-Mbps   Compute Modules QTY 7x DDR2 SO-DIMM 200 pin   Supported Compute Modules Raspberry Pi Compute Module 1, 3, 3+   Boot from eMMC Yes   Boot from SD Yes   Flash Compute Module Only for Master Node via micro USB    Reference Links"
+	"content": "Turing Pi specifications\nOverview    Name Value     Power Adapter 12-18 V, 3-5 A   Mini ITX Power socket 2x2 12 V   Int. Power Adapter, Max. W 50 W   Ethernet Port 1x 1-Gbps   Int. Network Speed 1-Gbps   Node Network Speed 100-Mbps   Compute Modules, Max. QTY 7x DDR2 SO-DIMM 200 pin   Supported Compute Modules Raspberry Pi Compute Module 1, 3, 3+   Boot from eMMC Yes   Boot from SD Yes   Micro SD slots, QTY 7x, 1 per node   Flash Compute Module Only for Master Node via micro USB   GPIO 40-pin, RPI compatible 7x   HDMI 1x, Node #1 (Master Node)   Audio 3.5 mm 1x, Node #1 (Master Node)    Scheme Reference Links"
 },
 {
 	"uri": "https://turing-machines.github.io/turing_pi/",
