@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Cluster Management Bus</title>
+      <link>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</guid>
+      <description>&lt;p&gt;Turing Pi cluster management bus configuration and internal devices&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Installing Turing Pi Kubeplay</title>
       <link>https://turing-machines.github.io/applications/children/kubeplay/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
@@ -29,15 +38,6 @@
       <description>&lt;p&gt;Install simplistic Kubeplay Application on the Turing Pi. It is a primitiv golang based server
 which get the user to go through the entire DevOps process (to build the docker image) and
 deploy it using Helm on Turing Pi.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Assembly</title>
-      <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</guid>
-      <description>&lt;p&gt;This page contains tutorial to build a Turing Pi cluster&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -99,6 +99,15 @@ The goal of this post is to transform a github repo into a helm repo.&lt;/p&gt;<
     </item>
     
     <item>
+      <title>Assembly</title>
+      <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</guid>
+      <description>&lt;p&gt;This page contains tutorial to build a Turing Pi cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>OS Installation on Turing Master</title>
       <link>https://turing-machines.github.io/os_installation/children/master_pi/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
@@ -137,15 +146,6 @@ nodes have multiple interfaces (wlan0 and eth0).&lt;/p&gt;</description>
       <guid>https://turing-machines.github.io/maintenance/children/2018-09-28-a/</guid>
       <description>&lt;p&gt;The new Kubernetes 1.12 is out. THe goal is to update my two clusters to 1.12
 using kubeadm 1.12&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Installing Kibana</title>
-      <link>https://turing-machines.github.io/applications/children/kibana/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/applications/children/kibana/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the Turing Pi.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -219,6 +219,15 @@ For instance you can cross-build golang executable for ARM32v7 and transfer it t
       
       <guid>https://turing-machines.github.io/os_installation/children/worker_pi/</guid>
       <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Kibana</title>
+      <link>https://turing-machines.github.io/applications/children/kibana/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/applications/children/kibana/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the Turing Pi.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -296,15 +305,6 @@ is the end to end encryption of the commnucation, the role of citadel to ensure 
 management of the certificates, the renewal of the certificates.
 As always, the goal of this post is to study that new tool and figure out I can
 leverage it in my day to day work.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Cluster Management Bus</title>
-      <link>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</guid>
-      <description>&lt;p&gt;Turing Pi cluster management bus configuration and internal devices&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -13,13 +13,13 @@
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/applications/children/kubeplay/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+    <loc>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</loc>
+    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</loc>
-    <lastmod>2018-07-07T00:00:00+00:00</lastmod>
+    <loc>https://turing-machines.github.io/applications/children/kubeplay/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -55,6 +55,11 @@
   <url>
     <loc>https://turing-machines.github.io/docker_kubernetes/children/2018-07-08-a/</loc>
     <lastmod>2018-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</loc>
+    <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -174,11 +179,6 @@
   <url>
     <loc>https://turing-machines.github.io/advanced/children/2018-07-31-a/</loc>
     <lastmod>2018-07-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</loc>
-    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>

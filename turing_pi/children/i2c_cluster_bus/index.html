@@ -12,19 +12,19 @@
     <title>Cluster Management Bus :: Turing Machines Documentation</title>
 
     
-    <link href="https://turing-machines.github.io/css/nucleus.css?1572033224" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1572033224" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hybrid.css?1572033224" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/featherlight.min.css?1572033224" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1572033224" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/auto-complete.css?1572033224" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/theme.css?1572033224" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hugo-theme.css?1572033224" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/nucleus.css?1572035344" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1572035344" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hybrid.css?1572035344" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/featherlight.min.css?1572035344" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1572035344" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/auto-complete.css?1572035344" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/theme.css?1572035344" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hugo-theme.css?1572035344" rel="stylesheet">
     
-      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1572033224" rel="stylesheet">
+      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1572035344" rel="stylesheet">
     
 
-    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1572033224"></script>
+    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1572035344"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1572033224"></script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1572033224"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1572035344"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1572035344"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/turing-machines.github.io";
     
 </script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1572033224"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1572035344"></script>
 
     
   </div>
@@ -128,9 +128,9 @@
  
   
     
-      <li data-nav-id="/turing_pi/children/cluster_assembly/" title="Assembly" class="dd-item ">
-        <a href="https://turing-machines.github.io/turing_pi/children/cluster_assembly/">
-        Assembly
+      <li data-nav-id="/turing_pi/children/i2c_cluster_bus/" title="Cluster Management Bus" class="dd-item active">
+        <a href="https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/">
+        Cluster Management Bus
         
         </a>
     </li>
@@ -147,9 +147,9 @@
  
   
     
-      <li data-nav-id="/turing_pi/children/i2c_cluster_bus/" title="Cluster Management Bus" class="dd-item active">
-        <a href="https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/">
-        Cluster Management Bus
+      <li data-nav-id="/turing_pi/children/cluster_assembly/" title="Assembly" class="dd-item ">
+        <a href="https://turing-machines.github.io/turing_pi/children/cluster_assembly/">
+        Assembly
         
         </a>
     </li>
@@ -939,6 +939,7 @@
 <li>
 <ul>
 <li><a href="#configure-i2c">Configure I2C</a></li>
+<li><a href="#i2c-write-read-quick-tutorial">I2C write/read quick tutorial</a></li>
 <li><a href="#eeprom">EEPROM</a></li>
 <li><a href="#i2c-expander">I2C expander</a></li>
 <li><a href="#real-time-clock">Real-Time Clock</a></li>
@@ -1002,11 +1003,51 @@
 70: -- -- -- -- -- -- -- --
 </code></pre>
 
-<p>You can see two I2C devices on addresses 0x57 and 0x6f.</p>
+<p>You can see two I2C devices addresses 0x57 and 0x6f.</p>
+
+<h3 id="i2c-write-read-quick-tutorial">I2C write/read quick tutorial</h3>
+
+<p>The <strong>i2cget</strong> command is used to read a byte from a specified register on the I2C device. The format for this command is as follows</p>
+
+<pre><code>i2cget [-f] [-y] 1 &lt;DEVICE ADDRESS&gt; &lt;ADDRESS&gt; [MODE]
+</code></pre>
+
+<p>[-f] [-y] Options:
+- -f force access to the device even if the device is still busy. However, be careful. This can cause the i2cget command to return an invalid value. We recommend avoiding this option.
+- -y disable interactive mode. Using this command will skip the prompt for confirmation from the i2cget command. By default, it will wait for the confirmation from the user before interacting with the i2c device. We recommend using this option.
+- <DEVICE ADDRESS> is an I2C bus address (e.g 0x04)
+- <ADDRESS> is the address on the slave from which to read data (eg. 0x00)
+The optional MODE can be one of the following:
+- b – read a byte of data, this is the default if left blank
+- w – read a word of data (two bytes)
+- c – write byte/read byte transaction</p>
+
+<p>Example of reading from register 0xf2 where factory default value is 0xff</p>
+
+<pre><code class="language-bash">sudo i2cget -y 1 0x57 0xf2
+0xff
+</code></pre>
+
+<p>Use the <strong>i2cset</strong> command to write data to an I2C device. The format of this command as follows</p>
+
+<pre><code>i2cset -y 0 &lt;DEVICE ADDRESS&gt; &lt;ADDRESS&gt; &lt;VALUE&gt;
+</code></pre>
+
+<p>Example of writing value 0x77 to the first byte of user space SRAM (starts from 0x20) and then reading</p>
+
+<pre><code class="language-bash">sudo i2cset -y 1 0x6f 0x20 0x77
+sudo i2cget -y 1 0x6f 0x20
+0x77
+</code></pre>
 
 <h3 id="eeprom">EEPROM</h3>
 
-<p>Both I2C devices have general purpose memory, so combined you have 128 bytes of SRAM</p>
+<p>Each I2C device have 64 bytes of general-purpose user memory, so combined you have 128 bytes of SRAM</p>
+
+<ul>
+<li>Device 0x57, Address 00h to 3Fh</li>
+<li>Device 0x6f, Address 0x20 to 0x5f</li>
+</ul>
 
 <h3 id="i2c-expander">I2C expander</h3>
 
@@ -1015,12 +1056,6 @@
 <p>I2C expander offers users a digitally programmable alternative to hardware
 jumpers and mechanical switches that are being used to control digital logic
 nodes.</p>
-
-<p>Example of reading from register 0xf2 where factory default value is 0xff</p>
-
-<pre><code class="language-bash">sudo i2cget -y 1 0x57 0xf2
-0xff
-</code></pre>
 
 <h3 id="real-time-clock">Real-Time Clock</h3>
 
@@ -1035,21 +1070,17 @@ power is lost, allowing the device to maintain accurate time and the SRAM
 contents. The times when the device switches over to the back-up supply and
 when primary power returns are both logged by the power-fail time-stamp.</p>
 
-<p>Memory map</p>
+<p><strong>Memory map</strong></p>
 
 <p><img src="https://turing-machines.github.io/images/turing_pi/memap.png" alt="" /></p>
 
-<p>Example of writing value 0x77 to first byte of SRAM (starts from 0x20) and then reading</p>
-
-<pre><code class="language-bash">sudo i2cset -y 1 0x6f 0x20 0x77
-sudo i2cget -y 1 0x6f 0x20
-0x77
-</code></pre>
-
 <h2 id="reference-links">Reference Links</h2>
 
-<div class="notices note" ><p>WIP</p>
-</div>
+<ul>
+<li><a href="https://datasheets.maximintegrated.com/en/ds/DS4520.pdf" target="_blank">I2C extender device datasheet</a></li>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/MCP7940N-Battery-Backed-I2C-RTCC-with-SRAM-20005010G.pdf" target="_blank">RTC device datasheet</a></li>
+<li><a href="https://turing-machines.github.io/turing_pi/children/cluster_assembly/">Turing Pi assembly</a></li>
+</ul>
 
 <footer class=" footline" >
 	
@@ -1120,57 +1151,6 @@ sudo i2cget -y 1 0x6f 0x20
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1188,53 +1168,8 @@ sudo i2cget -y 1 0x6f 0x20
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1423,6 +1358,102 @@ sudo i2cget -y 1 0x6f 0x20
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1689,10 +1720,10 @@ sudo i2cget -y 1 0x6f 0x20
 
 
         
-            <a class="nav nav-prev" href="https://turing-machines.github.io/turing_pi/children/cluster_assembly/" title="Assembly"> <i class="fas fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="https://turing-machines.github.io/turing_pi/children/specs/" title="Specs"> <i class="fas fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="https://turing-machines.github.io/os_installation/" title="Operating System" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="https://turing-machines.github.io/turing_pi/children/cluster_assembly/" title="Assembly" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
         
     </div>
 
@@ -1701,20 +1732,20 @@ sudo i2cget -y 1 0x6f 0x20
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://turing-machines.github.io/js/clipboard.min.js?1572033224"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1572033224"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1572033224"></script>
-    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1572033224"></script>
-    <script src="https://turing-machines.github.io/js/featherlight.min.js?1572033224"></script>
-    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1572033224"></script>
-    <script src="https://turing-machines.github.io/js/highlight.pack.js?1572033224"></script>
+    <script src="https://turing-machines.github.io/js/clipboard.min.js?1572035344"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1572035344"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1572035344"></script>
+    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1572035344"></script>
+    <script src="https://turing-machines.github.io/js/featherlight.min.js?1572035344"></script>
+    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1572035344"></script>
+    <script src="https://turing-machines.github.io/js/highlight.pack.js?1572035344"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1572033224"></script>
-    <script src="https://turing-machines.github.io/js/learn.js?1572033224"></script>
-    <script src="https://turing-machines.github.io/js/hugo-learn.js?1572033224"></script>
+    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1572035344"></script>
+    <script src="https://turing-machines.github.io/js/learn.js?1572035344"></script>
+    <script src="https://turing-machines.github.io/js/hugo-learn.js?1572035344"></script>
 
-    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1572033224" type="text/css" rel="stylesheet" />
-    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1572033224"></script>
+    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1572035344" type="text/css" rel="stylesheet" />
+    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1572035344"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

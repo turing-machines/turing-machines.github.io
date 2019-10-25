@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Cluster Management Bus</title>
+      <link>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</guid>
+      <description>&lt;p&gt;Turing Pi cluster management bus configuration and internal devices&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Installing Turing Pi Kubeplay</title>
       <link>https://turing-machines.github.io/applications/children/kubeplay/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
@@ -29,15 +38,6 @@
       <description>&lt;p&gt;Install simplistic Kubeplay Application on the Turing Pi. It is a primitiv golang based server
 which get the user to go through the entire DevOps process (to build the docker image) and
 deploy it using Helm on Turing Pi.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Assembly</title>
-      <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</guid>
-      <description>&lt;p&gt;This page contains tutorial to build a Turing Pi cluster&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -96,6 +96,15 @@ The goal of this post is to transform a github repo into a helm repo.&lt;/p&gt;<
       
       <guid>https://turing-machines.github.io/docker_kubernetes/children/2018-07-08-a/</guid>
       <description>&lt;p&gt;In order to install Prometheus, NATS, Cassandra using Kubernetes, we need to first create Persistency Volumes&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Assembly</title>
+      <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</guid>
+      <description>&lt;p&gt;This page contains tutorial to build a Turing Pi cluster&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -296,15 +305,6 @@ is the end to end encryption of the commnucation, the role of citadel to ensure 
 management of the certificates, the renewal of the certificates.
 As always, the goal of this post is to study that new tool and figure out I can
 leverage it in my day to day work.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Cluster Management Bus</title>
-      <link>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</guid>
-      <description>&lt;p&gt;Turing Pi cluster management bus configuration and internal devices&lt;/p&gt;</description>
     </item>
     
     <item>
