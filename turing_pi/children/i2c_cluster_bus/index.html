@@ -12,19 +12,19 @@
     <title>Cluster Management Bus :: Turing Machines Documentation</title>
 
     
-    <link href="https://turing-machines.github.io/css/nucleus.css?1572099297" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1572099297" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hybrid.css?1572099297" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/featherlight.min.css?1572099297" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1572099297" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/auto-complete.css?1572099297" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/theme.css?1572099297" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hugo-theme.css?1572099297" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/nucleus.css?1572103816" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1572103816" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hybrid.css?1572103816" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/featherlight.min.css?1572103816" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1572103816" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/auto-complete.css?1572103816" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/theme.css?1572103816" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hugo-theme.css?1572103816" rel="stylesheet">
     
-      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1572099297" rel="stylesheet">
+      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1572103816" rel="stylesheet">
     
 
-    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1572099297"></script>
+    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1572103816"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1572099297"></script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1572099297"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1572103816"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1572103816"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/turing-machines.github.io";
     
 </script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1572099297"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1572103816"></script>
 
     
   </div>
@@ -944,7 +944,7 @@
 <li><a href="#i2c-expander">I2C expander</a>
 <ul>
 <li><a href="#power-management">Power Management</a></li>
-<li><a href="#node-status">Node status</a></li>
+<li><a href="#compute-module-status">Compute Module status</a></li>
 </ul></li>
 <li><a href="#real-time-clock">Real-Time Clock</a></li>
 </ul></li>
@@ -1068,10 +1068,10 @@ jumpers and mechanical switches that are being used to control power on compute 
 
 <h4 id="power-management">Power Management</h4>
 
-<p>On/off compute nodes through register 0xF2</p>
+<p>On/off compute module through register 0xF2</p>
 
-<pre><code class="language-bash"># | Register Field # | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
-# | Node Slot #      | 5 | 6 | 7 | 4 | 3 | 2 | 1 | x |
+<pre><code class="language-bash"># | Bit Field # | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+# | Node Slot # | 5 | 6 | 7 | 4 | 3 | 2 | 1 | x |
 
 # Power on nodes #1,2,3 and power off #4,5,6,7
 sudo i2cset -y 1 0x57 0xf2 0x0e
@@ -1080,12 +1080,23 @@ sudo i2cset -y 1 0x57 0xf2 0x0e
 # | 0x0E        | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0 |
 </code></pre>
 
-<h4 id="node-status">Node status</h4>
+<p>Read on/off status</p>
 
-<p>Read nodes status (on/off) through register 0xF8</p>
+<pre><code class="language-bash">sudo i2cget -y 1 0x57 0xf2
+0x0e
+</code></pre>
 
-<pre><code class="language-bash"># | Register Field # | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
-# | Node Slot #      | 5 | 6 | 7 | 4 | 3 | 2 | 1 | x |
+<h4 id="compute-module-status">Compute Module status</h4>
+
+<p>Read compute module status through register 0xF8</p>
+
+<ul>
+<li>1 = Installed in slot AND switched on</li>
+<li>0 = Not installed in slot OR switched off</li>
+</ul>
+
+<pre><code class="language-bash"># | Bit Field # | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+# | Node Slot # | 5 | 6 | 7 | 4 | 3 | 2 | 1 | x |
 
 sudo i2cget -y 1 0x57 0xf8
 0x0e
@@ -1771,20 +1782,20 @@ when primary power returns are both logged by the power-fail time-stamp.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://turing-machines.github.io/js/clipboard.min.js?1572099297"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1572099297"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1572099297"></script>
-    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1572099297"></script>
-    <script src="https://turing-machines.github.io/js/featherlight.min.js?1572099297"></script>
-    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1572099297"></script>
-    <script src="https://turing-machines.github.io/js/highlight.pack.js?1572099297"></script>
+    <script src="https://turing-machines.github.io/js/clipboard.min.js?1572103817"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1572103817"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1572103817"></script>
+    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1572103817"></script>
+    <script src="https://turing-machines.github.io/js/featherlight.min.js?1572103817"></script>
+    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1572103817"></script>
+    <script src="https://turing-machines.github.io/js/highlight.pack.js?1572103817"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1572099297"></script>
-    <script src="https://turing-machines.github.io/js/learn.js?1572099297"></script>
-    <script src="https://turing-machines.github.io/js/hugo-learn.js?1572099297"></script>
+    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1572103817"></script>
+    <script src="https://turing-machines.github.io/js/learn.js?1572103817"></script>
+    <script src="https://turing-machines.github.io/js/hugo-learn.js?1572103817"></script>
 
-    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1572099297" type="text/css" rel="stylesheet" />
-    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1572099297"></script>
+    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1572103817" type="text/css" rel="stylesheet" />
+    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1572103817"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
