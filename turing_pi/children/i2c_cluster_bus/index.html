@@ -12,19 +12,19 @@
     <title>Cluster Management Bus :: Turing Machines Documentation</title>
 
     
-    <link href="https://turing-machines.github.io/css/nucleus.css?1572529608" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1572529608" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hybrid.css?1572529608" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/featherlight.min.css?1572529608" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1572529608" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/auto-complete.css?1572529608" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/theme.css?1572529608" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hugo-theme.css?1572529608" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/nucleus.css?1572530351" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1572530351" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hybrid.css?1572530351" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/featherlight.min.css?1572530351" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1572530351" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/auto-complete.css?1572530351" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/theme.css?1572530351" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hugo-theme.css?1572530351" rel="stylesheet">
     
-      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1572529608" rel="stylesheet">
+      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1572530351" rel="stylesheet">
     
 
-    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1572529608"></script>
+    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1572530351"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1572529608"></script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1572529608"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1572530351"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1572530351"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/turing-machines.github.io";
     
 </script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1572529608"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1572530351"></script>
 
     
   </div>
@@ -939,8 +939,9 @@
 <li>
 <ul>
 <li><a href="#configure-i2c-and-devices">Configure I2C and devices</a></li>
-<li><a href="#i2c-write-read-quick-tutorial">I2C write/read quick tutorial</a></li>
 <li><a href="#security">Security</a></li>
+<li><a href="#user-space-eeprom">User space EEPROM</a></li>
+<li><a href="#i2c-write-read-quick-tutorial">I2C write/read quick tutorial</a></li>
 <li><a href="#ethernet-switch">Ethernet Switch</a></li>
 <li><a href="#i2c-expander">I2C expander</a>
 <ul>
@@ -952,7 +953,6 @@
 <li><a href="#time-date">Time &amp; Date</a></li>
 </ul></li>
 <li><a href="#external-i2c-port">External I2C port</a></li>
-<li><a href="#eeprom">EEPROM</a></li>
 </ul></li>
 <li><a href="#reference-links">Reference Links</a></li>
 </ul></li>
@@ -1021,7 +1021,26 @@ ls /dev/*rtc*
 70: -- -- -- -- -- -- -- --
 </code></pre>
 
-<p>You can see three I2C devices with addresses 0x04, 0x57 and 0x6f.</p>
+<p>You can see three I2C devices Ethernet Switch (0x04h), I2C expander (0x57h) and RTCC (0x6Fh).</p>
+
+<h3 id="security">Security</h3>
+
+<p>As a security precaution, system devices are not exposed by default inside Docker
+containers. You can expose specific devices to your container using the <code>--device</code>
+option to docker run, as in</p>
+
+<pre><code>docker run --device /dev/i2c-1 app-image
+</code></pre>
+
+<p>or remove all restrictions with the <code>--privileged</code> flag</p>
+
+<pre><code>docker run --privileged app-image
+</code></pre>
+
+<h3 id="user-space-eeprom">User space EEPROM</h3>
+
+<p>I2C expander and RTCC each have 64 bytes of general purpose user memory, so combined you have 128 bytes of EEPROM.
+On device <code>0x57h</code> user space address from <code>0x00h to 0x3Fh</code> and on <code>0x6Fh</code> from <code>0x20h to 0x5Fh</code>.</p>
 
 <h3 id="i2c-write-read-quick-tutorial">I2C write/read quick tutorial</h3>
 
@@ -1034,9 +1053,9 @@ ls /dev/*rtc*
 
 <ul>
 <li>-f force access to the device even if the device is still busy. However, be careful. This can cause the i2cget command to return an invalid value. We recommend avoiding this option.</li>
-<li>-y disable interactive mode. Using this command will skip the prompt for confirmation from the i2cget command. By default, it will wait for the confirmation from the user before interacting with the i2c device.</li>
-<li>DEVICE_ADDRESS is an I2C bus address (e.g 0x04)</li>
-<li>ADDRESS is the address on the slave from which to read data (eg. 0x00)</li>
+<li>-y disable interactive mode. Using this command will skip the prompt for confirmation from the i2cget command. By default, it will wait for the confirmation from the user before interacting with the I2C device.</li>
+<li>DEVICE_ADDRESS is an I2C bus address (e.g 0x04h)</li>
+<li>ADDRESS is the address on the slave from which to read data (eg. 0x00h)</li>
 </ul>
 
 <p>The optional MODE can be one of the following:</p>
@@ -1047,7 +1066,7 @@ ls /dev/*rtc*
 <li>c – write byte/read byte transaction</li>
 </ul>
 
-<p>Example of reading from register 0xf2 where factory default value is 0xff</p>
+<p>Example of reading from register 0xF2h where factory default value is 0xFFh</p>
 
 <pre><code class="language-bash">sudo i2cget -y 1 0x57 0xf2
 0xff
@@ -1058,25 +1077,11 @@ ls /dev/*rtc*
 <pre><code>i2cset -y 1 &lt;DEVICE_ADDRESS&gt; &lt;ADDRESS&gt; &lt;VALUE&gt;
 </code></pre>
 
-<p>Example of writing value 0x77 to the first byte of user space SRAM (starts from 0x00) and then reading</p>
+<p>Example of writing value 0x77h to the first byte of user space SRAM (starts from 0x00h) and then reading</p>
 
 <pre><code class="language-bash">sudo i2cset -y 1 0x57 0x00 0x77
 sudo i2cget -y 1 0x57 0x00
 0x77
-</code></pre>
-
-<h3 id="security">Security</h3>
-
-<p>As a security precaution, system devices are not exposed by default inside Docker
-containers. You can expose specific devices to your container using the <code>--device</code>
-option to docker run, as in</p>
-
-<pre><code>docker run --device /dev/i2c-1 app-image
-</code></pre>
-
-<p>You can remove all restrictions with the <code>--privileged</code> flag</p>
-
-<pre><code>docker run --privileged app-image
 </code></pre>
 
 <h3 id="ethernet-switch">Ethernet Switch</h3>
@@ -1084,7 +1089,7 @@ option to docker run, as in</p>
 <p>The onboard RTL8370 integrate all the functions of a high-speed switch system; including SRAM for packet
 buffering, non-blocking switch fabric, and internal register management into a single CMOS device.</p>
 
-<div class="notices note" ><p>Device Address: 0x04</p>
+<div class="notices note" ><p>Device Address: 0x04h</p>
 </div>
 
 
@@ -1171,7 +1176,7 @@ buffering, non-blocking switch fabric, and internal register management into a s
 <p>I2C expander offers users a digitally programmable alternative to hardware
 jumpers and mechanical switches that are being used to control power on compute nodes.</p>
 
-<div class="notices note" ><p>Device Address: 0x57</p>
+<div class="notices note" ><p>Device Address: 0x57h</p>
 </div>
 
 
@@ -1213,7 +1218,7 @@ jumpers and mechanical switches that are being used to control power on compute 
 
 <h4 id="power-management">Power Management</h4>
 
-<p>On/off compute module through register 0xF2</p>
+<p>On/off compute module through register 0xF2h</p>
 
 <pre><code class="language-bash"># | Bit Field # | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 # | Node Slot # | 5 | 6 | 7 | 4 | 3 | 2 | 1 | x |
@@ -1222,7 +1227,7 @@ jumpers and mechanical switches that are being used to control power on compute 
 sudo i2cset -y 1 0x57 0xf2 0x0e
 
 # | Node Slot # | 5 | 6 | 7 | 4 | 3 | 2 | 1 | x |
-# | 0x0E        | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0 |
+# | 0x0Eh       | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0 |
 </code></pre>
 
 <p>Read on/off status</p>
@@ -1233,7 +1238,7 @@ sudo i2cset -y 1 0x57 0xf2 0x0e
 
 <h4 id="compute-module-status">Compute Module status</h4>
 
-<p>Read compute module status through register 0xF8</p>
+<p>Read compute module status through register 0xF8h</p>
 
 <ul>
 <li>1 = Installed in slot AND switched on</li>
@@ -1247,7 +1252,7 @@ sudo i2cget -y 1 0x57 0xf8
 0x0e
 
 # | Node Slot # | 5 | 6 | 7 | 4 | 3 | 2 | 1 | x |
-# | 0x0E        | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0 |
+# | 0x0Eh       | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0 |
 </code></pre>
 
 <h3 id="real-time-clock-calendar">Real-Time Clock/Calendar</h3>
@@ -1261,7 +1266,7 @@ power is lost, allowing the device to maintain accurate time and the SRAM
 contents. The times when the device switches over to the back-up supply and
 when primary power returns are both logged by the power-fail time-stamp.</p>
 
-<div class="notices note" ><p>Device Address: 0x6f</p>
+<div class="notices note" ><p>Device Address: 0x6Fh</p>
 </div>
 
 
@@ -1328,11 +1333,6 @@ when primary power returns are both logged by the power-fail time-stamp.</p>
 <pre><code>|  1  |  2  |  3  |  4  |
 | GND | VCC | SCL | SDA |
 </code></pre>
-
-<h3 id="eeprom">EEPROM</h3>
-
-<p>I2C expander and RTC each have 64 bytes of general purpose user memory, so combined you have 128 bytes of EEPROM.
-On device <code>0x57h</code> user space address from <code>0x00h to 0x3Fh</code> and on <code>0x6Fh</code> from <code>0x20h to 0x5Fh</code>.</p>
 
 <h2 id="reference-links">Reference Links</h2>
 
@@ -1992,20 +1992,20 @@ On device <code>0x57h</code> user space address from <code>0x00h to 0x3Fh</code>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://turing-machines.github.io/js/clipboard.min.js?1572529608"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1572529608"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1572529608"></script>
-    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1572529608"></script>
-    <script src="https://turing-machines.github.io/js/featherlight.min.js?1572529608"></script>
-    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1572529608"></script>
-    <script src="https://turing-machines.github.io/js/highlight.pack.js?1572529608"></script>
+    <script src="https://turing-machines.github.io/js/clipboard.min.js?1572530351"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1572530351"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1572530351"></script>
+    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1572530351"></script>
+    <script src="https://turing-machines.github.io/js/featherlight.min.js?1572530351"></script>
+    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1572530351"></script>
+    <script src="https://turing-machines.github.io/js/highlight.pack.js?1572530351"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1572529608"></script>
-    <script src="https://turing-machines.github.io/js/learn.js?1572529608"></script>
-    <script src="https://turing-machines.github.io/js/hugo-learn.js?1572529608"></script>
+    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1572530351"></script>
+    <script src="https://turing-machines.github.io/js/learn.js?1572530351"></script>
+    <script src="https://turing-machines.github.io/js/hugo-learn.js?1572530351"></script>
 
-    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1572529608" type="text/css" rel="stylesheet" />
-    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1572529608"></script>
+    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1572530351" type="text/css" rel="stylesheet" />
+    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1572530351"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
