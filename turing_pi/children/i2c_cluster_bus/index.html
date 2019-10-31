@@ -12,19 +12,19 @@
     <title>Cluster Management Bus :: Turing Machines Documentation</title>
 
     
-    <link href="https://turing-machines.github.io/css/nucleus.css?1572519523" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1572519523" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hybrid.css?1572519523" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/featherlight.min.css?1572519523" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1572519523" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/auto-complete.css?1572519523" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/theme.css?1572519523" rel="stylesheet">
-    <link href="https://turing-machines.github.io/css/hugo-theme.css?1572519523" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/nucleus.css?1572528528" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/fontawesome-all.min.css?1572528528" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hybrid.css?1572528528" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/featherlight.min.css?1572528528" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/perfect-scrollbar.min.css?1572528528" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/auto-complete.css?1572528528" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/theme.css?1572528528" rel="stylesheet">
+    <link href="https://turing-machines.github.io/css/hugo-theme.css?1572528528" rel="stylesheet">
     
-      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1572519523" rel="stylesheet">
+      <link href="https://turing-machines.github.io/css/theme-kubedge.css?1572528528" rel="stylesheet">
     
 
-    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1572519523"></script>
+    <script src="https://turing-machines.github.io/js/jquery-3.3.1.min.js?1572528528"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1572519523"></script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1572519523"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/lunr.min.js?1572528528"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/auto-complete.js?1572528528"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/turing-machines.github.io";
     
 </script>
-<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1572519523"></script>
+<script type="text/javascript" src="https://turing-machines.github.io/js/search.js?1572528528"></script>
 
     
   </div>
@@ -941,14 +941,23 @@
 <li><a href="#configure-i2c-and-devices">Configure I2C and devices</a></li>
 <li><a href="#i2c-write-read-quick-tutorial">I2C write/read quick tutorial</a></li>
 <li><a href="#security">Security</a></li>
-<li><a href="#eeprom">EEPROM</a></li>
+<li><a href="#ethernet-switch">Ethernet Switch</a>
+<ul>
+<li><a href="#registers-overview">Registers overview</a></li>
+</ul></li>
 <li><a href="#i2c-expander">I2C expander</a>
 <ul>
+<li><a href="#registers-overview-1">Registers overview</a></li>
 <li><a href="#power-management">Power Management</a></li>
 <li><a href="#compute-module-status">Compute Module status</a></li>
 </ul></li>
-<li><a href="#real-time-clock-calendar">Real-Time Clock/Calendar</a></li>
+<li><a href="#real-time-clock-calendar">Real-Time Clock/Calendar</a>
+<ul>
+<li><a href="#registers-overview-2">Registers overview</a></li>
+<li><a href="#time-date">Time &amp; Date</a></li>
+</ul></li>
 <li><a href="#external-i2c-port">External I2C port</a></li>
+<li><a href="#eeprom">EEPROM</a></li>
 </ul></li>
 <li><a href="#reference-links">Reference Links</a></li>
 </ul></li>
@@ -971,7 +980,7 @@
         
 
 
-<p>Turing Pi cluster management bus security, configuration and internal devices</p>
+<p>Turing Pi cluster management bus configuration, security and internal devices</p>
 
 <h3 id="configure-i2c-and-devices">Configure I2C and devices</h3>
 
@@ -981,7 +990,7 @@
 dtoverlay=i2c-rtc,mcp7940x
 </code></pre>
 
-<p>Enable I2C interface in <strong>raspi-config -&gt; Interfacing Options -&gt; I2C</strong> and reboot</p>
+<p>Enable I2C interface in <code>raspi-config</code> -&gt; Interfacing Options -&gt; I2C and reboot</p>
 
 <p>Check everything is fine with I2C and RTC</p>
 
@@ -1007,7 +1016,7 @@ ls /dev/*rtc*
 
 <pre><code class="language-bash">sudo i2cdetect -y 1
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
-00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+00:          -- 04 -- -- -- -- -- -- -- -- -- -- --
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -1017,13 +1026,13 @@ ls /dev/*rtc*
 70: -- -- -- -- -- -- -- --
 </code></pre>
 
-<p>You can see two I2C devices with addresses 0x57 and 0x6f.</p>
+<p>You can see three I2C devices with addresses 0x04, 0x57 and 0x6f.</p>
 
 <h3 id="i2c-write-read-quick-tutorial">I2C write/read quick tutorial</h3>
 
-<p>The <strong>i2cget</strong> command is used to read a byte from a specified register on the I2C device. The format for this command is as follows</p>
+<p>The <code>i2cget</code> command is used to read a byte from a specified register on the I2C device. The format for this command is as follows</p>
 
-<pre><code>i2cget [-f] [-y] 1 &lt;DEVICE ADDRESS&gt; &lt;ADDRESS&gt; [MODE]
+<pre><code>i2cget [-f] [-y] 1 &lt;DEVICE_ADDRESS&gt; &lt;ADDRESS&gt; [MODE]
 </code></pre>
 
 <p>[-f] [-y] Options:</p>
@@ -1031,7 +1040,7 @@ ls /dev/*rtc*
 <ul>
 <li>-f force access to the device even if the device is still busy. However, be careful. This can cause the i2cget command to return an invalid value. We recommend avoiding this option.</li>
 <li>-y disable interactive mode. Using this command will skip the prompt for confirmation from the i2cget command. By default, it will wait for the confirmation from the user before interacting with the i2c device.</li>
-<li>DEVICE ADDRESS is an I2C bus address (e.g 0x04)</li>
+<li>DEVICE_ADDRESS is an I2C bus address (e.g 0x04)</li>
 <li>ADDRESS is the address on the slave from which to read data (eg. 0x00)</li>
 </ul>
 
@@ -1049,9 +1058,9 @@ ls /dev/*rtc*
 0xff
 </code></pre>
 
-<p>Use the <strong>i2cset</strong> command to write data to an I2C device. The format of this command as follows</p>
+<p>Use the <code>i2cset</code> command to write data to an I2C device. The format of this command as follows</p>
 
-<pre><code>i2cset -y 1 &lt;DEVICE ADDRESS&gt; &lt;ADDRESS&gt; &lt;VALUE&gt;
+<pre><code>i2cset -y 1 &lt;DEVICE_ADDRESS&gt; &lt;ADDRESS&gt; &lt;VALUE&gt;
 </code></pre>
 
 <p>Example of writing value 0x77 to the first byte of user space SRAM (starts from 0x00) and then reading</p>
@@ -1075,10 +1084,94 @@ option to docker run, as in</p>
 <pre><code>docker run --privileged app-image
 </code></pre>
 
-<h3 id="eeprom">EEPROM</h3>
+<h3 id="ethernet-switch">Ethernet Switch</h3>
 
-<p>Each I2C device have 64 bytes of general purpose user memory, so combined you have 128 bytes of SRAM.
-On device 0x57 user space address from <strong>00h to 3Fh</strong> and on 0x6f from <strong>0x20 to 0x5f</strong>.</p>
+<p>The onboard RTL8370 integrate all the functions of a high-speed switch system; including SRAM for packet
+buffering, non-blocking switch fabric, and internal register management into a single CMOS device.</p>
+
+<div class="notices note" ><p>Device Address: 0x04</p>
+</div>
+
+
+<h4 id="registers-overview">Registers overview</h4>
+
+<table>
+<thead>
+<tr>
+<th>Register</th>
+<th>Register Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0</td>
+<td>Control Register</td>
+<td>0x1140h</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Status Register</td>
+<td>0x7949h</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>PHY Identifier 1</td>
+<td>0x001Ch</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>PHY Identifier 2</td>
+<td>0xC980h</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Auto-Negotiation Advertisement Register</td>
+<td>0x0DE1h</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Auto-Negotiation Link Partner Ability Register</td>
+<td>0x0000h</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>Auto-Negotiation Expansion Register</td>
+<td>0x0004h</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>Auto-Negotiation Page Transmit Register</td>
+<td>0x2001h</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>Auto-Negotiation Link Partner Next Page Register</td>
+<td>0x0000h</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>1000Base-T Control Register</td>
+<td>0x0E00h</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>1000Base-T Status Register</td>
+<td>0x0000h</td>
+</tr>
+</tbody>
+</table>
 
 <h3 id="i2c-expander">I2C expander</h3>
 
@@ -1088,6 +1181,44 @@ jumpers and mechanical switches that are being used to control power on compute 
 <div class="notices note" ><p>Device Address: 0x57</p>
 </div>
 
+
+<h4 id="registers-overview-1">Registers overview</h4>
+
+<table>
+<thead>
+<tr>
+<th>Register</th>
+<th>Register Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0x00h to 3Fh</td>
+<td>64 bytes of general-purpose user EEPROM</td>
+<td>0x00h</td>
+</tr>
+
+<tr>
+<td>0xF2h</td>
+<td>Control Register</td>
+<td>0xFFh</td>
+</tr>
+
+<tr>
+<td>0xF8h</td>
+<td>Status Register</td>
+<td>&ndash;</td>
+</tr>
+
+<tr>
+<td>0xFAh to 0xFFh</td>
+<td>6 bytes of general-purpose user SRAM</td>
+<td>&ndash;</td>
+</tr>
+</tbody>
+</table>
 
 <h4 id="power-management">Power Management</h4>
 
@@ -1139,15 +1270,67 @@ power is lost, allowing the device to maintain accurate time and the SRAM
 contents. The times when the device switches over to the back-up supply and
 when primary power returns are both logged by the power-fail time-stamp.</p>
 
+<div class="notices note" ><p>Device Address: 0x6f</p>
+</div>
+
+
+<h4 id="registers-overview-2">Registers overview</h4>
+
+<table>
+<thead>
+<tr>
+<th>Register</th>
+<th>Register Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0x00h to 0x06h</td>
+<td>Time &amp; Date</td>
+<td>&ndash;</td>
+</tr>
+
+<tr>
+<td>0x07h to 0x09h</td>
+<td>Configuration and Trimming</td>
+<td>&ndash;</td>
+</tr>
+
+<tr>
+<td>0x0Ah to 0x10h</td>
+<td>Alarm 0</td>
+<td>&ndash;</td>
+</tr>
+
+<tr>
+<td>0x11h to 0x17h</td>
+<td>Alarm 1</td>
+<td>&ndash;</td>
+</tr>
+
+<tr>
+<td>0x18h to 0x1Fh</td>
+<td>Power-Fail/Power-Up Time-Stamps</td>
+<td>&ndash;</td>
+</tr>
+
+<tr>
+<td>0x20h to 0x5Fh</td>
+<td>64 bytes of general-purpose user SRAM</td>
+<td>&ndash;</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="time-date">Time &amp; Date</h4>
+
 <p>Show time from hardware RTC</p>
 
 <pre><code class="language-bash">sudo hwclock --show
 2019-10-26 20:21:03.005326+01:00
 </code></pre>
-
-<div class="notices note" ><p>Device Address: 0x6f</p>
-</div>
-
 
 <h3 id="external-i2c-port">External I2C port</h3>
 
@@ -1156,6 +1339,11 @@ when primary power returns are both logged by the power-fail time-stamp.</p>
 <pre><code>|  1  |  2  |  3  |  4  |
 | GND | VCC | SCL | SDA |
 </code></pre>
+
+<h3 id="eeprom">EEPROM</h3>
+
+<p>I2C expander and RTC each have 64 bytes of general purpose user memory, so combined you have 128 bytes of EEPROM.
+On device <code>0x57h</code> user space address from <code>0x00h to 0x3Fh</code> and on <code>0x6Fh</code> from <code>0x20h to 0x5Fh</code>.</p>
 
 <h2 id="reference-links">Reference Links</h2>
 
@@ -1815,20 +2003,20 @@ when primary power returns are both logged by the power-fail time-stamp.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://turing-machines.github.io/js/clipboard.min.js?1572519523"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1572519523"></script>
-    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1572519523"></script>
-    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1572519523"></script>
-    <script src="https://turing-machines.github.io/js/featherlight.min.js?1572519523"></script>
-    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1572519523"></script>
-    <script src="https://turing-machines.github.io/js/highlight.pack.js?1572519523"></script>
+    <script src="https://turing-machines.github.io/js/clipboard.min.js?1572528528"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.min.js?1572528528"></script>
+    <script src="https://turing-machines.github.io/js/perfect-scrollbar.jquery.min.js?1572528528"></script>
+    <script src="https://turing-machines.github.io/js/jquery.sticky.js?1572528528"></script>
+    <script src="https://turing-machines.github.io/js/featherlight.min.js?1572528528"></script>
+    <script src="https://turing-machines.github.io/js/html5shiv-printshiv.min.js?1572528528"></script>
+    <script src="https://turing-machines.github.io/js/highlight.pack.js?1572528528"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1572519523"></script>
-    <script src="https://turing-machines.github.io/js/learn.js?1572519523"></script>
-    <script src="https://turing-machines.github.io/js/hugo-learn.js?1572519523"></script>
+    <script src="https://turing-machines.github.io/js/modernizr.custom.71422.js?1572528528"></script>
+    <script src="https://turing-machines.github.io/js/learn.js?1572528528"></script>
+    <script src="https://turing-machines.github.io/js/hugo-learn.js?1572528528"></script>
 
-    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1572519523" type="text/css" rel="stylesheet" />
-    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1572519523"></script>
+    <link href="https://turing-machines.github.io/mermaid/mermaid.css?1572528528" type="text/css" rel="stylesheet" />
+    <script src="https://turing-machines.github.io/mermaid/mermaid.js?1572528528"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
