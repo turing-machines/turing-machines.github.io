@@ -50,6 +50,15 @@ deploy it using Helm on Turing Pi.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>I2C read/write</title>
+      <link>https://turing-machines.github.io/turing_pi/children/i2c_read_write/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/turing_pi/children/i2c_read_write/</guid>
+      <description>&lt;p&gt;I2C read/write quick tutorial&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Installing Kubernetes Dashboard</title>
       <link>https://turing-machines.github.io/applications/children/kubernetes_dashboard/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
@@ -96,15 +105,6 @@ The goal of this post is to transform a github repo into a helm repo.&lt;/p&gt;<
       
       <guid>https://turing-machines.github.io/docker_kubernetes/children/2018-07-08-a/</guid>
       <description>&lt;p&gt;In order to install Prometheus, NATS, Cassandra using Kubernetes, we need to first create Persistency Volumes&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Assembly</title>
-      <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</guid>
-      <description>&lt;p&gt;This page contains tutorial to build a Turing Pi cluster&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -166,6 +166,15 @@ using kubeadm 1.12&lt;/p&gt;</description>
       <description>&lt;p&gt;This tutorial how to setup DHCPD and NAT so that the slave PI can access the
 internet through the NAT (ETH0-&amp;gt;WLAN0) running on Turing Master. This tutorial
 also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Assembly</title>
+      <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</guid>
+      <description>&lt;p&gt;This page contains tutorial to build a Turing Pi cluster&lt;/p&gt;</description>
     </item>
     
     <item>

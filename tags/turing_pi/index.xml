@@ -41,6 +41,15 @@ deploy it using Helm on Turing Pi.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>I2C read/write</title>
+      <link>https://turing-machines.github.io/turing_pi/children/i2c_read_write/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/turing_pi/children/i2c_read_write/</guid>
+      <description>&lt;p&gt;I2C read/write quick tutorial&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Assembly</title>
       <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>

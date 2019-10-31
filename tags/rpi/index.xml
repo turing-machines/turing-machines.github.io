@@ -50,15 +50,6 @@ deploy it using Helm on Turing Pi.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Assembly</title>
-      <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</guid>
-      <description>&lt;p&gt;This page contains tutorial to build a Turing Pi cluster&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>OS Installation on Turing Master</title>
       <link>https://turing-machines.github.io/os_installation/children/master_pi/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
@@ -117,6 +108,15 @@ using kubeadm 1.12&lt;/p&gt;</description>
       <description>&lt;p&gt;This tutorial how to setup DHCPD and NAT so that the slave PI can access the
 internet through the NAT (ETH0-&amp;gt;WLAN0) running on Turing Master. This tutorial
 also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Assembly</title>
+      <link>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</guid>
+      <description>&lt;p&gt;This page contains tutorial to build a Turing Pi cluster&lt;/p&gt;</description>
     </item>
     
     <item>
