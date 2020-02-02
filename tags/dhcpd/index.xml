@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dhcpd on Turing Machines Documentation</title>
-    <link>https://turing-machines.github.io/tags/dhcpd/</link>
+    <link>https://docs.turingpi.com/tags/dhcpd/</link>
     <description>Recent content in dhcpd on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://turing-machines.github.io/tags/dhcpd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.turingpi.com/tags/dhcpd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Setting up DHCPD on Turing Master</title>
-      <link>https://turing-machines.github.io/os_installation/children/setup_dhcpd/</link>
+      <link>https://docs.turingpi.com/os_installation/children/setup_dhcpd/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/os_installation/children/setup_dhcpd/</guid>
+      <guid>https://docs.turingpi.com/os_installation/children/setup_dhcpd/</guid>
       <description>&lt;p&gt;This tutorial how to setup DHCPD and NAT so that the slave PI can access the
 internet through the NAT (ETH0-&amp;gt;WLAN0) running on Turing Master. This tutorial
 also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs.&lt;/p&gt;</description>

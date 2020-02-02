@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>portieris on Turing Machines Documentation</title>
-    <link>https://turing-machines.github.io/tags/portieris/</link>
+    <link>https://docs.turingpi.com/tags/portieris/</link>
     <description>Recent content in portieris on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 18 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://turing-machines.github.io/tags/portieris/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.turingpi.com/tags/portieris/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Compile and Test Portieris</title>
-      <link>https://turing-machines.github.io/advanced/children/2018-07-18-a/</link>
+      <link>https://docs.turingpi.com/advanced/children/2018-07-18-a/</link>
       <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/advanced/children/2018-07-18-a/</guid>
+      <guid>https://docs.turingpi.com/advanced/children/2018-07-18-a/</guid>
       <description>&lt;p&gt;One of the biggest security risks related to Kubernetes are often linked to
 the fact that it is really hard to ensure that only &amp;ldquo;approved&amp;rdquo; images are
 deployed in your Kubernetes cluster. The goal here is to leverage Notary

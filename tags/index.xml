@@ -2,227 +2,227 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Turing Machines Documentation</title>
-    <link>https://turing-machines.github.io/tags/</link>
+    <link>https://docs.turingpi.com/tags/</link>
     <description>Recent content in Tags on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://turing-machines.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.turingpi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>64</title>
-      <link>https://turing-machines.github.io/tags/64/</link>
+      <link>https://docs.turingpi.com/tags/64/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/64/</guid>
+      <guid>https://docs.turingpi.com/tags/64/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ansible</title>
-      <link>https://turing-machines.github.io/tags/ansible/</link>
+      <link>https://docs.turingpi.com/tags/ansible/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/ansible/</guid>
+      <guid>https://docs.turingpi.com/tags/ansible/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cmb</title>
-      <link>https://turing-machines.github.io/tags/cmb/</link>
+      <link>https://docs.turingpi.com/tags/cmb/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/cmb/</guid>
+      <guid>https://docs.turingpi.com/tags/cmb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cni</title>
-      <link>https://turing-machines.github.io/tags/cni/</link>
+      <link>https://docs.turingpi.com/tags/cni/</link>
       <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/cni/</guid>
+      <guid>https://docs.turingpi.com/tags/cni/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dhcpd</title>
-      <link>https://turing-machines.github.io/tags/dhcpd/</link>
+      <link>https://docs.turingpi.com/tags/dhcpd/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/dhcpd/</guid>
+      <guid>https://docs.turingpi.com/tags/dhcpd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>https://turing-machines.github.io/tags/docker/</link>
+      <link>https://docs.turingpi.com/tags/docker/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/docker/</guid>
+      <guid>https://docs.turingpi.com/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>faq</title>
-      <link>https://turing-machines.github.io/tags/faq/</link>
+      <link>https://docs.turingpi.com/tags/faq/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/faq/</guid>
+      <guid>https://docs.turingpi.com/tags/faq/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>https://turing-machines.github.io/tags/github/</link>
+      <link>https://docs.turingpi.com/tags/github/</link>
       <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/github/</guid>
+      <guid>https://docs.turingpi.com/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>helm</title>
-      <link>https://turing-machines.github.io/tags/helm/</link>
+      <link>https://docs.turingpi.com/tags/helm/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/helm/</guid>
+      <guid>https://docs.turingpi.com/tags/helm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hypriot</title>
-      <link>https://turing-machines.github.io/tags/hypriot/</link>
+      <link>https://docs.turingpi.com/tags/hypriot/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/hypriot/</guid>
+      <guid>https://docs.turingpi.com/tags/hypriot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>i2c</title>
-      <link>https://turing-machines.github.io/tags/i2c/</link>
+      <link>https://docs.turingpi.com/tags/i2c/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/i2c/</guid>
+      <guid>https://docs.turingpi.com/tags/i2c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>istio</title>
-      <link>https://turing-machines.github.io/tags/istio/</link>
+      <link>https://docs.turingpi.com/tags/istio/</link>
       <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/istio/</guid>
+      <guid>https://docs.turingpi.com/tags/istio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kubernetes</title>
-      <link>https://turing-machines.github.io/tags/kubernetes/</link>
+      <link>https://docs.turingpi.com/tags/kubernetes/</link>
       <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/kubernetes/</guid>
+      <guid>https://docs.turingpi.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kustomize</title>
-      <link>https://turing-machines.github.io/tags/kustomize/</link>
+      <link>https://docs.turingpi.com/tags/kustomize/</link>
       <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/kustomize/</guid>
+      <guid>https://docs.turingpi.com/tags/kustomize/</guid>
       <description></description>
     </item>
     
     <item>
       <title>portieris</title>
-      <link>https://turing-machines.github.io/tags/portieris/</link>
+      <link>https://docs.turingpi.com/tags/portieris/</link>
       <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/portieris/</guid>
+      <guid>https://docs.turingpi.com/tags/portieris/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rpi</title>
-      <link>https://turing-machines.github.io/tags/rpi/</link>
+      <link>https://docs.turingpi.com/tags/rpi/</link>
       <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/rpi/</guid>
+      <guid>https://docs.turingpi.com/tags/rpi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rtc</title>
-      <link>https://turing-machines.github.io/tags/rtc/</link>
+      <link>https://docs.turingpi.com/tags/rtc/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/rtc/</guid>
+      <guid>https://docs.turingpi.com/tags/rtc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>security</title>
-      <link>https://turing-machines.github.io/tags/security/</link>
+      <link>https://docs.turingpi.com/tags/security/</link>
       <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/security/</guid>
+      <guid>https://docs.turingpi.com/tags/security/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sonobuoy</title>
-      <link>https://turing-machines.github.io/tags/sonobuoy/</link>
+      <link>https://docs.turingpi.com/tags/sonobuoy/</link>
       <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/sonobuoy/</guid>
+      <guid>https://docs.turingpi.com/tags/sonobuoy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>specs</title>
-      <link>https://turing-machines.github.io/tags/specs/</link>
+      <link>https://docs.turingpi.com/tags/specs/</link>
       <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/specs/</guid>
+      <guid>https://docs.turingpi.com/tags/specs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test-infra</title>
-      <link>https://turing-machines.github.io/tags/test-infra/</link>
+      <link>https://docs.turingpi.com/tags/test-infra/</link>
       <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/test-infra/</guid>
+      <guid>https://docs.turingpi.com/tags/test-infra/</guid>
       <description></description>
     </item>
     
     <item>
       <title>testing</title>
-      <link>https://turing-machines.github.io/tags/testing/</link>
+      <link>https://docs.turingpi.com/tags/testing/</link>
       <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/testing/</guid>
+      <guid>https://docs.turingpi.com/tags/testing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>turing_pi</title>
-      <link>https://turing-machines.github.io/tags/turing_pi/</link>
+      <link>https://docs.turingpi.com/tags/turing_pi/</link>
       <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/turing_pi/</guid>
+      <guid>https://docs.turingpi.com/tags/turing_pi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vault</title>
-      <link>https://turing-machines.github.io/tags/vault/</link>
+      <link>https://docs.turingpi.com/tags/vault/</link>
       <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/tags/vault/</guid>
+      <guid>https://docs.turingpi.com/tags/vault/</guid>
       <description></description>
     </item>
     

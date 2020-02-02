@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Helm &amp; Maintenance on Turing Machines Documentation</title>
-    <link>https://turing-machines.github.io/maintenance/</link>
+    <link>https://docs.turingpi.com/maintenance/</link>
     <description>Recent content in Helm &amp; Maintenance on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://turing-machines.github.io/maintenance/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.turingpi.com/maintenance/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Deply Helm and Tiller on PI Cluster</title>
-      <link>https://turing-machines.github.io/maintenance/children/2018-07-13-a/</link>
+      <link>https://docs.turingpi.com/maintenance/children/2018-07-13-a/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/maintenance/children/2018-07-13-a/</guid>
+      <guid>https://docs.turingpi.com/maintenance/children/2018-07-13-a/</guid>
       <description>&lt;p&gt;The main purpose of this exercise is to be able to use Helm on the Rapsberry PI Cluster.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Use github repo as helm chart repository</title>
-      <link>https://turing-machines.github.io/maintenance/children/2018-07-11-a/</link>
+      <link>https://docs.turingpi.com/maintenance/children/2018-07-11-a/</link>
       <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/maintenance/children/2018-07-11-a/</guid>
+      <guid>https://docs.turingpi.com/maintenance/children/2018-07-11-a/</guid>
       <description>&lt;p&gt;In order to be able use Helm charts the &amp;ldquo;normal&amp;rdquo; way, it is need to buid your own helm repository.
 The goal of this post is to transform a github repo into a helm repo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Upgrade RPI Kubernetes cluster to 1.12</title>
-      <link>https://turing-machines.github.io/maintenance/children/2018-09-28-a/</link>
+      <link>https://docs.turingpi.com/maintenance/children/2018-09-28-a/</link>
       <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/maintenance/children/2018-09-28-a/</guid>
+      <guid>https://docs.turingpi.com/maintenance/children/2018-09-28-a/</guid>
       <description>&lt;p&gt;The new Kubernetes 1.12 is out. THe goal is to update my two clusters to 1.12
 using kubeadm 1.12&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Compile and Test SONOBUOY</title>
-      <link>https://turing-machines.github.io/maintenance/children/2018-07-02-a/</link>
+      <link>https://docs.turingpi.com/maintenance/children/2018-07-02-a/</link>
       <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/maintenance/children/2018-07-02-a/</guid>
+      <guid>https://docs.turingpi.com/maintenance/children/2018-07-02-a/</guid>
       <description>&lt;p&gt;Sonobouy, deploys in a Kubernetes cluster and helps to assesse the compliance of that cluster&lt;/p&gt;</description>
     </item>
     

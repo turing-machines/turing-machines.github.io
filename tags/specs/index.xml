@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>specs on Turing Machines Documentation</title>
-    <link>https://turing-machines.github.io/tags/specs/</link>
+    <link>https://docs.turingpi.com/tags/specs/</link>
     <description>Recent content in specs on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Oct 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://turing-machines.github.io/tags/specs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.turingpi.com/tags/specs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Specs</title>
-      <link>https://turing-machines.github.io/turing_pi/children/specs/</link>
+      <link>https://docs.turingpi.com/turing_pi/children/specs/</link>
       <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/turing_pi/children/specs/</guid>
+      <guid>https://docs.turingpi.com/turing_pi/children/specs/</guid>
       <description>&lt;p&gt;Turing Pi specifications&lt;/p&gt;</description>
     </item>
     

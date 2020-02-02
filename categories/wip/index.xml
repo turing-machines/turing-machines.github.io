@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wip on Turing Machines Documentation</title>
-    <link>https://turing-machines.github.io/categories/wip/</link>
+    <link>https://docs.turingpi.com/categories/wip/</link>
     <description>Recent content in wip on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 18 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://turing-machines.github.io/categories/wip/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.turingpi.com/categories/wip/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Compile and Test Portieris</title>
-      <link>https://turing-machines.github.io/advanced/children/2018-07-18-a/</link>
+      <link>https://docs.turingpi.com/advanced/children/2018-07-18-a/</link>
       <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/advanced/children/2018-07-18-a/</guid>
+      <guid>https://docs.turingpi.com/advanced/children/2018-07-18-a/</guid>
       <description>&lt;p&gt;One of the biggest security risks related to Kubernetes are often linked to
 the fact that it is really hard to ensure that only &amp;ldquo;approved&amp;rdquo; images are
 deployed in your Kubernetes cluster. The goal here is to leverage Notary
@@ -25,19 +25,19 @@ and the a project called &amp;ldquo;Portieris&amp;rdquo; created by IBM.&lt;/p&g
     
     <item>
       <title>Add Persistency Volume to Turing Pi</title>
-      <link>https://turing-machines.github.io/docker_kubernetes/children/2018-07-08-a/</link>
+      <link>https://docs.turingpi.com/docker_kubernetes/children/2018-07-08-a/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/docker_kubernetes/children/2018-07-08-a/</guid>
+      <guid>https://docs.turingpi.com/docker_kubernetes/children/2018-07-08-a/</guid>
       <description>&lt;p&gt;In order to install Prometheus, NATS, Cassandra using Kubernetes, we need to first create Persistency Volumes&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Installing Hypriot OS</title>
-      <link>https://turing-machines.github.io/advanced/children/os_64_bits/</link>
+      <link>https://docs.turingpi.com/advanced/children/os_64_bits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/advanced/children/os_64_bits/</guid>
+      <guid>https://docs.turingpi.com/advanced/children/os_64_bits/</guid>
       <description>&lt;p&gt;Also ARM processor on the Raspberry PI 3B+ is a 64 bit processor,
 because the board is only equipped with 1G of RAM, a 64 bit operating system
 is not really needed except when&amp;hellip;.&lt;/p&gt;</description>
@@ -45,20 +45,20 @@ is not really needed except when&amp;hellip;.&lt;/p&gt;</description>
     
     <item>
       <title>Upgrade RPI Kubernetes cluster to 1.12</title>
-      <link>https://turing-machines.github.io/maintenance/children/2018-09-28-a/</link>
+      <link>https://docs.turingpi.com/maintenance/children/2018-09-28-a/</link>
       <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/maintenance/children/2018-09-28-a/</guid>
+      <guid>https://docs.turingpi.com/maintenance/children/2018-09-28-a/</guid>
       <description>&lt;p&gt;The new Kubernetes 1.12 is out. THe goal is to update my two clusters to 1.12
 using kubeadm 1.12&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Setting up DHCPD on Turing Master</title>
-      <link>https://turing-machines.github.io/os_installation/children/setup_dhcpd/</link>
+      <link>https://docs.turingpi.com/os_installation/children/setup_dhcpd/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/os_installation/children/setup_dhcpd/</guid>
+      <guid>https://docs.turingpi.com/os_installation/children/setup_dhcpd/</guid>
       <description>&lt;p&gt;This tutorial how to setup DHCPD and NAT so that the slave PI can access the
 internet through the NAT (ETH0-&amp;gt;WLAN0) running on Turing Master. This tutorial
 also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs.&lt;/p&gt;</description>
@@ -66,10 +66,10 @@ also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs
     
     <item>
       <title>Build and Deploy Kubernetes Kustomize</title>
-      <link>https://turing-machines.github.io/advanced/children/2018-07-29-a/</link>
+      <link>https://docs.turingpi.com/advanced/children/2018-07-29-a/</link>
       <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/advanced/children/2018-07-29-a/</guid>
+      <guid>https://docs.turingpi.com/advanced/children/2018-07-29-a/</guid>
       <description>&lt;p&gt;kustomize seems to help the setup of multiple clusters by removing copy paste accross cluster
 and still keeping the configuration file has plain yaml instead of the template like it
 is often the case with t&lt;/p&gt;</description>
@@ -77,20 +77,20 @@ is often the case with t&lt;/p&gt;</description>
     
     <item>
       <title>Build and Deploy Kubernetes test-infra</title>
-      <link>https://turing-machines.github.io/advanced/children/2018-07-30-a/</link>
+      <link>https://docs.turingpi.com/advanced/children/2018-07-30-a/</link>
       <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/advanced/children/2018-07-30-a/</guid>
+      <guid>https://docs.turingpi.com/advanced/children/2018-07-30-a/</guid>
       <description>&lt;p&gt;test-infra seems to somewhat overlap with sonobuoy features. The purpose of this post is
 to fetch the code, compile and deploy it on a Kubernetes cluster.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Build and Deploy Kubernetes Istio</title>
-      <link>https://turing-machines.github.io/advanced/children/2018-07-31-a/</link>
+      <link>https://docs.turingpi.com/advanced/children/2018-07-31-a/</link>
       <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/advanced/children/2018-07-31-a/</guid>
+      <guid>https://docs.turingpi.com/advanced/children/2018-07-31-a/</guid>
       <description>&lt;p&gt;Istio is aiming at improving security of the containers. One of the key aspects
 is the end to end encryption of the commnucation, the role of citadel to ensure the
 management of the certificates, the renewal of the certificates.
@@ -100,10 +100,10 @@ leverage it in my day to day work.&lt;/p&gt;</description>
     
     <item>
       <title>Build and Deploy Kubernetes Hashicorp Vault</title>
-      <link>https://turing-machines.github.io/advanced/children/2018-08-01-a/</link>
+      <link>https://docs.turingpi.com/advanced/children/2018-08-01-a/</link>
       <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/advanced/children/2018-08-01-a/</guid>
+      <guid>https://docs.turingpi.com/advanced/children/2018-08-01-a/</guid>
       <description>&lt;p&gt;Vault is aiming at improving security of the containers by rotating token and credential
 much more often than usual. Looks like it is especially effectiv to help rotate passwords
 used to access internal databases.&lt;/p&gt;</description>

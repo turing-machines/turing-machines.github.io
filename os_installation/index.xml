@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Operating System on Turing Machines Documentation</title>
-    <link>https://turing-machines.github.io/os_installation/</link>
+    <link>https://docs.turingpi.com/os_installation/</link>
     <description>Recent content in Operating System on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://turing-machines.github.io/os_installation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.turingpi.com/os_installation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OS Installation on Turing Master</title>
-      <link>https://turing-machines.github.io/os_installation/children/master_pi/</link>
+      <link>https://docs.turingpi.com/os_installation/children/master_pi/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/os_installation/children/master_pi/</guid>
+      <guid>https://docs.turingpi.com/os_installation/children/master_pi/</guid>
       <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Setting up DHCPD on Turing Master</title>
-      <link>https://turing-machines.github.io/os_installation/children/setup_dhcpd/</link>
+      <link>https://docs.turingpi.com/os_installation/children/setup_dhcpd/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/os_installation/children/setup_dhcpd/</guid>
+      <guid>https://docs.turingpi.com/os_installation/children/setup_dhcpd/</guid>
       <description>&lt;p&gt;This tutorial how to setup DHCPD and NAT so that the slave PI can access the
 internet through the NAT (ETH0-&amp;gt;WLAN0) running on Turing Master. This tutorial
 also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs.&lt;/p&gt;</description>
@@ -33,19 +33,19 @@ also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs
     
     <item>
       <title>OS Installation on Turing Worker</title>
-      <link>https://turing-machines.github.io/os_installation/children/worker_pi/</link>
+      <link>https://docs.turingpi.com/os_installation/children/worker_pi/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/os_installation/children/worker_pi/</guid>
+      <guid>https://docs.turingpi.com/os_installation/children/worker_pi/</guid>
       <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Using Ansible to manage Turing Pi</title>
-      <link>https://turing-machines.github.io/os_installation/children/ansible/</link>
+      <link>https://docs.turingpi.com/os_installation/children/ansible/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/os_installation/children/ansible/</guid>
+      <guid>https://docs.turingpi.com/os_installation/children/ansible/</guid>
       <description>&lt;p&gt;Even if the ultimate goal is to manage completly the cluster using Kubernetes,
 the ability to use Ansible during debug process is very usefull.
 The goal here is to setup ansible inventory, basic playbooks.&lt;/p&gt;</description>
@@ -53,10 +53,10 @@ The goal here is to setup ansible inventory, basic playbooks.&lt;/p&gt;</descrip
     
     <item>
       <title>Create a Turing Pi Rescue Dongle</title>
-      <link>https://turing-machines.github.io/os_installation/children/dongle/</link>
+      <link>https://docs.turingpi.com/os_installation/children/dongle/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/os_installation/children/dongle/</guid>
+      <guid>https://docs.turingpi.com/os_installation/children/dongle/</guid>
       <description>&lt;p&gt;I encountered multiple issues trying to repartition my SD on my PI.
 Because the / directory is mounted, it never really worked safely for me
 to use fdisk. Morevoer some of the powerfull tools such as gparted need

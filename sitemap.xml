@@ -3,320 +3,320 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://turing-machines.github.io/turing_pi/children/specs/</loc>
+    <loc>https://docs.turingpi.com/turing_pi/children/specs/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/turing_pi/</loc>
+    <loc>https://docs.turingpi.com/turing_pi/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/turing_pi/children/i2c_cluster_bus/</loc>
+    <loc>https://docs.turingpi.com/turing_pi/children/i2c_cluster_bus/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/docker_kubernetes/children/2018-07-03-a/</loc>
+    <loc>https://docs.turingpi.com/docker_kubernetes/children/2018-07-03-a/</loc>
     <lastmod>2018-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/os_installation/</loc>
+    <loc>https://docs.turingpi.com/os_installation/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/advanced/children/2018-07-18-a/</loc>
+    <loc>https://docs.turingpi.com/advanced/children/2018-07-18-a/</loc>
     <lastmod>2018-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/maintenance/children/2018-07-13-a/</loc>
+    <loc>https://docs.turingpi.com/maintenance/children/2018-07-13-a/</loc>
     <lastmod>2018-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/maintenance/children/2018-07-11-a/</loc>
+    <loc>https://docs.turingpi.com/maintenance/children/2018-07-11-a/</loc>
     <lastmod>2018-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/docker_kubernetes/children/2018-07-08-a/</loc>
+    <loc>https://docs.turingpi.com/docker_kubernetes/children/2018-07-08-a/</loc>
     <lastmod>2018-07-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/os_installation/children/master_pi/</loc>
+    <loc>https://docs.turingpi.com/os_installation/children/master_pi/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/advanced/children/os_64_bits/</loc>
+    <loc>https://docs.turingpi.com/advanced/children/os_64_bits/</loc>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/docker_kubernetes/</loc>
+    <loc>https://docs.turingpi.com/docker_kubernetes/</loc>
     <lastmod>2018-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/</loc>
+    <loc>https://docs.turingpi.com/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/docker_kubernetes/children/2018-07-14-a/</loc>
+    <loc>https://docs.turingpi.com/docker_kubernetes/children/2018-07-14-a/</loc>
     <lastmod>2018-07-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/maintenance/</loc>
+    <loc>https://docs.turingpi.com/maintenance/</loc>
     <lastmod>2018-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/maintenance/children/2018-09-28-a/</loc>
+    <loc>https://docs.turingpi.com/maintenance/children/2018-09-28-a/</loc>
     <lastmod>2018-09-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/os_installation/children/setup_dhcpd/</loc>
+    <loc>https://docs.turingpi.com/os_installation/children/setup_dhcpd/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/turing_pi/children/cluster_assembly/</loc>
+    <loc>https://docs.turingpi.com/turing_pi/children/cluster_assembly/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/docker_kubernetes/children/2018-06-19-a/</loc>
+    <loc>https://docs.turingpi.com/docker_kubernetes/children/2018-06-19-a/</loc>
     <lastmod>2018-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/docker_kubernetes/children/2018-07-12-a/</loc>
+    <loc>https://docs.turingpi.com/docker_kubernetes/children/2018-07-12-a/</loc>
     <lastmod>2018-07-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/os_installation/children/worker_pi/</loc>
+    <loc>https://docs.turingpi.com/os_installation/children/worker_pi/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/advanced/</loc>
+    <loc>https://docs.turingpi.com/advanced/</loc>
     <lastmod>2018-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/os_installation/children/ansible/</loc>
+    <loc>https://docs.turingpi.com/os_installation/children/ansible/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/advanced/children/2018-06-30-a/</loc>
+    <loc>https://docs.turingpi.com/advanced/children/2018-06-30-a/</loc>
     <lastmod>2018-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/advanced/children/2018-07-29-a/</loc>
+    <loc>https://docs.turingpi.com/advanced/children/2018-07-29-a/</loc>
     <lastmod>2018-07-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/maintenance/children/2018-07-02-a/</loc>
+    <loc>https://docs.turingpi.com/maintenance/children/2018-07-02-a/</loc>
     <lastmod>2018-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/os_installation/children/dongle/</loc>
+    <loc>https://docs.turingpi.com/os_installation/children/dongle/</loc>
     <lastmod>2018-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/advanced/children/2018-07-30-a/</loc>
+    <loc>https://docs.turingpi.com/advanced/children/2018-07-30-a/</loc>
     <lastmod>2018-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/advanced/children/2018-07-31-a/</loc>
+    <loc>https://docs.turingpi.com/advanced/children/2018-07-31-a/</loc>
     <lastmod>2018-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/faq/</loc>
+    <loc>https://docs.turingpi.com/faq/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/advanced/children/2018-08-01-a/</loc>
+    <loc>https://docs.turingpi.com/advanced/children/2018-08-01-a/</loc>
     <lastmod>2018-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/64/</loc>
+    <loc>https://docs.turingpi.com/tags/64/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/categories/</loc>
+    <loc>https://docs.turingpi.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/</loc>
+    <loc>https://docs.turingpi.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/ansible/</loc>
+    <loc>https://docs.turingpi.com/tags/ansible/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/cmb/</loc>
+    <loc>https://docs.turingpi.com/tags/cmb/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/cni/</loc>
+    <loc>https://docs.turingpi.com/tags/cni/</loc>
     <lastmod>2018-07-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/dhcpd/</loc>
+    <loc>https://docs.turingpi.com/tags/dhcpd/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/docker/</loc>
+    <loc>https://docs.turingpi.com/tags/docker/</loc>
     <lastmod>2018-07-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/faq/</loc>
+    <loc>https://docs.turingpi.com/tags/faq/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/github/</loc>
+    <loc>https://docs.turingpi.com/tags/github/</loc>
     <lastmod>2018-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/helm/</loc>
+    <loc>https://docs.turingpi.com/tags/helm/</loc>
     <lastmod>2018-07-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/hypriot/</loc>
+    <loc>https://docs.turingpi.com/tags/hypriot/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/i2c/</loc>
+    <loc>https://docs.turingpi.com/tags/i2c/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/istio/</loc>
+    <loc>https://docs.turingpi.com/tags/istio/</loc>
     <lastmod>2018-07-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/kubernetes/</loc>
+    <loc>https://docs.turingpi.com/tags/kubernetes/</loc>
     <lastmod>2018-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/kustomize/</loc>
+    <loc>https://docs.turingpi.com/tags/kustomize/</loc>
     <lastmod>2018-07-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/portieris/</loc>
+    <loc>https://docs.turingpi.com/tags/portieris/</loc>
     <lastmod>2018-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/rpi/</loc>
+    <loc>https://docs.turingpi.com/tags/rpi/</loc>
     <lastmod>2018-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/rtc/</loc>
+    <loc>https://docs.turingpi.com/tags/rtc/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/security/</loc>
+    <loc>https://docs.turingpi.com/tags/security/</loc>
     <lastmod>2018-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/sonobuoy/</loc>
+    <loc>https://docs.turingpi.com/tags/sonobuoy/</loc>
     <lastmod>2018-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/specs/</loc>
+    <loc>https://docs.turingpi.com/tags/specs/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/test-infra/</loc>
+    <loc>https://docs.turingpi.com/tags/test-infra/</loc>
     <lastmod>2018-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/testing/</loc>
+    <loc>https://docs.turingpi.com/tags/testing/</loc>
     <lastmod>2018-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/turing_pi/</loc>
+    <loc>https://docs.turingpi.com/tags/turing_pi/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/tags/vault/</loc>
+    <loc>https://docs.turingpi.com/tags/vault/</loc>
     <lastmod>2018-08-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/categories/wiki/</loc>
+    <loc>https://docs.turingpi.com/categories/wiki/</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://turing-machines.github.io/categories/wip/</loc>
+    <loc>https://docs.turingpi.com/categories/wip/</loc>
     <lastmod>2018-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

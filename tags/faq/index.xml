@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>faq on Turing Machines Documentation</title>
-    <link>https://turing-machines.github.io/tags/faq/</link>
+    <link>https://docs.turingpi.com/tags/faq/</link>
     <description>Recent content in faq on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://turing-machines.github.io/tags/faq/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.turingpi.com/tags/faq/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>FAQ</title>
-      <link>https://turing-machines.github.io/faq/</link>
+      <link>https://docs.turingpi.com/faq/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://turing-machines.github.io/faq/</guid>
+      <guid>https://docs.turingpi.com/faq/</guid>
       <description>1. What model Raspberry Pi is in this? Supported models with eMMC and without
  Raspberry Pi Compute Module 1 Raspberry Pi Compute Module 3 Raspberry Pi Compute Module 3+  2. Будет ли поддержка Raspberry Pi 4? Как только поступят в продажу Raspberry Pi 4 Compute Modules в короткие сроки будет версия платы с их поддержкой
 3. How to the compute modules communicate with each other? We use onboard 1 Gbps Ethernet switch within the nodes.</description>
