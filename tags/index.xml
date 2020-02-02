@@ -47,15 +47,6 @@
     </item>
     
     <item>
-      <title>dashboard</title>
-      <link>https://turing-machines.github.io/tags/dashboard/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/tags/dashboard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>dhcpd</title>
       <link>https://turing-machines.github.io/tags/dhcpd/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
@@ -83,29 +74,11 @@
     </item>
     
     <item>
-      <title>fluentd</title>
-      <link>https://turing-machines.github.io/tags/fluentd/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/tags/fluentd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>github</title>
       <link>https://turing-machines.github.io/tags/github/</link>
       <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://turing-machines.github.io/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>grafana</title>
-      <link>https://turing-machines.github.io/tags/grafana/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/tags/grafana/</guid>
       <description></description>
     </item>
     
@@ -148,7 +121,7 @@
     <item>
       <title>kubernetes</title>
       <link>https://turing-machines.github.io/tags/kubernetes/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://turing-machines.github.io/tags/kubernetes/</guid>
       <description></description>
@@ -164,15 +137,6 @@
     </item>
     
     <item>
-      <title>nats</title>
-      <link>https://turing-machines.github.io/tags/nats/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/tags/nats/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>portieris</title>
       <link>https://turing-machines.github.io/tags/portieris/</link>
       <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
@@ -182,18 +146,9 @@
     </item>
     
     <item>
-      <title>prometheus</title>
-      <link>https://turing-machines.github.io/tags/prometheus/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/tags/prometheus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>rpi</title>
       <link>https://turing-machines.github.io/tags/rpi/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://turing-machines.github.io/tags/rpi/</guid>
       <description></description>

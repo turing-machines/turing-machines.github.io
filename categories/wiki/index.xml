@@ -30,17 +30,6 @@
     </item>
     
     <item>
-      <title>Installing Turing Pi Kubeplay</title>
-      <link>https://turing-machines.github.io/applications/children/kubeplay/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/applications/children/kubeplay/</guid>
-      <description>&lt;p&gt;Install simplistic Kubeplay Application on the Turing Pi. It is a primitiv golang based server
-which get the user to go through the entire DevOps process (to build the docker image) and
-deploy it using Helm on Turing Pi.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Creating a Turing Pi Kubernetes Cluster</title>
       <link>https://turing-machines.github.io/docker_kubernetes/children/2018-07-03-a/</link>
       <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
@@ -56,15 +45,6 @@ deploy it using Helm on Turing Pi.&lt;/p&gt;</description>
       
       <guid>https://turing-machines.github.io/turing_pi/children/i2c_read_write/</guid>
       <description>&lt;p&gt;I2C read/write quick tutorial&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Installing Kubernetes Dashboard</title>
-      <link>https://turing-machines.github.io/applications/children/kubernetes_dashboard/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/applications/children/kubernetes_dashboard/</guid>
-      <description>&lt;p&gt;Install Kubernetes Dashboard on the Turing Pi&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -149,15 +129,6 @@ using kubeadm 1.12&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Installing Prometheus</title>
-      <link>https://turing-machines.github.io/applications/children/prometheus/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/applications/children/prometheus/</guid>
-      <description>&lt;p&gt;Install Prometheus on the Turing Pi&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Setting up DHCPD on Turing Master</title>
       <link>https://turing-machines.github.io/os_installation/children/setup_dhcpd/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
@@ -193,24 +164,6 @@ build a default SD image where cloud-init does 100% of the initialization work.&
     </item>
     
     <item>
-      <title>Installing NATS</title>
-      <link>https://turing-machines.github.io/applications/children/nats/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/applications/children/nats/</guid>
-      <description>&lt;p&gt;Install NATS on the Turing Pi&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Installing Grafana</title>
-      <link>https://turing-machines.github.io/applications/children/grafana/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/applications/children/grafana/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Install Grafana on the Turing Pi.&lt;/strong&gt; Grafana helps to plot the data in the system. It is an OSS like tools which helps to manage the Turing Pi cluster.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Enable docker Remote API</title>
       <link>https://turing-machines.github.io/docker_kubernetes/children/2018-07-12-a/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
@@ -228,15 +181,6 @@ For instance you can cross-build golang executable for ARM32v7 and transfer it t
       
       <guid>https://turing-machines.github.io/os_installation/children/worker_pi/</guid>
       <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Installing Kibana</title>
-      <link>https://turing-machines.github.io/applications/children/kibana/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://turing-machines.github.io/applications/children/kibana/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Install Kibana &amp;amp; fluentd on the Turing Pi.&lt;/strong&gt; Kibana is a good maintenance/OSS tools allowing traces and logs analysis.&lt;/p&gt;</description>
     </item>
     
     <item>
