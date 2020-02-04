@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="https://docs.turingpi.com/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="https://docs.turingpi.com/images/favicon.png" type="image/x-icon" />
-    <title>turing_pi :: Turing Machines Documentation</title>
+    <title>Add Raspberry Pi Compute Module as a worker :: Turing Machines Documentation</title>
 
     
     <link href="https://docs.turingpi.com/css/nucleus.css?1580834761" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tags/turing_pi/">
+  <body class="" data-url="/docker_kubernetes/children/add-worker/">
     <nav id="sidebar" class="">
 
 
@@ -174,7 +174,7 @@
   
     
     <li data-nav-id="/docker_kubernetes/" title="Kubernetes" class="dd-item 
-        
+        parent
         
         
         ">
@@ -255,7 +255,7 @@
  
   
     
-      <li data-nav-id="/docker_kubernetes/children/add-worker/" title="Add Raspberry Pi Compute Module as a worker" class="dd-item ">
+      <li data-nav-id="/docker_kubernetes/children/add-worker/" title="Add Raspberry Pi Compute Module as a worker" class="dd-item active">
         <a href="https://docs.turingpi.com/docker_kubernetes/children/add-worker/">
         Add a worker
         
@@ -392,6 +392,17 @@
               <div>
                 <div id="top-bar">
                 
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/turing-machines/docs/tree/master/content/docker_kubernetes/children/add-worker.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -406,7 +417,19 @@
                     
           
           
-            turing_pi
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://docs.turingpi.com/'>Turing Machines</a> > <a href='https://docs.turingpi.com/docker_kubernetes/'>Kubernetes</a> > Add Raspberry Pi Compute Module as a worker
+          
+        
+          
+        
           
         
                   </span>
@@ -414,7 +437,26 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#base-os">Base OS</a>
+<ul>
+<li><a href="#os">OS</a></li>
+<li><a href="#freeze-the-new-node-ip">Freeze the new node IP</a></li>
+<li><a href="#ssh-to-the-new-node">Ssh to the new node</a></li>
+<li><a href="#basic-hostname">Basic hostname</a></li>
+</ul></li>
+<li><a href="#install-kubeadm">Install kubeadm</a>
+<ul>
+<li><a href="#on-master-pi">On Master PI</a></li>
+<li><a href="#on-new-slave-pi">On New Slave PI</a></li>
+</ul></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -426,17 +468,101 @@
         
         <div id="body-inner">
           
-            <h1>turing_pi</h1>
+            <h1>Add Raspberry Pi Compute Module as a worker</h1>
           
 
         
 
 
+<p>During some of the manipulation of the partition table of
+my SD card, I ended up screwing up both my SD card and my backup Win32DiskImage backup.
+Moreover if your SD card is 32G, it takes around 30 minute to restore from backup.
+Hence the idea to come up with a way to build more resiliency in the cluster.
+Recreating a node from scratch should not take more than 10 mn. The propose procedure
+is still rather long because I did not push enough yet what the HypriotOS team, aka
+build a default SD image where cloud-init does 100% of the initialization work.</p>
 
+<h2 id="base-os">Base OS</h2>
+
+<p>Flash HypriotOS to SD and reboot Pi.</p>
+
+<h3 id="os">OS</h3>
+
+<pre><code>Flash the SD Card with HypriotOS
+Connect Pi through to the cluster switch
+</code></pre>
+
+<h3 id="freeze-the-new-node-ip">Freeze the new node IP</h3>
+
+<p>Access the Master PI, run <code>arp -a</code> and find the new IP.
+Freeze the new IP in the dhcpcd.conf</p>
+
+<pre><code class="language-bash">ssh &lt;masterip&gt;
+arp -a
+vi /etc/dhcp/dhcpd.conf
+</code></pre>
+
+<h3 id="ssh-to-the-new-node">Ssh to the new node</h3>
+
+<p>Access the node from the Master PI:</p>
+
+<pre><code class="language-bash">ssh 192.168.2.xxx
+docker ps
+</code></pre>
+
+<h3 id="basic-hostname">Basic hostname</h3>
+
+<p>Freeze your configuration</p>
+
+<pre><code class="language-bash">sudo apt-get remove --purge cloud-init
+sudo apt-get autoremove
+</code></pre>
+
+<p>Set the host name</p>
+
+<pre><code class="language-bash">sudo vi /etc/hosts
+sudo hostnamectl set-hostname &lt;xxx&gt;
+</code></pre>
+
+<h2 id="install-kubeadm">Install kubeadm</h2>
+
+<h3 id="on-master-pi">On Master PI</h3>
+
+<p>Firt access the kubemaster node and regenerate a token (if you did not use ttl=0 when using kubeadm init on the master):</p>
+
+<pre><code class="language-bash">kubeadm token create
+</code></pre>
+
+<h3 id="on-new-slave-pi">On New Slave PI</h3>
+
+<pre><code class="language-bash">sudo -i
+
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+echo &quot;deb http://apt.kubernetes.io/ kubernetes-xenial main&quot; &gt; /etc/apt/sources.list.d/kubernetes.list
+apt-get update &amp;&amp; apt-get install -y kubeadm kubectl kubelet
+</code></pre>
+
+<p>To help during the initialization phase, get kubeadm to download the images onto docker</p>
+
+<pre><code class="language-bash">kubeadm config images pull
+</code></pre>
+
+<p>Get the node to join the cluster</p>
+
+<pre><code class="language-bash">kubeadm join 192.168.2.1:6443 --token yyyyyy.xxxx --discovery-token-ca-cert-hash sha256:zzzz
+</code></pre>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<ul>
+<li>Will have to come back later and use cloud-init, create a clean &amp; small SD image for Win32DiskImage</li>
+<li>Will have to create more advanced partition on the SD card.</li>
+</ul>
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -536,6 +662,94 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -576,86 +790,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -682,8 +816,10 @@
 
 
         
+            <a class="nav nav-prev" href="https://docs.turingpi.com/docker_kubernetes/children/deploy-flannel/" title="Deploy Flannel in Turing Pi"> <i class="fas fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="https://docs.turingpi.com/turing_pi/" title="Turing Pi Basics" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="https://docs.turingpi.com/maintenance/" title="Helm &amp; Maintenance" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
         
     </div>
 
@@ -722,3 +858,4 @@
 
   </body>
 </html>
+

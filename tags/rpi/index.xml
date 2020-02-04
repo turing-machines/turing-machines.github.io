@@ -12,6 +12,39 @@
     
     
     <item>
+      <title>Add Persistent Volume to Turing Pi</title>
+      <link>https://docs.turingpi.com/docker_kubernetes/children/persistent-volume/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.turingpi.com/docker_kubernetes/children/persistent-volume/</guid>
+      <description>&lt;p&gt;In order to install Prometheus, NATS, Cassandra using Kubernetes, we need to first create Persistency Volumes&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Add Raspberry Pi Compute Module as a worker</title>
+      <link>https://docs.turingpi.com/docker_kubernetes/children/add-worker/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.turingpi.com/docker_kubernetes/children/add-worker/</guid>
+      <description>&lt;p&gt;During some of the manipulation of the partition table of
+my SD card, I ended up screwing up both my SD card and my backup Win32DiskImage backup.
+Moreover if your SD card is 32G, it takes around 30 minute to restore from backup.
+Hence the idea to come up with a way to build more resiliency in the cluster.
+Recreating a node from scratch should not take more than 10 mn. The propose procedure
+is still rather long because I did not push enough yet what the HypriotOS team, aka
+build a default SD image where cloud-init does 100% of the initialization work.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Assembly</title>
+      <link>https://docs.turingpi.com/turing_pi/children/cluster_assembly/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.turingpi.com/turing_pi/children/cluster_assembly/</guid>
+      <description>&lt;p&gt;This page contains tutorial to build a Turing Pi cluster&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Creating a Turing Pi Kubernetes Cluster</title>
       <link>https://docs.turingpi.com/docker_kubernetes/children/k8s_install/</link>
       <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
@@ -21,56 +54,23 @@
     </item>
     
     <item>
-      <title>Add Persistency Volume to Turing Pi</title>
-      <link>https://docs.turingpi.com/docker_kubernetes/children/2018-07-08-a/</link>
-      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/docker_kubernetes/children/2018-07-08-a/</guid>
-      <description>&lt;p&gt;In order to install Prometheus, NATS, Cassandra using Kubernetes, we need to first create Persistency Volumes&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Deploy Flannel in Turing Pi</title>
-      <link>https://docs.turingpi.com/docker_kubernetes/children/2018-07-14-a/</link>
-      <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
+      <link>https://docs.turingpi.com/docker_kubernetes/children/deploy-flannel/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.turingpi.com/docker_kubernetes/children/2018-07-14-a/</guid>
+      <guid>https://docs.turingpi.com/docker_kubernetes/children/deploy-flannel/</guid>
       <description>&lt;p&gt;In order to get the nodes and pods interface with each other accross the cluster.
 This post describes how I deployed Flannel acounting with the fact that some of the
 nodes have multiple interfaces (wlan0 and eth0).&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Upgrade Kubernetes cluster</title>
+      <title>Upgrade Kubernetes</title>
       <link>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</link>
       <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</guid>
       <description>Master node upgrade using kubeadm # apt-mark unhold kubeadm &amp;amp;&amp;amp; \ &amp;gt; apt-get update &amp;amp;&amp;amp; apt-get install -y kubeadm &amp;amp;&amp;amp; \ &amp;gt; apt-mark hold kubeadm kubeadm was already not hold. Hit:2 http://raspbian.raspberrypi.org/raspbian stretch InRelease Hit:3 https://download.docker.com/linux/raspbian stretch InRelease Hit:1 https://packages.cloud.google.com/apt kubernetes-xenial InRelease Hit:5 http://archive.raspberrypi.org/debian stretch InRelease Hit:4 https://packagecloud.io/Hypriot/rpi/debian stretch InRelease Reading package lists... Done Reading package lists... Done Building dependency tree Reading state information... Done The following packages will be upgraded: kubeadm 1 upgraded, 0 newly installed, 0 to remove and 38 not upgraded.</description>
-    </item>
-    
-    <item>
-      <title>Assembly</title>
-      <link>https://docs.turingpi.com/turing_pi/children/cluster_assembly/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/turing_pi/children/cluster_assembly/</guid>
-      <description>&lt;p&gt;This page contains tutorial to build a Turing Pi cluster&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Add RPI Compute Module node to Turing Pi in 10 min</title>
-      <link>https://docs.turingpi.com/docker_kubernetes/children/2018-06-19-a/</link>
-      <pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/docker_kubernetes/children/2018-06-19-a/</guid>
-      <description>&lt;p&gt;During some of the manipulation of the partition table of
-my SD card, I ended up screwing up both my SD card and my backup Win32DiskImage backup.
-Moreover if your SD card is 32G, it takes around 30 minute to restore from backup.
-Hence the idea to come up with a way to build more resiliency in the cluster.
-Recreating a node from scratch should not take more than 10 mn. The propose procedure
-is still rather long because I did not push enough yet what the HypriotOS team, aka
-build a default SD image where cloud-init does 100% of the initialization work.&lt;/p&gt;</description>
     </item>
     
   </channel>

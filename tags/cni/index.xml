@@ -6,17 +6,17 @@
     <description>Recent content in cni on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://docs.turingpi.com/tags/cni/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Deploy Flannel in Turing Pi</title>
-      <link>https://docs.turingpi.com/docker_kubernetes/children/2018-07-14-a/</link>
-      <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
+      <link>https://docs.turingpi.com/docker_kubernetes/children/deploy-flannel/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.turingpi.com/docker_kubernetes/children/2018-07-14-a/</guid>
+      <guid>https://docs.turingpi.com/docker_kubernetes/children/deploy-flannel/</guid>
       <description>&lt;p&gt;In order to get the nodes and pods interface with each other accross the cluster.
 This post describes how I deployed Flannel acounting with the fact that some of the
 nodes have multiple interfaces (wlan0 and eth0).&lt;/p&gt;</description>

@@ -21,31 +21,31 @@
     </item>
     
     <item>
-      <title>Add Persistency Volume to Turing Pi</title>
-      <link>https://docs.turingpi.com/docker_kubernetes/children/2018-07-08-a/</link>
-      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
+      <title>Add Persistent Volume to Turing Pi</title>
+      <link>https://docs.turingpi.com/docker_kubernetes/children/persistent-volume/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.turingpi.com/docker_kubernetes/children/2018-07-08-a/</guid>
+      <guid>https://docs.turingpi.com/docker_kubernetes/children/persistent-volume/</guid>
       <description>&lt;p&gt;In order to install Prometheus, NATS, Cassandra using Kubernetes, we need to first create Persistency Volumes&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Deploy Flannel in Turing Pi</title>
-      <link>https://docs.turingpi.com/docker_kubernetes/children/2018-07-14-a/</link>
-      <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
+      <link>https://docs.turingpi.com/docker_kubernetes/children/deploy-flannel/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.turingpi.com/docker_kubernetes/children/2018-07-14-a/</guid>
+      <guid>https://docs.turingpi.com/docker_kubernetes/children/deploy-flannel/</guid>
       <description>&lt;p&gt;In order to get the nodes and pods interface with each other accross the cluster.
 This post describes how I deployed Flannel acounting with the fact that some of the
 nodes have multiple interfaces (wlan0 and eth0).&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Add RPI Compute Module node to Turing Pi in 10 min</title>
-      <link>https://docs.turingpi.com/docker_kubernetes/children/2018-06-19-a/</link>
-      <pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate>
+      <title>Add Raspberry Pi Compute Module as a worker</title>
+      <link>https://docs.turingpi.com/docker_kubernetes/children/add-worker/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.turingpi.com/docker_kubernetes/children/2018-06-19-a/</guid>
+      <guid>https://docs.turingpi.com/docker_kubernetes/children/add-worker/</guid>
       <description>&lt;p&gt;During some of the manipulation of the partition table of
 my SD card, I ended up screwing up both my SD card and my backup Win32DiskImage backup.
 Moreover if your SD card is 32G, it takes around 30 minute to restore from backup.

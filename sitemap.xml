@@ -23,13 +23,13 @@
   </url>
   
   <url>
-    <loc>https://docs.turingpi.com/maintenance/children/helm-install/</loc>
+    <loc>https://docs.turingpi.com/docker_kubernetes/children/persistent-volume/</loc>
     <lastmod>2020-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.turingpi.com/docker_kubernetes/children/2018-07-08-a/</loc>
-    <lastmod>2018-07-08T00:00:00+00:00</lastmod>
+    <loc>https://docs.turingpi.com/maintenance/children/helm-install/</loc>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -43,8 +43,8 @@
   </url>
   
   <url>
-    <loc>https://docs.turingpi.com/docker_kubernetes/children/2018-07-14-a/</loc>
-    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
+    <loc>https://docs.turingpi.com/docker_kubernetes/children/deploy-flannel/</loc>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -53,18 +53,18 @@
   </url>
   
   <url>
-    <loc>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</loc>
+    <loc>https://docs.turingpi.com/docker_kubernetes/children/add-worker/</loc>
     <lastmod>2020-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs.turingpi.com/turing_pi/children/cluster_assembly/</loc>
-    <lastmod>2018-07-07T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.turingpi.com/docker_kubernetes/children/2018-06-19-a/</loc>
-    <lastmod>2018-06-19T00:00:00+00:00</lastmod>
+    <loc>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</loc>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -90,7 +90,7 @@
   
   <url>
     <loc>https://docs.turingpi.com/tags/cni/</loc>
-    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -150,7 +150,7 @@
   
   <url>
     <loc>https://docs.turingpi.com/categories/wip/</loc>
-    <lastmod>2018-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
