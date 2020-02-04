@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>Upgrade RPI Kubernetes cluster</title>
+      <title>Upgrade Kubernetes cluster</title>
       <link>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</link>
       <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       

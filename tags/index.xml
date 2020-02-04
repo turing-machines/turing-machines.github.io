@@ -11,15 +11,6 @@
     
     
     <item>
-      <title>64</title>
-      <link>https://docs.turingpi.com/tags/64/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/tags/64/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>cmb</title>
       <link>https://docs.turingpi.com/tags/cmb/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
@@ -65,38 +56,11 @@
     </item>
     
     <item>
-      <title>istio</title>
-      <link>https://docs.turingpi.com/tags/istio/</link>
-      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/tags/istio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>kubernetes</title>
       <link>https://docs.turingpi.com/tags/kubernetes/</link>
       <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kustomize</title>
-      <link>https://docs.turingpi.com/tags/kustomize/</link>
-      <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/tags/kustomize/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>portieris</title>
-      <link>https://docs.turingpi.com/tags/portieris/</link>
-      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/tags/portieris/</guid>
       <description></description>
     </item>
     
@@ -119,24 +83,6 @@
     </item>
     
     <item>
-      <title>security</title>
-      <link>https://docs.turingpi.com/tags/security/</link>
-      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/tags/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sonobuoy</title>
-      <link>https://docs.turingpi.com/tags/sonobuoy/</link>
-      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/tags/sonobuoy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>specs</title>
       <link>https://docs.turingpi.com/tags/specs/</link>
       <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
@@ -146,38 +92,11 @@
     </item>
     
     <item>
-      <title>test-infra</title>
-      <link>https://docs.turingpi.com/tags/test-infra/</link>
-      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/tags/test-infra/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>testing</title>
-      <link>https://docs.turingpi.com/tags/testing/</link>
-      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/tags/testing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>turing_pi</title>
       <link>https://docs.turingpi.com/tags/turing_pi/</link>
       <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/tags/turing_pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vault</title>
-      <link>https://docs.turingpi.com/tags/vault/</link>
-      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/tags/vault/</guid>
       <description></description>
     </item>
     

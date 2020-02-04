@@ -6,22 +6,10 @@
     <description>Recent content in wip on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://docs.turingpi.com/categories/wip/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Compile and Test Portieris</title>
-      <link>https://docs.turingpi.com/advanced/children/2018-07-18-a/</link>
-      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/advanced/children/2018-07-18-a/</guid>
-      <description>&lt;p&gt;One of the biggest security risks related to Kubernetes are often linked to
-the fact that it is really hard to ensure that only &amp;ldquo;approved&amp;rdquo; images are
-deployed in your Kubernetes cluster. The goal here is to leverage Notary
-and the a project called &amp;ldquo;Portieris&amp;rdquo; created by IBM.&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Add Persistency Volume to Turing Pi</title>
@@ -33,68 +21,12 @@ and the a project called &amp;ldquo;Portieris&amp;rdquo; created by IBM.&lt;/p&g
     </item>
     
     <item>
-      <title>Installing Hypriot OS</title>
-      <link>https://docs.turingpi.com/advanced/children/os_64_bits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/advanced/children/os_64_bits/</guid>
-      <description>&lt;p&gt;Also ARM processor on the Raspberry PI 3B+ is a 64 bit processor,
-because the board is only equipped with 1G of RAM, a 64 bit operating system
-is not really needed except when&amp;hellip;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Upgrade RPI Kubernetes cluster</title>
+      <title>Upgrade Kubernetes cluster</title>
       <link>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</link>
       <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</guid>
       <description>Master node upgrade using kubeadm # apt-mark unhold kubeadm &amp;amp;&amp;amp; \ &amp;gt; apt-get update &amp;amp;&amp;amp; apt-get install -y kubeadm &amp;amp;&amp;amp; \ &amp;gt; apt-mark hold kubeadm kubeadm was already not hold. Hit:2 http://raspbian.raspberrypi.org/raspbian stretch InRelease Hit:3 https://download.docker.com/linux/raspbian stretch InRelease Hit:1 https://packages.cloud.google.com/apt kubernetes-xenial InRelease Hit:5 http://archive.raspberrypi.org/debian stretch InRelease Hit:4 https://packagecloud.io/Hypriot/rpi/debian stretch InRelease Reading package lists... Done Reading package lists... Done Building dependency tree Reading state information... Done The following packages will be upgraded: kubeadm 1 upgraded, 0 newly installed, 0 to remove and 38 not upgraded.</description>
-    </item>
-    
-    <item>
-      <title>Build and Deploy Kubernetes Kustomize</title>
-      <link>https://docs.turingpi.com/advanced/children/2018-07-29-a/</link>
-      <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/advanced/children/2018-07-29-a/</guid>
-      <description>&lt;p&gt;kustomize seems to help the setup of multiple clusters by removing copy paste accross cluster
-and still keeping the configuration file has plain yaml instead of the template like it
-is often the case with t&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Build and Deploy Kubernetes test-infra</title>
-      <link>https://docs.turingpi.com/advanced/children/2018-07-30-a/</link>
-      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/advanced/children/2018-07-30-a/</guid>
-      <description>&lt;p&gt;test-infra seems to somewhat overlap with sonobuoy features. The purpose of this post is
-to fetch the code, compile and deploy it on a Kubernetes cluster.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Build and Deploy Kubernetes Istio</title>
-      <link>https://docs.turingpi.com/advanced/children/2018-07-31-a/</link>
-      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/advanced/children/2018-07-31-a/</guid>
-      <description>&lt;p&gt;Istio is aiming at improving security of the containers. One of the key aspects
-is the end to end encryption of the commnucation, the role of citadel to ensure the
-management of the certificates, the renewal of the certificates.
-As always, the goal of this post is to study that new tool and figure out I can
-leverage it in my day to day work.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Build and Deploy Kubernetes Hashicorp Vault</title>
-      <link>https://docs.turingpi.com/advanced/children/2018-08-01-a/</link>
-      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/advanced/children/2018-08-01-a/</guid>
-      <description>&lt;p&gt;Vault is aiming at improving security of the containers by rotating token and credential
-much more often than usual. Looks like it is especially effectiv to help rotate passwords
-used to access internal databases.&lt;/p&gt;</description>
     </item>
     
   </channel>

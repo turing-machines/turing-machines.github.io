@@ -30,17 +30,6 @@
     </item>
     
     <item>
-      <title>Installing Hypriot OS</title>
-      <link>https://docs.turingpi.com/advanced/children/os_64_bits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/advanced/children/os_64_bits/</guid>
-      <description>&lt;p&gt;Also ARM processor on the Raspberry PI 3B+ is a 64 bit processor,
-because the board is only equipped with 1G of RAM, a 64 bit operating system
-is not really needed except when&amp;hellip;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Deploy Flannel in Turing Pi</title>
       <link>https://docs.turingpi.com/docker_kubernetes/children/2018-07-14-a/</link>
       <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
@@ -52,7 +41,7 @@ nodes have multiple interfaces (wlan0 and eth0).&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Upgrade RPI Kubernetes cluster</title>
+      <title>Upgrade Kubernetes cluster</title>
       <link>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</link>
       <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
@@ -82,51 +71,6 @@ Hence the idea to come up with a way to build more resiliency in the cluster.
 Recreating a node from scratch should not take more than 10 mn. The propose procedure
 is still rather long because I did not push enough yet what the HypriotOS team, aka
 build a default SD image where cloud-init does 100% of the initialization work.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Build and Deploy Kubernetes Kustomize</title>
-      <link>https://docs.turingpi.com/advanced/children/2018-07-29-a/</link>
-      <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/advanced/children/2018-07-29-a/</guid>
-      <description>&lt;p&gt;kustomize seems to help the setup of multiple clusters by removing copy paste accross cluster
-and still keeping the configuration file has plain yaml instead of the template like it
-is often the case with t&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Build and Deploy Kubernetes test-infra</title>
-      <link>https://docs.turingpi.com/advanced/children/2018-07-30-a/</link>
-      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/advanced/children/2018-07-30-a/</guid>
-      <description>&lt;p&gt;test-infra seems to somewhat overlap with sonobuoy features. The purpose of this post is
-to fetch the code, compile and deploy it on a Kubernetes cluster.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Build and Deploy Kubernetes Istio</title>
-      <link>https://docs.turingpi.com/advanced/children/2018-07-31-a/</link>
-      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/advanced/children/2018-07-31-a/</guid>
-      <description>&lt;p&gt;Istio is aiming at improving security of the containers. One of the key aspects
-is the end to end encryption of the commnucation, the role of citadel to ensure the
-management of the certificates, the renewal of the certificates.
-As always, the goal of this post is to study that new tool and figure out I can
-leverage it in my day to day work.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Build and Deploy Kubernetes Hashicorp Vault</title>
-      <link>https://docs.turingpi.com/advanced/children/2018-08-01-a/</link>
-      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/advanced/children/2018-08-01-a/</guid>
-      <description>&lt;p&gt;Vault is aiming at improving security of the containers by rotating token and credential
-much more often than usual. Looks like it is especially effectiv to help rotate passwords
-used to access internal databases.&lt;/p&gt;</description>
     </item>
     
   </channel>
