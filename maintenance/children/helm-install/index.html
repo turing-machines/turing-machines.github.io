@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="https://docs.turingpi.com/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="https://docs.turingpi.com/images/favicon.png" type="image/x-icon" />
-    <title>Add Persistency Volume to Turing Pi :: Turing Machines Documentation</title>
+    <title>Deploy Helm and Tiller on Turing PI cluster :: Turing Machines Documentation</title>
 
     
     <link href="https://docs.turingpi.com/css/nucleus.css?1580829736" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/docker_kubernetes/children/2018-07-08-a/">
+  <body class="" data-url="/maintenance/children/helm-install/">
     <nav id="sidebar" class="">
 
 
@@ -174,7 +174,7 @@
   
     
     <li data-nav-id="/docker_kubernetes/" title="Kubernetes" class="dd-item 
-        parent
+        
         
         
         ">
@@ -217,7 +217,7 @@
  
   
     
-      <li data-nav-id="/docker_kubernetes/children/2018-07-08-a/" title="Add Persistency Volume to Turing Pi" class="dd-item active">
+      <li data-nav-id="/docker_kubernetes/children/2018-07-08-a/" title="Add Persistency Volume to Turing Pi" class="dd-item ">
         <a href="https://docs.turingpi.com/docker_kubernetes/children/2018-07-08-a/">
         Persistency Volume
         
@@ -282,7 +282,7 @@
   
     
     <li data-nav-id="/maintenance/" title="Helm &amp; Maintenance" class="dd-item 
-        
+        parent
         
         
         ">
@@ -306,7 +306,7 @@
  
   
     
-      <li data-nav-id="/maintenance/children/helm-install/" title="Deploy Helm and Tiller on Turing PI cluster" class="dd-item ">
+      <li data-nav-id="/maintenance/children/helm-install/" title="Deploy Helm and Tiller on Turing PI cluster" class="dd-item active">
         <a href="https://docs.turingpi.com/maintenance/children/helm-install/">
         Helm and Tiller
         
@@ -561,7 +561,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/turing-machines/docs/tree/master/content/docker_kubernetes/children/2018-07-08-a.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/turing-machines/docs/tree/master/content/maintenance/children/helm-install.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -590,7 +590,7 @@
             
           
           
-            <a href='https://docs.turingpi.com/'>Turing Machines</a> > <a href='https://docs.turingpi.com/docker_kubernetes/'>Kubernetes</a> > Add Persistency Volume to Turing Pi
+            <a href='https://docs.turingpi.com/'>Turing Machines</a> > <a href='https://docs.turingpi.com/maintenance/'>Helm & Maintenance</a> > Deploy Helm and Tiller on Turing PI cluster
           
         
           
@@ -606,14 +606,9 @@
 <ul>
 <li>
 <ul>
-<li><a href="#procedures">Procedures</a>
+<li>
 <ul>
-<li><a href="#partition-the-sd-cards">Partition the SD cards</a></li>
-<li><a href="#mount-the-disks">Mount the disks</a></li>
-<li><a href="#create-the-persistency-volumes-in-kubernetes">Create the Persistency Volumes in Kubernetes</a></li>
-</ul></li>
-<li><a href="#results">Results</a>
-<ul>
+<li><a href="#install-helm">Install Helm</a></li>
 <li><a href="#reference-links">Reference Links</a></li>
 </ul></li>
 </ul></li>
@@ -630,65 +625,56 @@
         
         <div id="body-inner">
           
-            <h1>Add Persistency Volume to Turing Pi</h1>
+            <h1>Deploy Helm and Tiller on Turing PI cluster</h1>
           
 
         
 
 
-<p>In order to install Prometheus, NATS, Cassandra using Kubernetes, we need to first create Persistency Volumes</p>
+<p>Use Helm &amp; Tiller on the Turing PI Cluster.</p>
 
-<h2 id="procedures">Procedures</h2>
+<h3 id="install-helm">Install Helm</h3>
 
-<p>The procedure assumes that you have 32G SD Card that you can partition into one 16G disk and seven 7G disks.</p>
-
-<h3 id="partition-the-sd-cards">Partition the SD cards</h3>
-
-<p>Use the Rescue dongle to create the partition. The ideal solution would be to update the cloud-init
-of the HypriotOS to do that automatically.</p>
-
-<h3 id="mount-the-disks">Mount the disks</h3>
-
-<p>Mounting the partitions, involves creating new directories on each node and adding &ldquo;.mount&rdquo; files under systemd
-This kind of done automatically under by the mount-disks playbook</p>
-
-<pre><code>cd $HOME/mgt/
-ansible picluster -i inventory/ -m shell -a &quot;df -kh&quot;
-ansible-playbook -i inventory/ playbooks/mount_disks.yaml
-ansible picluster -i inventory/ -m shell -a &quot;df -kh&quot;
+<pre><code>wget https://get.helm.sh/helm-v2.14.3-linux-arm.tar.gz
+tar xvzf helm-v2.14.3-linux-arm.tar.gz
+sudo mv linux-arm/helm /usr/local/bin/helm
+rm -rf linux-arm
 </code></pre>
 
-<h3 id="create-the-persistency-volumes-in-kubernetes">Create the Persistency Volumes in Kubernetes</h3>
+<p>Create rbac-config.yaml</p>
 
-<p>The kubectl deployment file for flannel and adapted to kubedge is available here:
-Note: Be sure to have picked the right branch (arm32v7 or arm64v8) when pulling kube-deployment</p>
-
-<p>Because we did not convert the go code to create the volumes automatically from the /mnt/disks/&hellip;,
-we have to kind of create the PV by hand.</p>
-
-<pre><code class="language-bash">cd $HOME
-cp -r proj/kubedge/kubedge_utils/kube-deployment/ .
-
-cd $HOME/kube-deployment/local-storage
-kubectl apply -f local-storageclass.yaml
-kubectl apply -f admin_account.yaml
-kubectl apply -f kubemaster-pi-volumes.yaml
-kubectl apply -f kube-node01-volumes.yaml
-kubectl apply -f kube-node02-volumes.yaml
-kubectl apply -f kube-node03-volumes.yaml
-kubectl apply -f kube-node04-volumes.yaml
+<pre><code>apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: tiller
+  namespace: kube-system
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: tiller
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+  - kind: ServiceAccount
+    name: tiller
+    namespace: kube-system
 </code></pre>
 
-<h2 id="results">Results</h2>
+<pre><code>kubectl apply -f rbac-config.yaml
+</code></pre>
 
-<ul>
-<li><img src="https://docs.turingpi.com/images/kubernetes/cluster2_volumes.png" alt="" /></li>
-</ul>
+<p>Init Helm</p>
+
+<pre><code>helm init --tiller-image=jessestuart/tiller --service-account tiller --override spec.selector.matchLabels.'name'='tiller',spec.selector.matchLabels.'app'='helm' --output yaml | sed 's@apiVersion: extensions/v1beta1@apiVersion: apps/v1@' | kubectl apply -f -
+</code></pre>
 
 <h3 id="reference-links">Reference Links</h3>
 
 <ul>
-<li>TBD</li>
+<li><a href="https://github.com/jonaseck2/rpi-helm" target="_blank">Usage of remote API</a></li>
 </ul>
 
 <footer class=" footline" >
@@ -794,7 +780,6 @@ kubectl apply -f kube-node04-volumes.yaml
             
                 
                     
-                    
                 
                 
 
@@ -807,45 +792,6 @@ kubectl apply -f kube-node04-volumes.yaml
             
             
                 
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -873,22 +819,6 @@ kubectl apply -f kube-node04-volumes.yaml
                     
             
         
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
                         
             
@@ -930,6 +860,7 @@ kubectl apply -f kube-node04-volumes.yaml
             
                 
                     
+                    
                 
                 
 
@@ -943,6 +874,7 @@ kubectl apply -f kube-node04-volumes.yaml
             
                 
                     
+                    
                 
                 
 
@@ -953,6 +885,41 @@ kubectl apply -f kube-node04-volumes.yaml
                     
             
         
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
                         
             
@@ -1050,6 +1017,22 @@ kubectl apply -f kube-node04-volumes.yaml
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1076,10 +1059,10 @@ kubectl apply -f kube-node04-volumes.yaml
 
 
         
-            <a class="nav nav-prev" href="https://docs.turingpi.com/docker_kubernetes/children/k8s_install/" title="Creating a Turing Pi Kubernetes Cluster"> <i class="fas fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="https://docs.turingpi.com/maintenance/" title="Helm &amp; Maintenance"> <i class="fas fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="https://docs.turingpi.com/docker_kubernetes/children/2018-07-14-a/" title="Deploy Flannel in Turing Pi" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="https://docs.turingpi.com/maintenance/children/k8s-upgrade/" title="Upgrade RPI Kubernetes cluster" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
         
     </div>
 

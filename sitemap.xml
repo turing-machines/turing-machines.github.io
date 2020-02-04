@@ -13,28 +13,23 @@
   </url>
   
   <url>
+    <loc>https://docs.turingpi.com/docker_kubernetes/children/k8s_install/</loc>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.turingpi.com/turing_pi/children/i2c_cluster_bus/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.turingpi.com/docker_kubernetes/children/k8s_install/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <loc>https://docs.turingpi.com/maintenance/children/helm-install/</loc>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs.turingpi.com/advanced/children/2018-07-18-a/</loc>
     <lastmod>2018-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.turingpi.com/maintenance/children/2018-07-13-a/</loc>
-    <lastmod>2018-07-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.turingpi.com/maintenance/children/2018-07-11-a/</loc>
-    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -48,7 +43,7 @@
   
   <url>
     <loc>https://docs.turingpi.com/docker_kubernetes/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -63,12 +58,12 @@
   
   <url>
     <loc>https://docs.turingpi.com/maintenance/</loc>
-    <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.turingpi.com/maintenance/children/2018-09-28-a/</loc>
-    <lastmod>2018-09-29T00:00:00+00:00</lastmod>
+    <loc>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</loc>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -94,11 +89,6 @@
   <url>
     <loc>https://docs.turingpi.com/advanced/children/2018-07-29-a/</loc>
     <lastmod>2018-07-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.turingpi.com/maintenance/children/2018-07-02-a/</loc>
-    <lastmod>2018-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -155,14 +145,8 @@
   </url>
   
   <url>
-    <loc>https://docs.turingpi.com/tags/github/</loc>
-    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://docs.turingpi.com/tags/helm/</loc>
-    <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -180,7 +164,7 @@
   
   <url>
     <loc>https://docs.turingpi.com/tags/kubernetes/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -198,7 +182,7 @@
   
   <url>
     <loc>https://docs.turingpi.com/tags/rpi/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -216,7 +200,7 @@
   
   <url>
     <loc>https://docs.turingpi.com/tags/sonobuoy/</loc>
-    <lastmod>2018-07-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -228,13 +212,13 @@
   
   <url>
     <loc>https://docs.turingpi.com/tags/test-infra/</loc>
-    <lastmod>2018-07-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://docs.turingpi.com/tags/testing/</loc>
-    <lastmod>2018-07-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

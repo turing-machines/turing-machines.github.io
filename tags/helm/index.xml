@@ -6,28 +6,18 @@
     <description>Recent content in helm on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://docs.turingpi.com/tags/helm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Deply Helm and Tiller on PI Cluster</title>
-      <link>https://docs.turingpi.com/maintenance/children/2018-07-13-a/</link>
-      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      <title>Deploy Helm and Tiller on Turing PI cluster</title>
+      <link>https://docs.turingpi.com/maintenance/children/helm-install/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.turingpi.com/maintenance/children/2018-07-13-a/</guid>
-      <description>&lt;p&gt;The main purpose of this exercise is to be able to use Helm on the Rapsberry PI Cluster.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Use github repo as helm chart repository</title>
-      <link>https://docs.turingpi.com/maintenance/children/2018-07-11-a/</link>
-      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/maintenance/children/2018-07-11-a/</guid>
-      <description>&lt;p&gt;In order to be able use Helm charts the &amp;ldquo;normal&amp;rdquo; way, it is need to buid your own helm repository.
-The goal of this post is to transform a github repo into a helm repo.&lt;/p&gt;</description>
+      <guid>https://docs.turingpi.com/maintenance/children/helm-install/</guid>
+      <description>&lt;p&gt;Use Helm &amp;amp; Tiller on the Turing PI Cluster.&lt;/p&gt;</description>
     </item>
     
   </channel>

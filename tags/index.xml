@@ -47,18 +47,9 @@
     </item>
     
     <item>
-      <title>github</title>
-      <link>https://docs.turingpi.com/tags/github/</link>
-      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>helm</title>
       <link>https://docs.turingpi.com/tags/helm/</link>
-      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/tags/helm/</guid>
       <description></description>
@@ -85,7 +76,7 @@
     <item>
       <title>kubernetes</title>
       <link>https://docs.turingpi.com/tags/kubernetes/</link>
-      <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/tags/kubernetes/</guid>
       <description></description>
@@ -112,7 +103,7 @@
     <item>
       <title>rpi</title>
       <link>https://docs.turingpi.com/tags/rpi/</link>
-      <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/tags/rpi/</guid>
       <description></description>
@@ -139,7 +130,7 @@
     <item>
       <title>sonobuoy</title>
       <link>https://docs.turingpi.com/tags/sonobuoy/</link>
-      <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/tags/sonobuoy/</guid>
       <description></description>
@@ -157,7 +148,7 @@
     <item>
       <title>test-infra</title>
       <link>https://docs.turingpi.com/tags/test-infra/</link>
-      <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/tags/test-infra/</guid>
       <description></description>
@@ -166,7 +157,7 @@
     <item>
       <title>testing</title>
       <link>https://docs.turingpi.com/tags/testing/</link>
-      <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/tags/testing/</guid>
       <description></description>

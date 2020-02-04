@@ -6,7 +6,7 @@
     <description>Recent content in rpi on Turing Machines Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://docs.turingpi.com/tags/rpi/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Creating a Turing Pi Kubernetes Cluster</title>
       <link>https://docs.turingpi.com/docker_kubernetes/children/k8s_install/</link>
-      <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/docker_kubernetes/children/k8s_install/</guid>
       <description>&lt;p&gt;Building Kubernetes on top of Turing Pi brings another dimension to the edge computing and learning, from setting up the OS, partitionning the OS, DHCP, NAT, cross compiling for the ARM32V7.&lt;/p&gt;</description>
@@ -52,13 +52,12 @@ nodes have multiple interfaces (wlan0 and eth0).&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Upgrade RPI Kubernetes cluster to 1.12</title>
-      <link>https://docs.turingpi.com/maintenance/children/2018-09-28-a/</link>
-      <pubDate>Sat, 29 Sep 2018 00:00:00 +0000</pubDate>
+      <title>Upgrade RPI Kubernetes cluster</title>
+      <link>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.turingpi.com/maintenance/children/2018-09-28-a/</guid>
-      <description>&lt;p&gt;The new Kubernetes 1.12 is out. THe goal is to update my two clusters to 1.12
-using kubeadm 1.12&lt;/p&gt;</description>
+      <guid>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</guid>
+      <description>Master node upgrade using kubeadm # apt-mark unhold kubeadm &amp;amp;&amp;amp; \ &amp;gt; apt-get update &amp;amp;&amp;amp; apt-get install -y kubeadm &amp;amp;&amp;amp; \ &amp;gt; apt-mark hold kubeadm kubeadm was already not hold. Hit:2 http://raspbian.raspberrypi.org/raspbian stretch InRelease Hit:3 https://download.docker.com/linux/raspbian stretch InRelease Hit:1 https://packages.cloud.google.com/apt kubernetes-xenial InRelease Hit:5 http://archive.raspberrypi.org/debian stretch InRelease Hit:4 https://packagecloud.io/Hypriot/rpi/debian stretch InRelease Reading package lists... Done Reading package lists... Done Building dependency tree Reading state information... Done The following packages will be upgraded: kubeadm 1 upgraded, 0 newly installed, 0 to remove and 38 not upgraded.</description>
     </item>
     
     <item>
