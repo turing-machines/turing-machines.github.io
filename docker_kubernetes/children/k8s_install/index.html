@@ -12,19 +12,19 @@
     <title>Creating a Turing Pi Kubernetes Cluster :: Turing Machines Documentation</title>
 
     
-    <link href="https://docs.turingpi.com/css/nucleus.css?1580819749" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/fontawesome-all.min.css?1580819749" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/hybrid.css?1580819749" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/featherlight.min.css?1580819749" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/perfect-scrollbar.min.css?1580819749" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/auto-complete.css?1580819749" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/theme.css?1580819749" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/hugo-theme.css?1580819749" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/nucleus.css?1580820252" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/fontawesome-all.min.css?1580820252" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/hybrid.css?1580820252" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/featherlight.min.css?1580820252" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/perfect-scrollbar.min.css?1580820252" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/auto-complete.css?1580820252" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/theme.css?1580820252" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/hugo-theme.css?1580820252" rel="stylesheet">
     
-      <link href="https://docs.turingpi.com/css/theme-kubedge.css?1580819749" rel="stylesheet">
+      <link href="https://docs.turingpi.com/css/theme-kubedge.css?1580820252" rel="stylesheet">
     
 
-    <script src="https://docs.turingpi.com/js/jquery-3.3.1.min.js?1580819749"></script>
+    <script src="https://docs.turingpi.com/js/jquery-3.3.1.min.js?1580820252"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.turingpi.com/js/lunr.min.js?1580819749"></script>
-<script type="text/javascript" src="https://docs.turingpi.com/js/auto-complete.js?1580819749"></script>
+<script type="text/javascript" src="https://docs.turingpi.com/js/lunr.min.js?1580820252"></script>
+<script type="text/javascript" src="https://docs.turingpi.com/js/auto-complete.js?1580820252"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.turingpi.com";
     
 </script>
-<script type="text/javascript" src="https://docs.turingpi.com/js/search.js?1580819749"></script>
+<script type="text/javascript" src="https://docs.turingpi.com/js/search.js?1580820252"></script>
 
     
   </div>
@@ -258,25 +258,6 @@
       <li data-nav-id="/docker_kubernetes/children/2018-06-19-a/" title="Add RPI Compute Module node to Turing Pi in 10 min" class="dd-item ">
         <a href="https://docs.turingpi.com/docker_kubernetes/children/2018-06-19-a/">
         Add a node
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/docker_kubernetes/children/2018-07-12-a/" title="Enable docker Remote API" class="dd-item ">
-        <a href="https://docs.turingpi.com/docker_kubernetes/children/2018-07-12-a/">
-        Docker Remote API
         
         </a>
     </li>
@@ -663,15 +644,20 @@
 <ul>
 <li>
 <ul>
+<li>
+<ul>
 <li><a href="#key-aspects">Key Aspects</a></li>
 <li><a href="#on-master-and-slaves">On Master and Slaves</a></li>
-<li><a href="#initialize-the-kubernetes-master-node">Initialize the Kubernetes Master node</a></li>
+<li><a href="#initialize-the-kubernetes-master-node">Initialize the Kubernetes Master node</a>
+<ul>
 <li><a href="#initialize-kubectl-configuration">Initialize kubectl configuration</a></li>
-<li><a href="#on-the-slave-node">On the slave node</a></li>
-<li><a href="#setup-cni">Setup CNI</a></li>
+</ul></li>
+<li><a href="#add-worker-nodes">Add worker nodes</a></li>
+<li><a href="#setup-container-network-interface">Setup Container Network Interface</a></li>
 <li><a href="#5-node-cluster">5 node cluster</a></li>
 <li><a href="#cleanup">Cleanup</a></li>
 <li><a href="#reference-links">Reference Links</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -694,14 +680,14 @@
 
 <p>Building Kubernetes on top of Turing Pi brings another dimension to the edge computing and learning, from setting up the OS, partitionning the OS, DHCP, NAT, cross compiling for the ARM32V7.</p>
 
-<h2 id="key-aspects">Key Aspects</h2>
+<h3 id="key-aspects">Key Aspects</h3>
 
 <ul>
 <li>Assemble a Turing Pi Cluster</li>
 <li>Deploy Kubernetes on Turing Pi</li>
 </ul>
 
-<h2 id="on-master-and-slaves">On Master and Slaves</h2>
+<h3 id="on-master-and-slaves">On Master and Slaves</h3>
 
 <pre><code class="language-bash">sudo -i
 
@@ -717,10 +703,9 @@ sudo apt-get install -qy kubelet kubectl kubeadm
 <pre><code class="language-bash">kubeadm config images pull
 </code></pre>
 
-<h2 id="initialize-the-kubernetes-master-node">Initialize the Kubernetes Master node</h2>
+<h3 id="initialize-the-kubernetes-master-node">Initialize the Kubernetes Master node</h3>
 
 <pre><code class="language-bash">sudo kubeadm init --token-ttl=0 --pod-network-cidr=10.244.0.0/16
-
 
 [init] using Kubernetes version: ...
 [preflight] running pre-flight checks
@@ -788,7 +773,7 @@ as root:
   kubeadm join 192.168.2.1:6443 --token vej1mx.yyyyyy --discovery-token-ca-cert-hash sha256:xxxxxx
 </code></pre>
 
-<h2 id="initialize-kubectl-configuration">Initialize kubectl configuration</h2>
+<h4 id="initialize-kubectl-configuration">Initialize kubectl configuration</h4>
 
 <p>As normal user (not root)</p>
 
@@ -798,12 +783,12 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl get nodes
 </code></pre>
 
-<h2 id="on-the-slave-node">On the slave node</h2>
+<h3 id="add-worker-nodes">Add worker nodes</h3>
 
 <pre><code class="language-bash">kubeadm join 192.168.2.1:6443 --token vej1mx.yyyyyy --discovery-token-ca-cert-hash sha256:xxxxxx
 </code></pre>
 
-<h2 id="setup-cni">Setup CNI</h2>
+<h3 id="setup-container-network-interface">Setup Container Network Interface</h3>
 
 <p>At that point, nodes are not in ready state yet and CoreDNS in pending state</p>
 
@@ -823,7 +808,7 @@ Note: Be sure to have picked the right branch (arm32v7 or arm64v8) when pulling 
 kubectl get all -n kube-system
 </code></pre>
 
-<h2 id="5-node-cluster">5 node cluster</h2>
+<h3 id="5-node-cluster">5 node cluster</h3>
 
 <pre><code>kubectl get nodes
 
@@ -884,7 +869,7 @@ kube-system   replicaset.apps/kube-dns-7b6ff86f69               1         1     
 kube-system   replicaset.apps/kubernetes-dashboard-7fcc5cb979   1         1         1         23d
 </code></pre>
 
-<h2 id="cleanup">Cleanup</h2>
+<h3 id="cleanup">Cleanup</h3>
 
 <p>Teardown cluster</p>
 
@@ -896,7 +881,7 @@ sudo apt-get autoremove
 sudo rm -rf ~/.kube
 </code></pre>
 
-<h2 id="reference-links">Reference Links</h2>
+<h3 id="reference-links">Reference Links</h3>
 
 <ul>
 <li><a href="https://blog.hypriot.com/post/setup-kubernetes-raspberry-pi-cluster/" target="_blank">Kubeadm on Hypriot</a></li>
@@ -1038,22 +1023,6 @@ sudo rm -rf ~/.kube
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1344,20 +1313,20 @@ sudo rm -rf ~/.kube
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.turingpi.com/js/clipboard.min.js?1580819749"></script>
-    <script src="https://docs.turingpi.com/js/perfect-scrollbar.min.js?1580819749"></script>
-    <script src="https://docs.turingpi.com/js/perfect-scrollbar.jquery.min.js?1580819749"></script>
-    <script src="https://docs.turingpi.com/js/jquery.sticky.js?1580819749"></script>
-    <script src="https://docs.turingpi.com/js/featherlight.min.js?1580819749"></script>
-    <script src="https://docs.turingpi.com/js/html5shiv-printshiv.min.js?1580819749"></script>
-    <script src="https://docs.turingpi.com/js/highlight.pack.js?1580819749"></script>
+    <script src="https://docs.turingpi.com/js/clipboard.min.js?1580820252"></script>
+    <script src="https://docs.turingpi.com/js/perfect-scrollbar.min.js?1580820252"></script>
+    <script src="https://docs.turingpi.com/js/perfect-scrollbar.jquery.min.js?1580820252"></script>
+    <script src="https://docs.turingpi.com/js/jquery.sticky.js?1580820252"></script>
+    <script src="https://docs.turingpi.com/js/featherlight.min.js?1580820252"></script>
+    <script src="https://docs.turingpi.com/js/html5shiv-printshiv.min.js?1580820252"></script>
+    <script src="https://docs.turingpi.com/js/highlight.pack.js?1580820252"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.turingpi.com/js/modernizr.custom.71422.js?1580819749"></script>
-    <script src="https://docs.turingpi.com/js/learn.js?1580819749"></script>
-    <script src="https://docs.turingpi.com/js/hugo-learn.js?1580819749"></script>
+    <script src="https://docs.turingpi.com/js/modernizr.custom.71422.js?1580820252"></script>
+    <script src="https://docs.turingpi.com/js/learn.js?1580820252"></script>
+    <script src="https://docs.turingpi.com/js/hugo-learn.js?1580820252"></script>
 
-    <link href="https://docs.turingpi.com/mermaid/mermaid.css?1580819749" type="text/css" rel="stylesheet" />
-    <script src="https://docs.turingpi.com/mermaid/mermaid.js?1580819749"></script>
+    <link href="https://docs.turingpi.com/mermaid/mermaid.css?1580820252" type="text/css" rel="stylesheet" />
+    <script src="https://docs.turingpi.com/mermaid/mermaid.js?1580820252"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

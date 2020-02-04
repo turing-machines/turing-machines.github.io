@@ -82,11 +82,6 @@
   </url>
   
   <url>
-    <loc>https://docs.turingpi.com/docker_kubernetes/children/2018-07-12-a/</loc>
-    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://docs.turingpi.com/advanced/</loc>
     <lastmod>2018-07-18T00:00:00+00:00</lastmod>
   </url>
@@ -150,12 +145,6 @@
   <url>
     <loc>https://docs.turingpi.com/tags/cni/</loc>
     <lastmod>2018-07-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://docs.turingpi.com/tags/docker/</loc>
-    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

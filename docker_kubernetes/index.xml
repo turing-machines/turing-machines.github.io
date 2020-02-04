@@ -55,16 +55,5 @@ is still rather long because I did not push enough yet what the HypriotOS team, 
 build a default SD image where cloud-init does 100% of the initialization work.&lt;/p&gt;</description>
     </item>
     
-    <item>
-      <title>Enable docker Remote API</title>
-      <link>https://docs.turingpi.com/docker_kubernetes/children/2018-07-12-a/</link>
-      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/docker_kubernetes/children/2018-07-12-a/</guid>
-      <description>&lt;p&gt;In order to build image for Raspberry PI, it is sometimes usefull to be able to leverate infrastruture from a remote VM.
-For instance you can cross-build golang executable for ARM32v7 and transfer it to build an image on the remote PI.
-(used for Tiller docker image)&lt;/p&gt;</description>
-    </item>
-    
   </channel>
 </rss>
