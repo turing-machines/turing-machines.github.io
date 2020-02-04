@@ -13,11 +13,11 @@
     
     <item>
       <title>Creating a Turing Pi Kubernetes Cluster</title>
-      <link>https://docs.turingpi.com/docker_kubernetes/children/2018-07-03-a/</link>
+      <link>https://docs.turingpi.com/docker_kubernetes/children/k8s_install/</link>
       <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.turingpi.com/docker_kubernetes/children/2018-07-03-a/</guid>
-      <description>&lt;p&gt;Also GCE is perfect to learn Kubernetes, building Kubernetes on top of Turing Pi brings another dimension to the edge computing and learning, from setting up the OS, partitionning the OS, DHCP, NAT, cross compiling for the ARM32V7.&lt;/p&gt;</description>
+      <guid>https://docs.turingpi.com/docker_kubernetes/children/k8s_install/</guid>
+      <description>&lt;p&gt;Building Kubernetes on top of Turing Pi brings another dimension to the edge computing and learning, from setting up the OS, partitionning the OS, DHCP, NAT, cross compiling for the ARM32V7.&lt;/p&gt;</description>
     </item>
     
     <item>

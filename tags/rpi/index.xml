@@ -13,11 +13,11 @@
     
     <item>
       <title>Creating a Turing Pi Kubernetes Cluster</title>
-      <link>https://docs.turingpi.com/docker_kubernetes/children/2018-07-03-a/</link>
+      <link>https://docs.turingpi.com/docker_kubernetes/children/k8s_install/</link>
       <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.turingpi.com/docker_kubernetes/children/2018-07-03-a/</guid>
-      <description>&lt;p&gt;Also GCE is perfect to learn Kubernetes, building Kubernetes on top of Turing Pi brings another dimension to the edge computing and learning, from setting up the OS, partitionning the OS, DHCP, NAT, cross compiling for the ARM32V7.&lt;/p&gt;</description>
+      <guid>https://docs.turingpi.com/docker_kubernetes/children/k8s_install/</guid>
+      <description>&lt;p&gt;Building Kubernetes on top of Turing Pi brings another dimension to the edge computing and learning, from setting up the OS, partitionning the OS, DHCP, NAT, cross compiling for the ARM32V7.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,15 +27,6 @@
       
       <guid>https://docs.turingpi.com/docker_kubernetes/children/2018-07-08-a/</guid>
       <description>&lt;p&gt;In order to install Prometheus, NATS, Cassandra using Kubernetes, we need to first create Persistency Volumes&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>OS Installation on Turing Master</title>
-      <link>https://docs.turingpi.com/os_installation/children/master_pi/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/os_installation/children/master_pi/</guid>
-      <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -71,17 +62,6 @@ using kubeadm 1.12&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Setting up DHCPD on Turing Master</title>
-      <link>https://docs.turingpi.com/os_installation/children/setup_dhcpd/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/os_installation/children/setup_dhcpd/</guid>
-      <description>&lt;p&gt;This tutorial how to setup DHCPD and NAT so that the slave PI can access the
-internet through the NAT (ETH0-&amp;gt;WLAN0) running on Turing Master. This tutorial
-also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Assembly</title>
       <link>https://docs.turingpi.com/turing_pi/children/cluster_assembly/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
@@ -106,26 +86,6 @@ build a default SD image where cloud-init does 100% of the initialization work.&
     </item>
     
     <item>
-      <title>OS Installation on Turing Worker</title>
-      <link>https://docs.turingpi.com/os_installation/children/worker_pi/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/os_installation/children/worker_pi/</guid>
-      <description>&lt;p&gt;This page describes simple steps to install the OS (HypriotOS) on the PIs.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Using Ansible to manage Turing Pi</title>
-      <link>https://docs.turingpi.com/os_installation/children/ansible/</link>
-      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/os_installation/children/ansible/</guid>
-      <description>&lt;p&gt;Even if the ultimate goal is to manage completly the cluster using Kubernetes,
-the ability to use Ansible during debug process is very usefull.
-The goal here is to setup ansible inventory, basic playbooks.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Build and Deploy Kubernetes Kustomize</title>
       <link>https://docs.turingpi.com/advanced/children/2018-07-29-a/</link>
       <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
@@ -134,20 +94,6 @@ The goal here is to setup ansible inventory, basic playbooks.&lt;/p&gt;</descrip
       <description>&lt;p&gt;kustomize seems to help the setup of multiple clusters by removing copy paste accross cluster
 and still keeping the configuration file has plain yaml instead of the template like it
 is often the case with t&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Create a Turing Pi Rescue Dongle</title>
-      <link>https://docs.turingpi.com/os_installation/children/dongle/</link>
-      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/os_installation/children/dongle/</guid>
-      <description>&lt;p&gt;I encountered multiple issues trying to repartition my SD on my PI.
-Because the / directory is mounted, it never really worked safely for me
-to use fdisk. Morevoer some of the powerfull tools such as gparted need
-X11 installed, which I don&amp;rsquo;t have by default.&lt;/p&gt;
-
-&lt;p&gt;Hopefully the new PI3 B and B+ are able to boot from USB, hence the idea of creating a Rescue Dongle&lt;/p&gt;</description>
     </item>
     
     <item>

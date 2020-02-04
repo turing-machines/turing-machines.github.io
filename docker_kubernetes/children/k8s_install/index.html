@@ -9,22 +9,22 @@
 
     <link rel="shortcut icon" href="https://docs.turingpi.com/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="https://docs.turingpi.com/images/favicon.png" type="image/x-icon" />
-    <title>docker :: Turing Machines Documentation</title>
+    <title>Creating a Turing Pi Kubernetes Cluster :: Turing Machines Documentation</title>
 
     
-    <link href="https://docs.turingpi.com/css/nucleus.css?1580819750" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/fontawesome-all.min.css?1580819750" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/hybrid.css?1580819750" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/featherlight.min.css?1580819750" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/perfect-scrollbar.min.css?1580819750" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/auto-complete.css?1580819750" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/theme.css?1580819750" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/hugo-theme.css?1580819750" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/nucleus.css?1580819749" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/fontawesome-all.min.css?1580819749" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/hybrid.css?1580819749" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/featherlight.min.css?1580819749" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/perfect-scrollbar.min.css?1580819749" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/auto-complete.css?1580819749" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/theme.css?1580819749" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/hugo-theme.css?1580819749" rel="stylesheet">
     
-      <link href="https://docs.turingpi.com/css/theme-kubedge.css?1580819750" rel="stylesheet">
+      <link href="https://docs.turingpi.com/css/theme-kubedge.css?1580819749" rel="stylesheet">
     
 
-    <script src="https://docs.turingpi.com/js/jquery-3.3.1.min.js?1580819750"></script>
+    <script src="https://docs.turingpi.com/js/jquery-3.3.1.min.js?1580819749"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tags/docker/">
+  <body class="" data-url="/docker_kubernetes/children/k8s_install/">
     <nav id="sidebar" class="">
 
 
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.turingpi.com/js/lunr.min.js?1580819750"></script>
-<script type="text/javascript" src="https://docs.turingpi.com/js/auto-complete.js?1580819750"></script>
+<script type="text/javascript" src="https://docs.turingpi.com/js/lunr.min.js?1580819749"></script>
+<script type="text/javascript" src="https://docs.turingpi.com/js/auto-complete.js?1580819749"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.turingpi.com";
     
 </script>
-<script type="text/javascript" src="https://docs.turingpi.com/js/search.js?1580819750"></script>
+<script type="text/javascript" src="https://docs.turingpi.com/js/search.js?1580819749"></script>
 
     
   </div>
@@ -174,7 +174,7 @@
   
     
     <li data-nav-id="/docker_kubernetes/" title="Kubernetes" class="dd-item 
-        
+        parent
         
         
         ">
@@ -198,7 +198,7 @@
  
   
     
-      <li data-nav-id="/docker_kubernetes/children/k8s_install/" title="Creating a Turing Pi Kubernetes Cluster" class="dd-item ">
+      <li data-nav-id="/docker_kubernetes/children/k8s_install/" title="Creating a Turing Pi Kubernetes Cluster" class="dd-item active">
         <a href="https://docs.turingpi.com/docker_kubernetes/children/k8s_install/">
         Installation
         
@@ -614,6 +614,17 @@
               <div>
                 <div id="top-bar">
                 
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/turing-machines/docs/tree/master/content/docker_kubernetes/children/k8s_install.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -628,7 +639,19 @@
                     
           
           
-            docker
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://docs.turingpi.com/'>Turing Machines</a> > <a href='https://docs.turingpi.com/docker_kubernetes/'>Kubernetes</a> > Creating a Turing Pi Kubernetes Cluster
+          
+        
+          
+        
           
         
                   </span>
@@ -636,7 +659,22 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#key-aspects">Key Aspects</a></li>
+<li><a href="#on-master-and-slaves">On Master and Slaves</a></li>
+<li><a href="#initialize-the-kubernetes-master-node">Initialize the Kubernetes Master node</a></li>
+<li><a href="#initialize-kubectl-configuration">Initialize kubectl configuration</a></li>
+<li><a href="#on-the-slave-node">On the slave node</a></li>
+<li><a href="#setup-cni">Setup CNI</a></li>
+<li><a href="#5-node-cluster">5 node cluster</a></li>
+<li><a href="#cleanup">Cleanup</a></li>
+<li><a href="#reference-links">Reference Links</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -648,17 +686,226 @@
         
         <div id="body-inner">
           
-            <h1>docker</h1>
+            <h1>Creating a Turing Pi Kubernetes Cluster</h1>
           
 
         
 
 
+<p>Building Kubernetes on top of Turing Pi brings another dimension to the edge computing and learning, from setting up the OS, partitionning the OS, DHCP, NAT, cross compiling for the ARM32V7.</p>
 
+<h2 id="key-aspects">Key Aspects</h2>
+
+<ul>
+<li>Assemble a Turing Pi Cluster</li>
+<li>Deploy Kubernetes on Turing Pi</li>
+</ul>
+
+<h2 id="on-master-and-slaves">On Master and Slaves</h2>
+
+<pre><code class="language-bash">sudo -i
+
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | \
+sudo apt-key add - &amp;&amp; echo &quot;deb http://apt.kubernetes.io/ kubernetes-xenial main&quot; | \
+sudo tee /etc/apt/sources.list.d/kubernetes.list &amp;&amp; sudo apt-get update -q
+
+sudo apt-get install -qy kubelet kubectl kubeadm
+</code></pre>
+
+<p>To help during the initialization phase, get kubeadm to download the images onto docker</p>
+
+<pre><code class="language-bash">kubeadm config images pull
+</code></pre>
+
+<h2 id="initialize-the-kubernetes-master-node">Initialize the Kubernetes Master node</h2>
+
+<pre><code class="language-bash">sudo kubeadm init --token-ttl=0 --pod-network-cidr=10.244.0.0/16
+
+
+[init] using Kubernetes version: ...
+[preflight] running pre-flight checks
+        [WARNING SystemVerification]: this Docker version is not on the list of validated versions: 18.04.0-ce. Latest validated version: 18.06
+[preflight/images] Pulling images required for setting up a Kubernetes cluster
+[preflight/images] This might take a minute or two, depending on the speed of your internet connection
+[preflight/images] You can also perform this action in beforehand using 'kubeadm config images pull'
+[kubelet] Writing kubelet environment file with flags to file &quot;/var/lib/kubelet/kubeadm-flags.env&quot;
+[kubelet] Writing kubelet configuration to file &quot;/var/lib/kubelet/config.yaml&quot;
+[preflight] Activating the kubelet service
+[certificates] Generated ca certificate and key.
+[certificates] Generated apiserver-kubelet-client certificate and key.
+[certificates] Generated apiserver certificate and key.
+[certificates] apiserver serving cert is signed for DNS names [kubemaster-pi kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 192.168.2.1]
+[certificates] Generated front-proxy-ca certificate and key.
+[certificates] Generated front-proxy-client certificate and key.
+[certificates] Generated etcd/ca certificate and key.
+[certificates] Generated etcd/peer certificate and key.
+[certificates] etcd/peer serving cert is signed for DNS names [kubemaster-pi localhost] and IPs [192.168.2.1 127.0.0.1 ::1]
+[certificates] Generated etcd/server certificate and key.
+[certificates] etcd/server serving cert is signed for DNS names [kubemaster-pi localhost] and IPs [127.0.0.1 ::1]
+[certificates] Generated etcd/healthcheck-client certificate and key.
+[certificates] Generated apiserver-etcd-client certificate and key.
+[certificates] valid certificates and keys now exist in &quot;/etc/kubernetes/pki&quot;
+[certificates] Generated sa key and public key.
+[kubeconfig] Wrote KubeConfig file to disk: &quot;/etc/kubernetes/admin.conf&quot;
+[kubeconfig] Wrote KubeConfig file to disk: &quot;/etc/kubernetes/kubelet.conf&quot;
+[kubeconfig] Wrote KubeConfig file to disk: &quot;/etc/kubernetes/controller-manager.conf&quot;
+[kubeconfig] Wrote KubeConfig file to disk: &quot;/etc/kubernetes/scheduler.conf&quot;
+[controlplane] wrote Static Pod manifest for component kube-apiserver to &quot;/etc/kubernetes/manifests/kube-apiserver.yaml&quot;
+[controlplane] wrote Static Pod manifest for component kube-controller-manager to &quot;/etc/kubernetes/manifests/kube-controller-manager.yaml&quot;
+[controlplane] wrote Static Pod manifest for component kube-scheduler to &quot;/etc/kubernetes/manifests/kube-scheduler.yaml&quot;
+[etcd] Wrote Static Pod manifest for a local etcd instance to &quot;/etc/kubernetes/manifests/etcd.yaml&quot;
+[init] waiting for the kubelet to boot up the control plane as Static Pods from directory &quot;/etc/kubernetes/manifests&quot;              
+[init] this might take a minute or longer if the control plane images have to be pulled
+[apiclient] All control plane components are healthy after 88.010108 seconds
+[uploadconfig] storing the configuration used in ConfigMap &quot;kubeadm-config&quot; in the &quot;kube-system&quot; Namespace
+[kubelet] Creating a ConfigMap &quot;kubelet-config-1.12&quot; in namespace kube-system with the configuration for the kubeletsin the cluster
+[markmaster] Marking the node kubemaster-pi as master by adding the label &quot;node-role.kubernetes.io/master=''&quot;
+[markmaster] Marking the node kubemaster-pi as master by adding the taints [node-role.kubernetes.io/master:NoSchedule]
+[patchnode] Uploading the CRI Socket information &quot;/var/run/dockershim.sock&quot; to the Node API object &quot;kubemaster-pi&quot; asan annotation
+[bootstraptoken] using token: vej1mx.6qf2xljr39rr1i14
+[bootstraptoken] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
+[bootstraptoken] configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token
+[bootstraptoken] configured RBAC rules to allow certificate rotation for all node client certificates in the cluster
+[bootstraptoken] creating the &quot;cluster-info&quot; ConfigMap in the &quot;kube-public&quot; namespace
+[addons] Applied essential addon: CoreDNS
+[addons] Applied essential addon: kube-proxy
+
+Your Kubernetes master has initialized successfully!
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+You should now deploy a pod network to the cluster.
+Run &quot;kubectl apply -f [podnetwork].yaml&quot; with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+You can now join any number of machines by running the following on each node
+as root:
+
+  kubeadm join 192.168.2.1:6443 --token vej1mx.yyyyyy --discovery-token-ca-cert-hash sha256:xxxxxx
+</code></pre>
+
+<h2 id="initialize-kubectl-configuration">Initialize kubectl configuration</h2>
+
+<p>As normal user (not root)</p>
+
+<pre><code class="language-bash">mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+kubectl get nodes
+</code></pre>
+
+<h2 id="on-the-slave-node">On the slave node</h2>
+
+<pre><code class="language-bash">kubeadm join 192.168.2.1:6443 --token vej1mx.yyyyyy --discovery-token-ca-cert-hash sha256:xxxxxx
+</code></pre>
+
+<h2 id="setup-cni">Setup CNI</h2>
+
+<p>At that point, nodes are not in ready state yet and CoreDNS in pending state</p>
+
+<pre><code class="language-bash">kubectl get nodes
+kubectl get all -n kube-system
+</code></pre>
+
+<p>The kubectl deployment file for flannel and adapted to kubedge is available here:
+Note: Be sure to have picked the right branch (arm32v7 or arm64v8) when pulling kube-deployment</p>
+
+<pre><code class="language-bash">kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+</code></pre>
+
+<p>The nodes should turn ready and CoreDNS should start</p>
+
+<pre><code class="language-bash">kubectl get nodes
+kubectl get all -n kube-system
+</code></pre>
+
+<h2 id="5-node-cluster">5 node cluster</h2>
+
+<pre><code>kubectl get nodes
+
+NAME            STATUS    ROLES     AGE       VERSION
+kube-node01     Ready     &lt;none&gt;    23d       v1.9.8
+kube-node02     Ready     &lt;none&gt;    23d       v1.9.8
+kube-node03     Ready     &lt;none&gt;    23d       v1.9.8
+kube-node04     Ready     &lt;none&gt;    23d       v1.9.8
+kubemaster-pi   Ready     master    23d       v1.9.8
+</code></pre>
+
+<pre><code>kubectl get all --all-namespaces
+
+NAMESPACE     NAME                                        READY     STATUS    RESTARTS   AGE
+kube-system   pod/etcd-kubemaster-pi                      1/1       Running   0          23d
+kube-system   pod/kube-apiserver-kubemaster-pi            1/1       Running   0          23d
+kube-system   pod/kube-controller-manager-kubemaster-pi   1/1       Running   0          23d
+kube-system   pod/kube-dns-7b6ff86f69-l7lf6               3/3       Running   0          23d
+kube-system   pod/kube-flannel-ds-8xbx4                   1/1       Running   0          23d
+kube-system   pod/kube-flannel-ds-9cz9f                   1/1       Running   0          23d
+kube-system   pod/kube-flannel-ds-rgpcq                   1/1       Running   0          23d
+kube-system   pod/kube-flannel-ds-xnjtz                   1/1       Running   0          23d
+kube-system   pod/kube-flannel-ds-xxdf6                   1/1       Running   0          23d
+kube-system   pod/kube-proxy-5m95q                        1/1       Running   0          23d
+kube-system   pod/kube-proxy-7sh7m                        1/1       Running   0          23d
+kube-system   pod/kube-proxy-f7t9r                        1/1       Running   0          23d
+kube-system   pod/kube-proxy-pkqvd                        1/1       Running   0          23d
+kube-system   pod/kube-proxy-shrdr                        1/1       Running   0          23d
+kube-system   pod/kube-scheduler-kubemaster-pi            1/1       Running   0          23d
+kube-system   pod/kubernetes-dashboard-7fcc5cb979-8vbmp   1/1       Running   0          23d
+
+NAMESPACE     NAME                           TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)         AGE
+kube-system   service/kube-dns               ClusterIP   10.96.0.10       &lt;none&gt;        53/UDP,53/TCP   23d
+kube-system   service/kubernetes-dashboard   NodePort    10.102.144.189   &lt;none&gt;        443:30383/TCP   23d
+
+NAMESPACE     NAME                                   DESIRED   CURRENT   READY     UP-TO-DATE   AVAILABLE   NODE SELECTOR                 AGE
+kube-system   daemonset.extensions/kube-flannel-ds   5         5         5         5            5           beta.kubernetes.io/arch=arm   23d
+kube-system   daemonset.extensions/kube-proxy        5         5         5         5            5           &lt;none&gt;                        23d
+
+NAMESPACE     NAME                                         DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+kube-system   deployment.extensions/kube-dns               1         1         1            1           23d
+kube-system   deployment.extensions/kubernetes-dashboard   1         1         1            1           23d
+
+NAMESPACE     NAME                                                    DESIRED   CURRENT   READY     AGE
+kube-system   replicaset.extensions/kube-dns-7b6ff86f69               1         1         1         23d
+kube-system   replicaset.extensions/kubernetes-dashboard-7fcc5cb979   1         1         1         23d
+
+NAMESPACE     NAME                             DESIRED   CURRENT   READY     UP-TO-DATE   AVAILABLE   NODE SELECTOR                 AGE
+kube-system   daemonset.apps/kube-flannel-ds   5         5         5         5            5           beta.kubernetes.io/arch=arm   23d
+kube-system   daemonset.apps/kube-proxy        5         5         5         5            5           &lt;none&gt;                        23d
+
+NAMESPACE     NAME                                   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+kube-system   deployment.apps/kube-dns               1         1         1            1           23d
+kube-system   deployment.apps/kubernetes-dashboard   1         1         1            1           23d
+
+NAMESPACE     NAME                                              DESIRED   CURRENT   READY     AGE
+kube-system   replicaset.apps/kube-dns-7b6ff86f69               1         1         1         23d
+kube-system   replicaset.apps/kubernetes-dashboard-7fcc5cb979   1         1         1         23d
+</code></pre>
+
+<h2 id="cleanup">Cleanup</h2>
+
+<p>Teardown cluster</p>
+
+<pre><code class="language-bash">sudo kubeadm reset
+sudo docker rm $(sudo docker ps -qa)
+sudo docker image rm $(sudo docker image list -qa)
+sudo apt-get purge kubeadm kubectl kubelet
+sudo apt-get autoremove
+sudo rm -rf ~/.kube
+</code></pre>
+
+<h2 id="reference-links">Reference Links</h2>
+
+<ul>
+<li><a href="https://blog.hypriot.com/post/setup-kubernetes-raspberry-pi-cluster/" target="_blank">Kubeadm on Hypriot</a></li>
+</ul>
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -758,6 +1005,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -770,6 +1018,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -787,85 +1036,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1006,6 +1178,22 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -1054,6 +1242,70 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1080,8 +1332,10 @@
 
 
         
+            <a class="nav nav-prev" href="https://docs.turingpi.com/docker_kubernetes/" title="Kubernetes"> <i class="fas fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="https://docs.turingpi.com/turing_pi/" title="Turing Pi Basics" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="https://docs.turingpi.com/docker_kubernetes/children/2018-07-08-a/" title="Add Persistency Volume to Turing Pi" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
         
     </div>
 
@@ -1090,20 +1344,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.turingpi.com/js/clipboard.min.js?1580819750"></script>
-    <script src="https://docs.turingpi.com/js/perfect-scrollbar.min.js?1580819750"></script>
-    <script src="https://docs.turingpi.com/js/perfect-scrollbar.jquery.min.js?1580819750"></script>
-    <script src="https://docs.turingpi.com/js/jquery.sticky.js?1580819750"></script>
-    <script src="https://docs.turingpi.com/js/featherlight.min.js?1580819750"></script>
-    <script src="https://docs.turingpi.com/js/html5shiv-printshiv.min.js?1580819750"></script>
-    <script src="https://docs.turingpi.com/js/highlight.pack.js?1580819750"></script>
+    <script src="https://docs.turingpi.com/js/clipboard.min.js?1580819749"></script>
+    <script src="https://docs.turingpi.com/js/perfect-scrollbar.min.js?1580819749"></script>
+    <script src="https://docs.turingpi.com/js/perfect-scrollbar.jquery.min.js?1580819749"></script>
+    <script src="https://docs.turingpi.com/js/jquery.sticky.js?1580819749"></script>
+    <script src="https://docs.turingpi.com/js/featherlight.min.js?1580819749"></script>
+    <script src="https://docs.turingpi.com/js/html5shiv-printshiv.min.js?1580819749"></script>
+    <script src="https://docs.turingpi.com/js/highlight.pack.js?1580819749"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.turingpi.com/js/modernizr.custom.71422.js?1580819750"></script>
-    <script src="https://docs.turingpi.com/js/learn.js?1580819750"></script>
-    <script src="https://docs.turingpi.com/js/hugo-learn.js?1580819750"></script>
+    <script src="https://docs.turingpi.com/js/modernizr.custom.71422.js?1580819749"></script>
+    <script src="https://docs.turingpi.com/js/learn.js?1580819749"></script>
+    <script src="https://docs.turingpi.com/js/hugo-learn.js?1580819749"></script>
 
-    <link href="https://docs.turingpi.com/mermaid/mermaid.css?1580819750" type="text/css" rel="stylesheet" />
-    <script src="https://docs.turingpi.com/mermaid/mermaid.js?1580819750"></script>
+    <link href="https://docs.turingpi.com/mermaid/mermaid.css?1580819749" type="text/css" rel="stylesheet" />
+    <script src="https://docs.turingpi.com/mermaid/mermaid.js?1580819749"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
@@ -1120,3 +1374,4 @@
 
   </body>
 </html>
+

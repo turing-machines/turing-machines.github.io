@@ -54,17 +54,6 @@ using kubeadm 1.12&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Setting up DHCPD on Turing Master</title>
-      <link>https://docs.turingpi.com/os_installation/children/setup_dhcpd/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.turingpi.com/os_installation/children/setup_dhcpd/</guid>
-      <description>&lt;p&gt;This tutorial how to setup DHCPD and NAT so that the slave PI can access the
-internet through the NAT (ETH0-&amp;gt;WLAN0) running on Turing Master. This tutorial
-also describe how to setup the DHCPD to automatically allocated IPs to PI or PCs.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Build and Deploy Kubernetes Kustomize</title>
       <link>https://docs.turingpi.com/advanced/children/2018-07-29-a/</link>
       <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
