@@ -12,19 +12,19 @@
     <title>Kubernetes :: Turing Machines Documentation</title>
 
     
-    <link href="https://docs.turingpi.com/css/nucleus.css?1580829991" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/fontawesome-all.min.css?1580829991" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/hybrid.css?1580829991" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/featherlight.min.css?1580829991" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/perfect-scrollbar.min.css?1580829991" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/auto-complete.css?1580829991" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/theme.css?1580829991" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/hugo-theme.css?1580829991" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/nucleus.css?1580830219" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/fontawesome-all.min.css?1580830219" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/hybrid.css?1580830219" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/featherlight.min.css?1580830219" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/perfect-scrollbar.min.css?1580830219" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/auto-complete.css?1580830219" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/theme.css?1580830219" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/hugo-theme.css?1580830219" rel="stylesheet">
     
-      <link href="https://docs.turingpi.com/css/theme-kubedge.css?1580829991" rel="stylesheet">
+      <link href="https://docs.turingpi.com/css/theme-kubedge.css?1580830219" rel="stylesheet">
     
 
-    <script src="https://docs.turingpi.com/js/jquery-3.3.1.min.js?1580829991"></script>
+    <script src="https://docs.turingpi.com/js/jquery-3.3.1.min.js?1580830219"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.turingpi.com/js/lunr.min.js?1580829991"></script>
-<script type="text/javascript" src="https://docs.turingpi.com/js/auto-complete.js?1580829991"></script>
+<script type="text/javascript" src="https://docs.turingpi.com/js/lunr.min.js?1580830219"></script>
+<script type="text/javascript" src="https://docs.turingpi.com/js/auto-complete.js?1580830219"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.turingpi.com";
     
 </script>
-<script type="text/javascript" src="https://docs.turingpi.com/js/search.js?1580829991"></script>
+<script type="text/javascript" src="https://docs.turingpi.com/js/search.js?1580830219"></script>
 
     
   </div>
@@ -444,7 +444,25 @@
 
 <h1 id="docker-and-kubernetes">Docker and Kubernetes</h1>
 
-<p><img src="https://docs.turingpi.com/images/hack4easy/kubectl_system.png" alt="" /></p>
+<pre><code>$ kubectl get pods --all-namespaces
+NAMESPACE     NAME                             READY   STATUS    RESTARTS   AGE
+kube-system   coredns-6955765f44-slbhm         1/1     Running   19         8h
+kube-system   coredns-6955765f44-zv8f8         1/1     Running   19         8h
+kube-system   etcd-master                      1/1     Running   38         8h
+kube-system   kube-apiserver-master            1/1     Running   28         8h
+kube-system   kube-controller-manager-master   1/1     Running   29         8h
+kube-system   kube-flannel-ds-arm-68ts8        1/1     Running   7          7h27m
+kube-system   kube-flannel-ds-arm-dflh6        1/1     Running   14         7h48m
+kube-system   kube-flannel-ds-arm-hjh67        1/1     Running   25         7h59m
+kube-system   kube-flannel-ds-arm-q6d7q        1/1     Running   16         7h32m
+kube-system   kube-flannel-ds-arm-qp4fq        1/1     Running   0          7h40m
+kube-system   kube-proxy-62lm8                 1/1     Running   12         7h32m
+kube-system   kube-proxy-9fdnh                 1/1     Running   0          7h40m
+kube-system   kube-proxy-hxm2m                 1/1     Running   6          7h27m
+kube-system   kube-proxy-vb49r                 1/1     Running   20         8h
+kube-system   kube-proxy-zpbmc                 1/1     Running   12         7h48m
+kube-system   kube-scheduler-master            1/1     Running   30         8h
+</code></pre>
 
 
 
@@ -860,20 +878,20 @@ build a default SD image where cloud-init does 100% of the initialization work.<
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.turingpi.com/js/clipboard.min.js?1580829991"></script>
-    <script src="https://docs.turingpi.com/js/perfect-scrollbar.min.js?1580829991"></script>
-    <script src="https://docs.turingpi.com/js/perfect-scrollbar.jquery.min.js?1580829991"></script>
-    <script src="https://docs.turingpi.com/js/jquery.sticky.js?1580829991"></script>
-    <script src="https://docs.turingpi.com/js/featherlight.min.js?1580829991"></script>
-    <script src="https://docs.turingpi.com/js/html5shiv-printshiv.min.js?1580829991"></script>
-    <script src="https://docs.turingpi.com/js/highlight.pack.js?1580829991"></script>
+    <script src="https://docs.turingpi.com/js/clipboard.min.js?1580830219"></script>
+    <script src="https://docs.turingpi.com/js/perfect-scrollbar.min.js?1580830219"></script>
+    <script src="https://docs.turingpi.com/js/perfect-scrollbar.jquery.min.js?1580830219"></script>
+    <script src="https://docs.turingpi.com/js/jquery.sticky.js?1580830219"></script>
+    <script src="https://docs.turingpi.com/js/featherlight.min.js?1580830219"></script>
+    <script src="https://docs.turingpi.com/js/html5shiv-printshiv.min.js?1580830219"></script>
+    <script src="https://docs.turingpi.com/js/highlight.pack.js?1580830219"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.turingpi.com/js/modernizr.custom.71422.js?1580829991"></script>
-    <script src="https://docs.turingpi.com/js/learn.js?1580829991"></script>
-    <script src="https://docs.turingpi.com/js/hugo-learn.js?1580829991"></script>
+    <script src="https://docs.turingpi.com/js/modernizr.custom.71422.js?1580830219"></script>
+    <script src="https://docs.turingpi.com/js/learn.js?1580830219"></script>
+    <script src="https://docs.turingpi.com/js/hugo-learn.js?1580830219"></script>
 
-    <link href="https://docs.turingpi.com/mermaid/mermaid.css?1580829991" type="text/css" rel="stylesheet" />
-    <script src="https://docs.turingpi.com/mermaid/mermaid.js?1580829991"></script>
+    <link href="https://docs.turingpi.com/mermaid/mermaid.css?1580830219" type="text/css" rel="stylesheet" />
+    <script src="https://docs.turingpi.com/mermaid/mermaid.js?1580830219"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
