@@ -88,7 +88,7 @@ nodes have multiple interfaces (wlan0 and eth0).&lt;/p&gt;</description>
       <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/maintenance/children/helm-install/</guid>
-      <description>&lt;p&gt;Use Helm &amp;amp; Tiller on the Turing PI Cluster.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Use Helm &amp;amp; Tiller on the Turing PI Cluster&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -97,7 +97,7 @@ nodes have multiple interfaces (wlan0 and eth0).&lt;/p&gt;</description>
       <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</guid>
-      <description>Master node upgrade using kubeadm # apt-mark unhold kubeadm &amp;amp;&amp;amp; \ &amp;gt; apt-get update &amp;amp;&amp;amp; apt-get install -y kubeadm &amp;amp;&amp;amp; \ &amp;gt; apt-mark hold kubeadm kubeadm was already not hold. Hit:2 http://raspbian.raspberrypi.org/raspbian stretch InRelease Hit:3 https://download.docker.com/linux/raspbian stretch InRelease Hit:1 https://packages.cloud.google.com/apt kubernetes-xenial InRelease Hit:5 http://archive.raspberrypi.org/debian stretch InRelease Hit:4 https://packagecloud.io/Hypriot/rpi/debian stretch InRelease Reading package lists... Done Reading package lists... Done Building dependency tree Reading state information... Done The following packages will be upgraded: kubeadm 1 upgraded, 0 newly installed, 0 to remove and 38 not upgraded.</description>
+      <description>&lt;p&gt;Upgrade tutorial&lt;/p&gt;</description>
     </item>
     
     <item>
