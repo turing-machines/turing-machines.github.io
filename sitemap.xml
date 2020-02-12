@@ -58,11 +58,6 @@
   </url>
   
   <url>
-    <loc>https://docs.turingpi.com/turing_pi/children/cluster_assembly/</loc>
-    <lastmod>2020-02-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://docs.turingpi.com/maintenance/children/k8s-upgrade/</loc>
     <lastmod>2020-02-04T00:00:00+00:00</lastmod>
   </url>
