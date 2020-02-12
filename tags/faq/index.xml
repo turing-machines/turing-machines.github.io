@@ -17,9 +17,9 @@
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/faq/</guid>
-      <description>1. What model Raspberry Pi is in this? Supported models with eMMC and without
- Raspberry Pi Compute Module 1 Raspberry Pi Compute Module 3 Raspberry Pi Compute Module 3+  2. Будет ли поддержка Raspberry Pi 4? Как только поступят в продажу Raspberry Pi 4 Compute Modules в короткие сроки будет версия платы с их поддержкой
-3. How to the compute modules communicate with each other? We use onboard 1 Gbps Ethernet switch within the nodes.</description>
+      <description>1. Which Raspberry Pi models are compatible? Turing Pi supports the following models with and without eMMC
+ Raspberry Pi Compute Module 1 Raspberry Pi Compute Module 3 Raspberry Pi Compute Module 3+  2. Does the board support the new Rasberry pi 4? There is no Compute Model for the Raspberry pi 4th generation yet
+3. How to the compute modules communicate with each other? The nodes interconnected with the onboard 1 Gbps switch.</description>
     </item>
     
   </channel>

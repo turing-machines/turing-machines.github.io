@@ -12,19 +12,19 @@
     <title>FAQ :: Turing Machines Documentation</title>
 
     
-    <link href="https://docs.turingpi.com/css/nucleus.css?1580834761" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/fontawesome-all.min.css?1580834761" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/hybrid.css?1580834761" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/featherlight.min.css?1580834761" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/perfect-scrollbar.min.css?1580834761" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/auto-complete.css?1580834761" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/theme.css?1580834761" rel="stylesheet">
-    <link href="https://docs.turingpi.com/css/hugo-theme.css?1580834761" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/nucleus.css?1581503029" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/fontawesome-all.min.css?1581503029" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/hybrid.css?1581503029" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/featherlight.min.css?1581503029" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/perfect-scrollbar.min.css?1581503029" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/auto-complete.css?1581503029" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/theme.css?1581503029" rel="stylesheet">
+    <link href="https://docs.turingpi.com/css/hugo-theme.css?1581503029" rel="stylesheet">
     
-      <link href="https://docs.turingpi.com/css/theme-kubedge.css?1580834761" rel="stylesheet">
+      <link href="https://docs.turingpi.com/css/theme-kubedge.css?1581503029" rel="stylesheet">
     
 
-    <script src="https://docs.turingpi.com/js/jquery-3.3.1.min.js?1580834761"></script>
+    <script src="https://docs.turingpi.com/js/jquery-3.3.1.min.js?1581503029"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://docs.turingpi.com/js/lunr.min.js?1580834761"></script>
-<script type="text/javascript" src="https://docs.turingpi.com/js/auto-complete.js?1580834761"></script>
+<script type="text/javascript" src="https://docs.turingpi.com/js/lunr.min.js?1581503029"></script>
+<script type="text/javascript" src="https://docs.turingpi.com/js/auto-complete.js?1581503029"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/docs.turingpi.com";
     
 </script>
-<script type="text/javascript" src="https://docs.turingpi.com/js/search.js?1580834761"></script>
+<script type="text/javascript" src="https://docs.turingpi.com/js/search.js?1581503029"></script>
 
     
   </div>
@@ -437,13 +437,15 @@
 <ul>
 <li>
 <ul>
-<li><a href="#1-what-model-raspberry-pi-is-in-this">1. What model Raspberry Pi is in this?</a></li>
-<li><a href="#2-будет-ли-поддержка-raspberry-pi-4">2. Будет ли поддержка Raspberry Pi 4?</a></li>
+<li><a href="#1-which-raspberry-pi-models-are-compatible">1. Which Raspberry Pi models are compatible?</a></li>
+<li><a href="#2-does-the-board-support-the-new-rasberry-pi-4">2. Does the board support the new Rasberry pi 4?</a></li>
 <li><a href="#3-how-to-the-compute-modules-communicate-with-each-other">3. How to the compute modules communicate with each other?</a></li>
-<li><a href="#4-поддерживается-ли-прошивка-compute-modules-через-кластер">4. Поддерживается ли прошивка Compute Modules через кластер?</a></li>
-<li><a href="#5-usb-connections-to-individual-boards-or-is-there-a-1-gbps-switch-or">5. USB connections to individual boards or is there a 1 Gbps switch or?</a></li>
-<li><a href="#6-i-see-atx-dc-12v-power-ports-does-this-mean-it-can-function-from-either-an-atx-power-supply-or-12v">6. I see ATX DC 12V power ports. Does this mean it can function from either an ATX power supply or 12V?</a></li>
-<li><a href="#7-guys-what-is-the-purpose-of-these-things">7. Guys what is the purpose of these things?</a></li>
+<li><a href="#4-from-where-the-cluster-board-boots-os">4. From where the cluster board boots OS?</a></li>
+<li><a href="#5-does-each-node-get-its-own-ip-address">5. Does each node get its own IP address?</a></li>
+<li><a href="#6-can-i-flash-compute-modules-through-the-board">6. Can I flash compute modules through the board?</a></li>
+<li><a href="#7-how-do-the-ethernet-usb-hdmi-and-audio-ports-work-is-there-a-way-to-switch-them-between-nodes">7. How do the Ethernet, USB, HDMI, and audio ports work? Is there a way to switch them between nodes?</a></li>
+<li><a href="#8-there-are-atx-and-dc-12v-power-ports-on-the-cluster-board-does-this-mean-it-can-function-from-either-an-atx-power-supply-or-12v">8. There are ATX and DC 12V power ports on the cluster board. Does this mean it can function from either an ATX power supply or 12V?</a></li>
+<li><a href="#7-what-ca-i-do-with-the-board">7. What ca I do with the board?</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -467,9 +469,9 @@
 
 
 
-<h3 id="1-what-model-raspberry-pi-is-in-this">1. What model Raspberry Pi is in this?</h3>
+<h3 id="1-which-raspberry-pi-models-are-compatible">1. Which Raspberry Pi models are compatible?</h3>
 
-<p>Supported models with eMMC and without</p>
+<p>Turing Pi supports the following models with and without eMMC</p>
 
 <ul>
 <li><a href="https://www.raspberrypi.org/products/compute-module-1/" target="_blank">Raspberry Pi Compute Module 1</a></li>
@@ -477,36 +479,45 @@
 <li><a href="https://www.raspberrypi.org/products/compute-module-3-plus/" target="_blank">Raspberry Pi Compute Module 3+</a></li>
 </ul>
 
-<h3 id="2-будет-ли-поддержка-raspberry-pi-4">2. Будет ли поддержка Raspberry Pi 4?</h3>
+<h3 id="2-does-the-board-support-the-new-rasberry-pi-4">2. Does the board support the new Rasberry pi 4?</h3>
 
-<p>Как только поступят в продажу Raspberry Pi 4 Compute Modules в короткие сроки будет версия платы с их поддержкой</p>
+<p>There is no Compute Model for the Raspberry pi 4th generation yet</p>
 
 <h3 id="3-how-to-the-compute-modules-communicate-with-each-other">3. How to the compute modules communicate with each other?</h3>
 
-<p>We use onboard 1 Gbps Ethernet switch within the nodes. Also, each node can exchange some tech info thought the I2C bus with each other, including Real-Time Clock (RTC)</p>
+<p>The nodes interconnected with the onboard 1 Gbps switch. However, each node is limited with 100 Mbps USB speed. Also, there is an I2C bus to exchange some technical information between nodes, including Real-Time Clock (RTC).</p>
 
-<h3 id="4-поддерживается-ли-прошивка-compute-modules-через-кластер">4. Поддерживается ли прошивка Compute Modules через кластер?</h3>
+<h3 id="4-from-where-the-cluster-board-boots-os">4. From where the cluster board boots OS?</h3>
 
-<p>Yes. Only for the master node.</p>
+<p>You can boot the OS either from eMMC or SD card.</p>
 
-<h3 id="5-usb-connections-to-individual-boards-or-is-there-a-1-gbps-switch-or">5. USB connections to individual boards or is there a 1 Gbps switch or?</h3>
-
-<p>По два вертикальных USB подсоединены каждый к своей ноде. Если смотреть со стороны портов: правый первый USB подсоединенем к мастер ноде, второй с ethernet ко второй ноде, третий к четвертой ноде и четвертый к шестой ноде</p>
-
-<h3 id="6-i-see-atx-dc-12v-power-ports-does-this-mean-it-can-function-from-either-an-atx-power-supply-or-12v">6. I see ATX DC 12V power ports. Does this mean it can function from either an ATX power supply or 12V?</h3>
+<h3 id="5-does-each-node-get-its-own-ip-address">5. Does each node get its own IP address?</h3>
 
 <p>Yes</p>
 
-<h3 id="7-guys-what-is-the-purpose-of-these-things">7. Guys what is the purpose of these things?</h3>
+<h3 id="6-can-i-flash-compute-modules-through-the-board">6. Can I flash compute modules through the board?</h3>
 
-<p>Kind of</p>
+<p>Yes, you can flash a compute module using a top/master node.</p>
+
+<h3 id="7-how-do-the-ethernet-usb-hdmi-and-audio-ports-work-is-there-a-way-to-switch-them-between-nodes">7. How do the Ethernet, USB, HDMI, and audio ports work? Is there a way to switch them between nodes?</h3>
+
+<p>Each pair of USB connected to a particular node. HDMI and audio connected with a top/master node. Ethernet connected with a second node.</p>
+
+<h3 id="8-there-are-atx-and-dc-12v-power-ports-on-the-cluster-board-does-this-mean-it-can-function-from-either-an-atx-power-supply-or-12v">8. There are ATX and DC 12V power ports on the cluster board. Does this mean it can function from either an ATX power supply or 12V?</h3>
+
+<p>Yes</p>
+
+<h3 id="7-what-ca-i-do-with-the-board">7. What ca I do with the board?</h3>
 
 <ul>
-<li>To prototype and learn clustering applications and practices</li>
-<li>Host at the edge Kubernetes (k8s, k3s), Docker, TensorFlow, Caffe and other beauties of microservice architecture</li>
-<li>Home education lab</li>
-<li>Compute node for IoT purposes</li>
-<li>Home automation server</li>
+<li>Edge gateway and application hosting</li>
+<li>Homelab</li>
+<li>Develop and learn cloud-native technologies (Kubernetes, Docker, Serverless, Microservices) on bare metal</li>
+<li>Cloud-native apps testing environment</li>
+<li>Learn concepts of distributed Machine Learning apps</li>
+<li>Hosting and managing IoT apps</li>
+<li>Prototype and learn cluster applications, parallel computing, and distributed computing concepts on bare metal</li>
+<li>Host Minecraft</li>
 </ul>
 
 
@@ -771,20 +782,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://docs.turingpi.com/js/clipboard.min.js?1580834761"></script>
-    <script src="https://docs.turingpi.com/js/perfect-scrollbar.min.js?1580834761"></script>
-    <script src="https://docs.turingpi.com/js/perfect-scrollbar.jquery.min.js?1580834761"></script>
-    <script src="https://docs.turingpi.com/js/jquery.sticky.js?1580834761"></script>
-    <script src="https://docs.turingpi.com/js/featherlight.min.js?1580834761"></script>
-    <script src="https://docs.turingpi.com/js/html5shiv-printshiv.min.js?1580834761"></script>
-    <script src="https://docs.turingpi.com/js/highlight.pack.js?1580834761"></script>
+    <script src="https://docs.turingpi.com/js/clipboard.min.js?1581503029"></script>
+    <script src="https://docs.turingpi.com/js/perfect-scrollbar.min.js?1581503029"></script>
+    <script src="https://docs.turingpi.com/js/perfect-scrollbar.jquery.min.js?1581503029"></script>
+    <script src="https://docs.turingpi.com/js/jquery.sticky.js?1581503029"></script>
+    <script src="https://docs.turingpi.com/js/featherlight.min.js?1581503029"></script>
+    <script src="https://docs.turingpi.com/js/html5shiv-printshiv.min.js?1581503029"></script>
+    <script src="https://docs.turingpi.com/js/highlight.pack.js?1581503029"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://docs.turingpi.com/js/modernizr.custom.71422.js?1580834761"></script>
-    <script src="https://docs.turingpi.com/js/learn.js?1580834761"></script>
-    <script src="https://docs.turingpi.com/js/hugo-learn.js?1580834761"></script>
+    <script src="https://docs.turingpi.com/js/modernizr.custom.71422.js?1581503029"></script>
+    <script src="https://docs.turingpi.com/js/learn.js?1581503029"></script>
+    <script src="https://docs.turingpi.com/js/hugo-learn.js?1581503029"></script>
 
-    <link href="https://docs.turingpi.com/mermaid/mermaid.css?1580834761" type="text/css" rel="stylesheet" />
-    <script src="https://docs.turingpi.com/mermaid/mermaid.js?1580834761"></script>
+    <link href="https://docs.turingpi.com/mermaid/mermaid.css?1581503029" type="text/css" rel="stylesheet" />
+    <script src="https://docs.turingpi.com/mermaid/mermaid.js?1581503029"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
