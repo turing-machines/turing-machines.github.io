@@ -35,9 +35,7 @@
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/faq/</guid>
-      <description>1. Which Raspberry Pi models are compatible? Turing Pi supports the following models with and without eMMC
- Raspberry Pi Compute Module 1 Raspberry Pi Compute Module 3 Raspberry Pi Compute Module 3+  2. Does the board support the new Rasberry pi 4? There is no Compute Model for the Raspberry pi 4th generation yet
-3. How to the compute modules communicate with each other? The nodes interconnected with the onboard 1 Gbps switch.</description>
+      <description>1. What can I do with the board?  Edge gateway and application hosting Homelab Develop and learn cloud-native technologies (Kubernetes, Docker, Serverless, Microservices) on bare metal Cloud-native apps testing environment Learn concepts of distributed Machine Learning apps Hosting and managing IoT apps Prototype and learn cluster applications, parallel computing, and distributed computing concepts on bare metal Host Minecraft  2. Which Raspberry Pi models are compatible? Turing Pi supports the following models with and without eMMC</description>
     </item>
     
   </channel>
