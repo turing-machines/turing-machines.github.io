@@ -97,7 +97,7 @@ nodes have multiple interfaces (wlan0 and eth0).&lt;/p&gt;</description>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://docs.turingpi.com/faq/</guid>
-      <description>1. What can I do with the board?  Edge gateway and application hosting Homelab Develop and learn cloud-native technologies (Kubernetes, Docker, Serverless, Microservices) on bare metal Cloud-native apps testing environment Learn concepts of distributed Machine Learning apps Hosting and managing IoT apps Prototype and learn cluster applications, parallel computing, and distributed computing concepts on bare metal Host Kubernetes K8S or K3S, Minecraft, Plex, OwnCloud, &amp;hellip;  2. Which Raspberry Pi models are compatible?</description>
+      <description>1. What can I do with the board?  Home server (homelab) and application hosting Develop and learn cloud-native technologies (Kubernetes, Docker Swarm, Serverless, Microservices) on bare metal Cloud-native apps testing environment Learn concepts of distributed Machine Learning apps Hosting and managing IoT apps Prototype and learn cluster applications, parallel computing, and distributed computing concepts on bare metal Host K8S, K3S, Minecraft, Plex, OwnCloud, &amp;hellip;  2. Which Raspberry Pi models are compatible?</description>
     </item>
     
   </channel>
