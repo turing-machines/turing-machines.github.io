@@ -601,7 +601,7 @@ On device 0x57h user space address from 0x00h to 0x3Fh and on 0x6Fh from 0x20h t
 <p>The onboard RTL8370 integrate all the functions of a high-speed switch system; including SRAM for packet
 buffering, non-blocking switch fabric, and internal register management into a single CMOS device.</p>
 
-<div class="notices note" ><p>Device Address: 0x04h</p>
+<div class="notices note" ><p>Device Address: 0x5Ch</p>
 </div>
 
 
@@ -691,7 +691,7 @@ buffering, non-blocking switch fabric, and internal register management into a s
 # 0x0000: 10Mbps
 
 # Set network speed to 1000Mbps
-sudo i2cset -m 0x2040 -y 0x04 0x00 0x2000 w
+sudo i2cset -m 0x2040 -y 0x5c 0x00 0x2000 w
 </code></pre>
 
 <h4 id="power-up-down">Power Up/Down</h4>
@@ -701,10 +701,10 @@ sudo i2cset -m 0x2040 -y 0x04 0x00 0x2000 w
 # 0x0000: Normal operation
 
 # Power down
-sudo i2cset -m 0x0800 -y 0x04 0x00 0x0800 w
+sudo i2cset -m 0x0800 -y 0x5c 0x00 0x0800 w
 
 # Power up
-sudo i2cset -m 0x0800 -y 0x04 0x00 0x0000 w
+sudo i2cset -m 0x0800 -y 0x5c 0x00 0x0000 w
 </code></pre>
 
 <h3 id="i2c-expander">I2C expander</h3>
